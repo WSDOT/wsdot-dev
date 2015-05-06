@@ -76,10 +76,11 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_address',
     'label' => 'Address',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -135,7 +136,8 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-park_and_ride_lots-field_city_term_reference'
+  // Exported field_instance:
+  // 'node-park_and_ride_lots-field_city_term_reference'
   $field_instances['node-park_and_ride_lots-field_city_term_reference'] = array(
     'bundle' => 'park_and_ride_lots',
     'default_value' => NULL,
@@ -215,7 +217,8 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-park_and_ride_lots-field_county_term_reference'
+  // Exported field_instance:
+  // 'node-park_and_ride_lots-field_county_term_reference'
   $field_instances['node-park_and_ride_lots-field_county_term_reference'] = array(
     'bundle' => 'park_and_ride_lots',
     'default_value' => NULL,
@@ -362,10 +365,11 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_owner',
     'label' => 'Owner',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -402,10 +406,11 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_street_location',
     'label' => 'Street Location',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -478,7 +483,8 @@ function wsdot_park_and_ride_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-park_and_ride_lots-field_transit_provider_term_refe'
+  // Exported field_instance:
+  // 'node-park_and_ride_lots-field_transit_provider_term_refe'
   $field_instances['node-park_and_ride_lots-field_transit_provider_term_refe'] = array(
     'bundle' => 'park_and_ride_lots',
     'default_value' => NULL,
