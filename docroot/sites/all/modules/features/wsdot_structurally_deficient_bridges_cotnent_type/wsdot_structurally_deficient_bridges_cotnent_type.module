@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WSDOT Structurally Deficient Bridges Cotnent Type feature.
+ */
+
+include_once 'wsdot_structurally_deficient_bridges_cotnent_type.features.inc';
