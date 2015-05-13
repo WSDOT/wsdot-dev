@@ -75,11 +75,10 @@ function wsdot_structurally_deficient_bridges_view_views_default_views() {
   $handler->display->display_options['fields']['field_bridge_number']['table'] = 'field_data_field_bridge_number';
   $handler->display->display_options['fields']['field_bridge_number']['field'] = 'field_bridge_number';
   $handler->display->display_options['fields']['field_bridge_number']['element_label_colon'] = FALSE;
-  /* Field: Content: Year */
+  /* Field: Content: Year Built */
   $handler->display->display_options['fields']['field_year']['id'] = 'field_year';
   $handler->display->display_options['fields']['field_year']['table'] = 'field_data_field_year';
   $handler->display->display_options['fields']['field_year']['field'] = 'field_year';
-  $handler->display->display_options['fields']['field_year']['label'] = 'Year Built';
   $handler->display->display_options['fields']['field_year']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_year']['settings'] = array(
     'format_type' => 'long',
@@ -167,6 +166,7 @@ function wsdot_structurally_deficient_bridges_view_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['structurally_deficient_bridges'] = $view;
 
   return $export;
