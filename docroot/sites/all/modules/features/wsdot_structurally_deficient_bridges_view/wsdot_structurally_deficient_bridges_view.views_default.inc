@@ -132,6 +132,38 @@ function wsdot_structurally_deficient_bridges_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'structurally_deficient_bridges' => 'structurally_deficient_bridges',
   );
+  /* Filter criterion: Field: Counties (field_counties) */
+  $handler->display->display_options['filters']['field_counties_tid']['id'] = 'field_counties_tid';
+  $handler->display->display_options['filters']['field_counties_tid']['table'] = 'field_data_field_counties';
+  $handler->display->display_options['filters']['field_counties_tid']['field'] = 'field_counties_tid';
+  $handler->display->display_options['filters']['field_counties_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_counties_tid']['expose']['operator_id'] = 'field_counties_tid_op';
+  $handler->display->display_options['filters']['field_counties_tid']['expose']['label'] = 'County';
+  $handler->display->display_options['filters']['field_counties_tid']['expose']['operator'] = 'field_counties_tid_op';
+  $handler->display->display_options['filters']['field_counties_tid']['expose']['identifier'] = 'field_counties_tid';
+  $handler->display->display_options['filters']['field_counties_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    11 => 0,
+  );
+  $handler->display->display_options['filters']['field_counties_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_counties_tid']['vocabulary'] = 'counties';
+  /* Filter criterion: Content: Highways (field_highways) */
+  $handler->display->display_options['filters']['field_highways_tid']['id'] = 'field_highways_tid';
+  $handler->display->display_options['filters']['field_highways_tid']['table'] = 'field_data_field_highways';
+  $handler->display->display_options['filters']['field_highways_tid']['field'] = 'field_highways_tid';
+  $handler->display->display_options['filters']['field_highways_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_highways_tid']['expose']['operator_id'] = 'field_highways_tid_op';
+  $handler->display->display_options['filters']['field_highways_tid']['expose']['label'] = 'Highway';
+  $handler->display->display_options['filters']['field_highways_tid']['expose']['operator'] = 'field_highways_tid_op';
+  $handler->display->display_options['filters']['field_highways_tid']['expose']['identifier'] = 'field_highways_tid';
+  $handler->display->display_options['filters']['field_highways_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    11 => 0,
+  );
+  $handler->display->display_options['filters']['field_highways_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_highways_tid']['vocabulary'] = 'highways';
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
