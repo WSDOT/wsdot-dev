@@ -846,6 +846,9 @@ h2.pane-title, h4.pane-title {
 .views-field-field-external-project {
 	font-size: 1.2em;
 }
+.views-field-field-project-ref {
+	font-size: 1.2em;
+}
 .views-field-field-contact-info {
 	font-size: 1.2em;
 }
@@ -867,7 +870,13 @@ h2.pane-title, h4.pane-title {
 	margin-left: 1.2em;
 	display: block;
 }
-/* Social Media */
+h4.RoadworkTitle {
+	Margin: 1em 0;
+}
+/* Styles for Roadwork Content Type */
+.date-display-start, .date-display-end {
+	font-size: 1.2em;
+}/* Social Media */
 
 .social-media-share-widget {
 	margin-top: 3em;
