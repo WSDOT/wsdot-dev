@@ -874,8 +874,30 @@ h4.RoadworkTitle {
 	Margin: 1em 0;
 }
 /* Styles for Roadwork Content Type */
+
+.field-name-field-regions .label-inline, .field-name-field-highways .label-inline, .field-name-field-counties .label-inline, .field-name-field-project-ref .label-inline, .field-name-field-user-reference .label-inline, .field-name-field-external-project .label-inline, .field-name-field-contact-info .label-inline, .field-name-field-work-schedule .label-inline, .field-name-field-description .label-inline {
+	font-weight: bold;
+	display: inline-block;
+	font-size: 1.2em;
+}
+.field-name-field-location .label-inline {
+	display: inline-block;
+	font-size: 1.2em;
+}
+.field-name-field-location .field-name-field-milepost {
+	font-size: 1.2em;
+	display: inline-block;
+}
+.field-name-field-description label-inline {
+	font-size: 1em;
+	display: inline-block;
+}
+.field-name-field-description p {
+	display: inline;
+}
 .date-display-start, .date-display-end {
 	font-size: 1.2em;
+<<<<<<< HEAD
 }/* Social Media */
 
 .social-media-share-widget {
@@ -885,3 +907,9 @@ h4.RoadworkTitle {
 .widgets-element-horizontal,.widgets-style-horizontal {
 	margin-right: 1em;	
 }
+=======
+}
+.field-name-field-regions, .field-name-field-highways, .field-name-field-counties {
+	font-size: .8em;
+}
+>>>>>>> CSS updates to Roadwork content type
