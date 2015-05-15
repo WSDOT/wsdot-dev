@@ -866,8 +866,7 @@ h2.pane-title, h4.pane-title {
 	font-size: 1.2em;
 }	
 .ExternalContactFields {
-	font-size: 1em;
-	margin-left: 1.2em;
+	font-size: .8em;
 	display: block;
 }
 h4.RoadworkTitle {
@@ -875,7 +874,7 @@ h4.RoadworkTitle {
 }
 /* Styles for Roadwork Content Type */
 
-.field-name-field-regions .label-inline, .field-name-field-highways .label-inline, .field-name-field-counties .label-inline, .field-name-field-project-ref .label-inline, .field-name-field-user-reference .label-inline, .field-name-field-external-project .label-inline, .field-name-field-contact-info .label-inline, .field-name-field-work-schedule .label-inline, .field-name-field-description .label-inline {
+.field-name-field-regions .label-inline, .field-name-field-highways .label-inline, .field-name-field-counties .label-inline, .field-name-field-contact-info .label-inline, .field-name-field-description .label-inline {
 	font-weight: bold;
 	display: inline-block;
 	font-size: 1.2em;
@@ -895,21 +894,60 @@ h4.RoadworkTitle {
 .field-name-field-description p {
 	display: inline;
 }
-.date-display-start, .date-display-end {
+.field-name-field-project-ref .label-inline {
+	font-weight: bold;
+	display: inline-block;
+}
+.field-name-field-project-ref {
 	font-size: 1.2em;
-<<<<<<< HEAD
-}/* Social Media */
+}
+.field-name-field-user-reference .label-inline {
+	font-weight: bold;
+	display: inline-block;
+}
+.field-name-field-user-reference  {
+	font-size: 1.2em;
+}
+.field-name-field-external-project .label-inline {
+	font-weight: bold;
+	display: inline-block;
+}
+.field-name-field-external-project {
+	font-size: 1.2em;
+}
+.field-name-field-contact-title {
+	
+	margin-left: 1em;
+}
+.field-name-field-contact-phone {
+	
+	margin-left: 1em;
+}
+.field-name-field-contact-firstlast {
+	
+	margin-left: 1em;
+}
+.field-name-field-contact-email {
+
+	margin-left: 1em;
+}
+.field-name-field-work-schedule .label-inline {
+	font-size: 1em;
+	display: inline-block;
+}
+.field-name-field-regions, .field-name-field-highways, .field-name-field-counties {
+	font-size: 85%;
+	margin-right: 1em;
+	display: inline-block;
+}
+.field-collection-item-field-contact-info {
+	font-size: 1.2em;
+}
+/* Social Media */
 
 .social-media-share-widget {
 	margin-top: 3em;
 }
-
 .widgets-element-horizontal,.widgets-style-horizontal {
 	margin-right: 1em;	
 }
-=======
-}
-.field-name-field-regions, .field-name-field-highways, .field-name-field-counties {
-	font-size: .8em;
-}
->>>>>>> CSS updates to Roadwork content type
