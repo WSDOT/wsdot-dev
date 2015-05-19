@@ -1,7 +1,8 @@
 name = WSDOT Publications View
 core = 7.x
-package = WSDOT Views
-version = 7.x-1.0
+
+package = WSDOT Content
+version = 7.x-2.0
 project = wsdot_manuals_view
 dependencies[] = ctools
 dependencies[] = entityreference
@@ -16,6 +17,7 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_instance][] = file-project_document-field_project_ref
 features[field_instance][] = node-page-body
+features[views_view][] = publications
 features_exclude[dependencies][date] = date
 features_exclude[dependencies][field_collection] = field_collection
 features_exclude[dependencies][file] = file
