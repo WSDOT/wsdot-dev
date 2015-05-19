@@ -98,7 +98,7 @@ function wsdot_manuals_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'publications' => 'publications',
   );
-  /* Filter criterion: Content: Document Type (field_document_type) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_document_type_value']['id'] = 'field_document_type_value';
   $handler->display->display_options['filters']['field_document_type_value']['table'] = 'field_data_field_document_type';
   $handler->display->display_options['filters']['field_document_type_value']['field'] = 'field_document_type_value';
@@ -116,35 +116,43 @@ function wsdot_manuals_view_views_default_views() {
     'field_publication_number' => 'field_publication_number',
     'title' => 'title',
     'field_authors' => 'field_authors',
+    'field_originator' => 'field_originator',
     'field_date_1' => 'field_date_1',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'field_publication_number';
   $handler->display->display_options['style_options']['info'] = array(
     'field_publication_number' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
-      'align' => '',
+      'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 0,
     ),
     'title' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
-      'align' => '',
+      'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 0,
     ),
     'field_authors' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
-      'align' => '',
+      'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 1,
+    ),
+    'field_originator' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => 'views-align-left',
+      'separator' => '',
+      'empty_column' => 0,
     ),
     'field_date_1' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
-      'align' => '',
+      'align' => 'views-align-left',
       'separator' => '',
       'empty_column' => 0,
     ),
@@ -168,6 +176,10 @@ function wsdot_manuals_view_views_default_views() {
   $handler->display->display_options['fields']['field_authors']['id'] = 'field_authors';
   $handler->display->display_options['fields']['field_authors']['table'] = 'field_data_field_authors';
   $handler->display->display_options['fields']['field_authors']['field'] = 'field_authors';
+  /* Field: Content: Originator */
+  $handler->display->display_options['fields']['field_originator']['id'] = 'field_originator';
+  $handler->display->display_options['fields']['field_originator']['table'] = 'field_data_field_originator';
+  $handler->display->display_options['fields']['field_originator']['field'] = 'field_originator';
   /* Field: Field: Publication Date */
   $handler->display->display_options['fields']['field_date_1']['id'] = 'field_date_1';
   $handler->display->display_options['fields']['field_date_1']['table'] = 'field_data_field_date';
@@ -195,11 +207,11 @@ function wsdot_manuals_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'publications' => 'publications',
   );
-  /* Filter criterion: Content: Document Type (field_document_type) */
-  $handler->display->display_options['filters']['field_document_type_value']['id'] = 'field_document_type_value';
-  $handler->display->display_options['filters']['field_document_type_value']['table'] = 'field_data_field_document_type';
-  $handler->display->display_options['filters']['field_document_type_value']['field'] = 'field_document_type_value';
-  $handler->display->display_options['filters']['field_document_type_value']['value'] = array(
+  /* Filter criterion: Content: Publication Type (field_publication_type) */
+  $handler->display->display_options['filters']['field_publication_type_value']['id'] = 'field_publication_type_value';
+  $handler->display->display_options['filters']['field_publication_type_value']['table'] = 'field_data_field_publication_type';
+  $handler->display->display_options['filters']['field_publication_type_value']['field'] = 'field_publication_type_value';
+  $handler->display->display_options['filters']['field_publication_type_value']['value'] = array(
     'Research Reports' => 'Research Reports',
   );
   $handler->display->display_options['path'] = 'research/reports';
@@ -248,11 +260,11 @@ function wsdot_manuals_view_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'publications' => 'publications',
   );
-  /* Filter criterion: Content: Document Type (field_document_type) */
-  $handler->display->display_options['filters']['field_document_type_value']['id'] = 'field_document_type_value';
-  $handler->display->display_options['filters']['field_document_type_value']['table'] = 'field_data_field_document_type';
-  $handler->display->display_options['filters']['field_document_type_value']['field'] = 'field_document_type_value';
-  $handler->display->display_options['filters']['field_document_type_value']['value'] = array(
+  /* Filter criterion: Content: Publication Type (field_publication_type) */
+  $handler->display->display_options['filters']['field_publication_type_value']['id'] = 'field_publication_type_value';
+  $handler->display->display_options['filters']['field_publication_type_value']['table'] = 'field_data_field_publication_type';
+  $handler->display->display_options['filters']['field_publication_type_value']['field'] = 'field_publication_type_value';
+  $handler->display->display_options['filters']['field_publication_type_value']['value'] = array(
     'Engineering Manuals' => 'Engineering Manuals',
   );
   $handler->display->display_options['path'] = 'publications/manuals';

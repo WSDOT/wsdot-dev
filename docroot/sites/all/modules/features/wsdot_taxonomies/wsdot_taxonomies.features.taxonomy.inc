@@ -266,7 +266,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'name' => 'Subjects',
       'machine_name' => 'subjects',
       'description' => 'Term list based on Web site structure and hierarchy',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(

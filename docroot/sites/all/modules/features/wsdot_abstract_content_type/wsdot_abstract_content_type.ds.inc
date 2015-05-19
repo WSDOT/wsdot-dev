@@ -17,6 +17,16 @@ function wsdot_abstract_content_type_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'publications';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'changed_date' => array(
+      'weight' => '11',
+      'label' => 'inline',
+      'format' => 'ds_post_date_long',
+    ),
     'field_number_of_pages' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -35,23 +45,15 @@ function wsdot_abstract_content_type_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'publications';
   $ds_fieldsetting->view_mode = 'full';
   $ds_fieldsetting->settings = array(
-    'field_last_modified_date' => array(
+    'field_authors' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb-el' => 'h3',
+          'lb-el' => 'H3',
         ),
       ),
     ),
-    'field_publication_number' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'h3',
-        ),
-      ),
-    ),
-    'field_description' => array(
+    'field_chapter' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -67,7 +69,23 @@ function wsdot_abstract_content_type_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_orginating_organizations' => array(
+    'field_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h3',
+        ),
+      ),
+    ),
+    'field_description' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h3',
+        ),
+      ),
+    ),
+    'field_publication_number' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -80,30 +98,6 @@ function wsdot_abstract_content_type_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'lb-el' => 'h3',
-        ),
-      ),
-    ),
-    'field_chapter' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'h3',
-        ),
-      ),
-    ),
-    'field_date' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'h3',
-        ),
-      ),
-    ),
-    'field_authors' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'H3',
         ),
       ),
     ),
@@ -129,40 +123,36 @@ function wsdot_abstract_content_type_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_publication_number',
+        0 => 'title',
         1 => 'field_description',
         2 => 'field_date',
-        3 => 'field_last_modified_date',
-        4 => 'field_contact_info',
+        3 => 'field_publication_number',
+        4 => 'field_publication_version',
         5 => 'field_authors',
-        6 => 'field_orginating_organizations',
-        7 => 'field_number_of_pages',
-        8 => 'field_related_publications',
+        6 => 'field_contact_info',
+        7 => 'field_originator',
+        8 => 'field_number_of_pages',
         9 => 'field_subjects',
-        10 => 'field_version_date',
-        11 => 'field_publication_version_',
-        12 => 'field_complete',
-        13 => 'field_revision',
+        10 => 'field_related_publications',
+        11 => 'changed_date',
       ),
       'right' => array(
-        14 => 'field_chapter',
+        12 => 'field_chapter',
       ),
     ),
     'fields' => array(
-      'field_publication_number' => 'left',
+      'title' => 'left',
       'field_description' => 'left',
       'field_date' => 'left',
-      'field_last_modified_date' => 'left',
-      'field_contact_info' => 'left',
+      'field_publication_number' => 'left',
+      'field_publication_version' => 'left',
       'field_authors' => 'left',
-      'field_orginating_organizations' => 'left',
+      'field_contact_info' => 'left',
+      'field_originator' => 'left',
       'field_number_of_pages' => 'left',
-      'field_related_publications' => 'left',
       'field_subjects' => 'left',
-      'field_version_date' => 'left',
-      'field_publication_version_' => 'left',
-      'field_complete' => 'left',
-      'field_revision' => 'left',
+      'field_related_publications' => 'left',
+      'changed_date' => 'left',
       'field_chapter' => 'right',
     ),
     'classes' => array(),
@@ -188,40 +178,32 @@ function wsdot_abstract_content_type_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'field_publication_number',
-        1 => 'field_description',
-        2 => 'field_date',
-        3 => 'field_last_modified_date',
-        4 => 'field_contact_info',
-        5 => 'field_authors',
-        6 => 'field_orginating_organizations',
-        7 => 'field_number_of_pages',
-        8 => 'field_related_publications',
-        9 => 'field_subjects',
-        10 => 'field_version_date',
-        11 => 'field_publication_version_',
-        12 => 'field_complete',
-        13 => 'field_revision',
+        0 => 'field_description',
+        1 => 'field_date',
+        2 => 'field_publication_number',
+        3 => 'field_publication_version',
+        4 => 'field_number_of_pages',
+        5 => 'field_contact_info',
+        6 => 'field_authors',
+        7 => 'field_originator',
+        8 => 'field_subjects',
+        9 => 'field_related_publications',
       ),
       'right' => array(
-        14 => 'field_chapter',
+        10 => 'field_chapter',
       ),
     ),
     'fields' => array(
-      'field_publication_number' => 'left',
       'field_description' => 'left',
       'field_date' => 'left',
-      'field_last_modified_date' => 'left',
+      'field_publication_number' => 'left',
+      'field_publication_version' => 'left',
+      'field_number_of_pages' => 'left',
       'field_contact_info' => 'left',
       'field_authors' => 'left',
-      'field_orginating_organizations' => 'left',
-      'field_number_of_pages' => 'left',
-      'field_related_publications' => 'left',
+      'field_originator' => 'left',
       'field_subjects' => 'left',
-      'field_version_date' => 'left',
-      'field_publication_version_' => 'left',
-      'field_complete' => 'left',
-      'field_revision' => 'left',
+      'field_related_publications' => 'left',
       'field_chapter' => 'right',
     ),
     'classes' => array(),

@@ -29,7 +29,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -69,14 +69,14 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 14,
+        'weight' => 12,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 14,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -118,71 +118,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         ),
       ),
       'type' => 'media_generic',
-      'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'node-publications-field_complete'
-  $field_instances['node-publications-field_complete'] = array(
-    'bundle' => 'publications',
-    'deleted' => 0,
-    'description' => 'Complete Version of ',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 12,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 12,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_complete',
-    'label' => 'Complete',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt pdf doc docx excel',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'project_document' => 0,
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 14,
+      'weight' => 24,
     ),
   );
 
@@ -200,7 +136,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'full' => array(
         'label' => 'inline',
@@ -209,7 +145,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -265,7 +201,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -298,7 +234,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_select',
-      'weight' => 12,
+      'weight' => 19,
     ),
   );
 
@@ -307,7 +243,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'bundle' => 'publications',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Use only the description field and not the summary field',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -321,7 +257,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -336,7 +272,6 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'label' => 'Description',
     'required' => 1,
     'settings' => array(
-      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -348,118 +283,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
-    ),
-  );
-
-
-  // Exported field_instance: 'node-publications-field_document_type'
-  $field_instances['node-publications-field_document_type'] = array(
-    'bundle' => 'publications',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_document_type',
-    'label' => 'Document Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'node-publications-field_last_modified_date'
-  $field_instances['node-publications-field_last_modified_date'] = array(
-    'bundle' => 'publications',
-    'deleted' => 0,
-    'description' => 'If there is no specific day, use the 1st of the month for the day.',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 3,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_last_modified_date',
-    'label' => 'Last Modified Date',
-    'required' => 0,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_text',
-      'weight' => 13,
+      'weight' => 18,
     ),
   );
 
@@ -468,26 +292,21 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'bundle' => 'publications',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Number of pages of Publication. Do not include size.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => 1,
-          'scale' => 0,
-          'thousand_separator' => ',',
-        ),
-        'type' => 'number_integer',
-        'weight' => 7,
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'number',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'number_unformatted',
-        'weight' => 7,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -502,41 +321,40 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'label' => 'Number of Pages',
     'required' => 0,
     'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => '',
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 14,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 21,
     ),
   );
 
-  // Exported field_instance: 'node-publications-field_orginating_organizations'
-  $field_instances['node-publications-field_orginating_organizations'] = array(
+  // Exported field_instance: 'node-publications-field_originator'
+  $field_instances['node-publications-field_originator'] = array(
     'bundle' => 'publications',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Enter the organizations only who have contributed to the document. No person names.',
+    'description' => 'The company or organization that created or authored the document. Within WSDOT, this may be the office and division.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'full' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -547,7 +365,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_orginating_organizations',
+    'field_name' => 'field_originator',
     'label' => 'Originator',
     'required' => 0,
     'settings' => array(
@@ -558,10 +376,10 @@ function wsdot_abstract_content_type_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 50,
+        'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 20,
     ),
   );
 
@@ -570,21 +388,21 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'bundle' => 'publications',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The alphanumeric identifier for the publication. Does not include version number',
     'display' => array(
       'default' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 3,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -597,54 +415,6 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_publication_number',
     'label' => 'Publication Number',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'node-publications-field_publication_version_'
-  $field_instances['node-publications-field_publication_version_'] = array(
-    'bundle' => 'publications',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'In format Publication Number.Version  Example: M41-01.21',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_publication_version_',
-    'label' => 'Publication Version ',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -657,7 +427,100 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance: 'node-publications-field_publication_type'
+  $field_instances['node-publications-field_publication_type'] = array(
+    'bundle' => 'publications',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_publication_type',
+    'label' => 'Publication Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-publications-field_publication_version'
+  $field_instances['node-publications-field_publication_version'] = array(
+    'bundle' => 'publications',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'For manuals this is the publication number plus the version number',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_publication_version',
+    'label' => 'Publication Version',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 17,
     ),
   );
 
@@ -666,21 +529,21 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     'bundle' => 'publications',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Link to the abstract page of the Publication not the document itself.',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 10,
       ),
       'full' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -701,13 +564,13 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
         'url_cutoff' => 80,
       ),
-      'enable_tokens' => 1,
+      'enable_tokens' => 0,
       'rel_remove' => 'default',
       'title' => 'required',
       'title_label_use_field_label' => 0,
@@ -722,11 +585,10 @@ function wsdot_abstract_content_type_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 16,
+      'weight' => 23,
     ),
   );
 
-  
   // Exported field_instance: 'node-publications-field_subjects'
   $field_instances['node-publications-field_subjects'] = array(
     'bundle' => 'publications',
@@ -742,14 +604,14 @@ function wsdot_abstract_content_type_field_default_field_instances() {
         'weight' => 9,
       ),
       'full' => array(
-        'label' => 'inline',
+        'label' => 'above',
         'module' => 'ds',
         'settings' => array(
           'taxonomy_term_reference_view_mode' => 'full',
           'use_content_language' => TRUE,
         ),
         'type' => 'ds_taxonomy_view_mode',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -771,42 +633,32 @@ function wsdot_abstract_content_type_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 15,
+      'weight' => 22,
     ),
   );
-
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Authors');
-  t('Complete');
   t('Complete Document');
-  t('Complete Version of ');
   t('Date that the document was created or published');
   t('Description');
-
+  t('For manuals this is the publication number plus the version number');
   t('Full name of Authors and Contributors to the document');
-  t('Manual Managers');
-  t('Publication Date');
-  t('Subjects');
-
-  t('Document Type');
-  t('Enter the organizations only who have contributed to the document. No person names.');
-  t('Full name of Authors and Contributors to the document');
-  t('If there is no specific day, use the 1st of the month for the day.');
-  t('In format Publication Number.Version  Example: M41-01.21');
-  t('Last Modified Date');
+  t('Link to the abstract page of the Publication not the document itself.');
   t('Manual Managers');
   t('Number of Pages');
+  t('Number of pages of Publication. Do not include size.');
   t('Originator');
   t('Publication Date');
   t('Publication Number');
-  t('Publication Version ');
+  t('Publication Type');
+  t('Publication Version');
   t('Related Publications');
-  t('Revision');
   t('Subjects');
-  t('Version Date');
-  t('document containing revisions from last version');
+  t('The alphanumeric identifier for the publication. Does not include version number');
+  t('The company or organization that created or authored the document. Within WSDOT, this may be the office and division.');
+  t('Use only the description field and not the summary field');
 
   return $field_instances;
 }
