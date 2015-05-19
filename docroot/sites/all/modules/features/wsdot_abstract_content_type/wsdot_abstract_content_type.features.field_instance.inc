@@ -352,8 +352,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     ),
   );
 
-<<<<<<< HEAD
-=======
+
   // Exported field_instance: 'node-publications-field_document_type'
   $field_instances['node-publications-field_document_type'] = array(
     'bundle' => 'publications',
@@ -727,71 +726,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-publications-field_revision'
-  $field_instances['node-publications-field_revision'] = array(
-    'bundle' => 'publications',
-    'deleted' => 0,
-    'description' => 'document containing revisions from last version',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 13,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_revision',
-    'label' => 'Revision',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 'document',
-          'image' => 0,
-          'project_document' => 0,
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 'media_default--media_browser_my_files',
-          'upload' => 'upload',
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 15,
-    ),
-  );
-
->>>>>>> 15a4a3c1bee7d6af8f43f8e80cc45d41b1285a44
+  
   // Exported field_instance: 'node-publications-field_subjects'
   $field_instances['node-publications-field_subjects'] = array(
     'bundle' => 'publications',
@@ -840,76 +775,7 @@ function wsdot_abstract_content_type_field_default_field_instances() {
     ),
   );
 
-<<<<<<< HEAD
-=======
-  // Exported field_instance: 'node-publications-field_version_date'
-  $field_instances['node-publications-field_version_date'] = array(
-    'bundle' => 'publications',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 10,
-      ),
-      'full' => array(
-        'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
-        'weight' => 10,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_version_date',
-    'label' => 'Version Date',
-    'required' => 0,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_text',
-      'weight' => 12,
-    ),
-  );
 
->>>>>>> 15a4a3c1bee7d6af8f43f8e80cc45d41b1285a44
   // Translatables
   // Included for use with string extractors like potx.
   t('Authors');
@@ -918,12 +784,12 @@ function wsdot_abstract_content_type_field_default_field_instances() {
   t('Complete Version of ');
   t('Date that the document was created or published');
   t('Description');
-<<<<<<< HEAD
+
   t('Full name of Authors and Contributors to the document');
   t('Manual Managers');
   t('Publication Date');
   t('Subjects');
-=======
+
   t('Document Type');
   t('Enter the organizations only who have contributed to the document. No person names.');
   t('Full name of Authors and Contributors to the document');
@@ -941,7 +807,6 @@ function wsdot_abstract_content_type_field_default_field_instances() {
   t('Subjects');
   t('Version Date');
   t('document containing revisions from last version');
->>>>>>> 15a4a3c1bee7d6af8f43f8e80cc45d41b1285a44
 
   return $field_instances;
 }
