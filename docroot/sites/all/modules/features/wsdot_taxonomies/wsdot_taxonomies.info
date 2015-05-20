@@ -14,6 +14,7 @@ dependencies[] = wsdot_field_bases
 dependencies[] = wsdot_projects
 features[features_api][] = api:2
 features[field_instance][] = taxonomy_term-amenities-field_image
+features[field_instance][] = taxonomy_term-cities-field_counties
 features[field_instance][] = taxonomy_term-counties-field_regions
 features[field_instance][] = taxonomy_term-project_phases-field_image
 features[field_instance][] = taxonomy_term-regions-field_contact_info

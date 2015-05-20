@@ -7,7 +7,10 @@ project = wsdot_park_and_ride_content_type
 dependencies[] = features
 dependencies[] = link
 dependencies[] = number
+<<<<<<< HEAD
 dependencies[] = options
+=======
+>>>>>>> 15a4a3c1bee7d6af8f43f8e80cc45d41b1285a44
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text
