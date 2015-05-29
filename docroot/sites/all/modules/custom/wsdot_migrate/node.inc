@@ -26,6 +26,7 @@ abstract class WSDOTNode extends WSDOTMigrationBase {
    * @var array
    */
   protected $resourceLinks = array();
+
   /**
    * Mapping of legacy office names to the equivalent Drupal region term names.
    *
@@ -382,7 +383,12 @@ abstract class WSDOTNode extends WSDOTMigrationBase {
     $this->resourceLinks = array();
     foreach ($result as $resource_row) {
       if ($resource_row->ResourceBlobId) {
-        // @todo handle blobs
+        // @todo handle blobs. Find the Drupal fid corresponding to ResourceBlobId.
+        // sourceMigration() won't work to translate it, because that isn't
+        // applied until after prepareRow, so we need to look up the map table
+        // ourselves. Add the fid to the appropriate file field (when there are
+        // file fields). Save the relationship, so handleResource can replace
+        // a ControlProp reference to this resource with a relative URL.
       }
       else {
         $this->resourceLinks[$resource_row->Id] = $resource_row->URL;
