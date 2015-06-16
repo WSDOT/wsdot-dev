@@ -1,7 +1,7 @@
 name = WSDOT Office Locations Content Type
 description = Used to create contact information for a specific office
 core = 7.x
-package = Features
+package = WSDOT Content
 version = 7.x-1.0
 project = wsdot_office_locations_content_type
 dependencies[] = ctools

@@ -1,7 +1,7 @@
 name = WSDOT Office Locations View
 description = This view creates the Office Locations page
 core = 7.x
-package = Features
+package = WSDOT Views
 version = 7.x-1.0
 project = wsdot_office_locations_view
 dependencies[] = views
