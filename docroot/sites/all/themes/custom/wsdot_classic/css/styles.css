@@ -887,7 +887,7 @@ h4.RoadworkTitle {
 	font-size: 1.2em;
 	display: inline-block;
 }
-.field-name-field-description label-inline {
+.field-name-field-description .label-inline {
 	font-size: 1em;
 	display: inline-block;
 }
@@ -950,4 +950,17 @@ h4.RoadworkTitle {
 }
 .widgets-element-horizontal,.widgets-style-horizontal {
 	margin-right: 1em;	
+}
+/* Styles for Offices Content Type */
+h4.OfficesTitle {
+	margin: 2em 0 1em 0;
+}
+.StreetAddress .label-inline, .MailingAddress .label-inline, .phone .label-inline, .TollFree .label-inline, .TollFreeMisc .label-inline, .FaxNumber .label-inline, .website .label-inline, .email .label-inline, .OfficeMap .label-inline{
+	display: inline-block;
+}
+.StreetAddress, .MailingAddress, .phone, .PhoneMisc, .TollFree, .TollFreeMisc, .FaxNumber, .website, .email, .OfficeMap {
+ font-size: 1.2em;
+}
+.PhoneMisc {
+	display: inline;
 }
