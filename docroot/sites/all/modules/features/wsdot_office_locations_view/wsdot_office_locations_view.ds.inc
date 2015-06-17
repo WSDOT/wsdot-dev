@@ -1,35 +1,14 @@
 <?php
 /**
  * @file
- * wsdot_office_locations_content_type.ds.inc
+ * wsdot_office_locations_view.ds.inc
  */
 
 /**
  * Implements hook_ds_field_settings_info().
  */
-function wsdot_office_locations_content_type_ds_field_settings_info() {
+function wsdot_office_locations_view_ds_field_settings_info() {
   $export = array();
-
-  $ds_fieldsetting = new stdClass();
-  $ds_fieldsetting->api_version = 1;
-  $ds_fieldsetting->id = 'node|offices|default';
-  $ds_fieldsetting->entity_type = 'node';
-  $ds_fieldsetting->bundle = 'offices';
-  $ds_fieldsetting->view_mode = 'default';
-  $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '0',
-        'wrapper' => 'h4',
-        'class' => 'OfficesTitle',
-        'ft' => array(),
-      ),
-    ),
-  );
-  $export['node|offices|default'] = $ds_fieldsetting;
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
@@ -145,7 +124,7 @@ function wsdot_office_locations_content_type_ds_field_settings_info() {
 /**
  * Implements hook_ds_layout_settings_info().
  */
-function wsdot_office_locations_content_type_ds_layout_settings_info() {
+function wsdot_office_locations_view_ds_layout_settings_info() {
   $export = array();
 
   $ds_layout = new stdClass();
