@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the WSDOT Office Locations Content Type feature.
+ */
+
+include_once 'wsdot_office_locations_content_type.features.inc';
