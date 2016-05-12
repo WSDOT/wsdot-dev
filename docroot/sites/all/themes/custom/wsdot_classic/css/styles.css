@@ -606,14 +606,14 @@ h4.RoadworkTitle {
 	background: none,#eef0eb url(../images/svg/left_nav_arrow.svg) no-repeat left 14px;
 }
 
-input[type=text],input[type=email],input[type=password],input[type=tel] {
+form.webform-client-form input[type=text],form.webform-client-form input[type=email],form.webform-client-form input[type=password],form.webform-client-form input[type=tel] {
 	-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     display: inline-block;
     width: 200px;
     max-width: 100%;
-    margin-bottom: 1.25em;
+    margin-bottom: 1em;
     padding: 6px;
     font-family: "Lato",sans-serif;
     font-size: 15px;
@@ -625,33 +625,15 @@ input[type=text],input[type=email],input[type=password],input[type=tel] {
     background-color: transparent;
 }
 
-.text-label-top {
-	display: inline-block;
-	font-family: "Lato",sans-serif;
-    font-size: 15px;
-}
-
-.text-label-inline {
-	display: inline-block;
-	font-family: "Lato",sans-serif;
-    font-size: 15px;
-	margin-right: 0.5em;
-}
-
-.resizable-textarea .grippie {
-    width: 500px;
-    max-width: 100%;
-}
-
-select {
+form.webform-client-form select {
 	display: inline-block;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     max-width: 100%;
-    min-width: 184px;
+    min-width: 214px;
     padding: 0.4em;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
     border: 1px solid #bbb;
     border-radius: 0;
     outline: none;
@@ -664,7 +646,7 @@ select {
 }
 
 
-textarea {
+form.webform-client-form textarea {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -672,7 +654,6 @@ textarea {
     width: 500px;
     max-width: 100%;
     height: 120px;
-    margin-top: 1em;
     padding: 0.5em;
     border: 1px solid #bbb;
     border-radius: 0;
@@ -680,4 +661,23 @@ textarea {
     font-family: "Lato",sans-serif;
     font-size: 15px;
     color: #222;
+}
+
+.label-top {
+	display: inline-block;
+	font-family: "Lato",sans-serif;
+    font-size: 15px;
+	margin-bottom: 1em;
+}
+
+.label-inline {
+	display: inline-block;
+	font-family: "Lato",sans-serif;
+    font-size: 15px;
+	margin-right: 1em;
+}
+
+.resizable-textarea .grippie {
+    width: 498px;
+    max-width: calc(100% - 2px);
 }
