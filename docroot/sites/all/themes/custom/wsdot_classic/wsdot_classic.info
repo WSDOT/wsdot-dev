@@ -39,6 +39,7 @@ features[] = secondary_menu
 
 ; Stylesheets
 ; ---------------------
+stylesheets[all][] = http://fonts.googleapis.com/css?family=Lato:400italic,700italic,900italic,400,700,900
 stylesheets[all][] = css/styles.css
 stylesheets[print][] = css/print.css
 
