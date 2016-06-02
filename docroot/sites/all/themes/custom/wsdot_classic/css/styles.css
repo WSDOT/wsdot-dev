@@ -103,10 +103,10 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 
 .mainban {background: #f2f2f2 url(../images/back/tabs_bg.png) repeat-x left top;}
 .mainnav {width:955px;margin:0 auto;}
-.mainnav ul {list-style:none;background: transparent url(../images/back/tabs_div.png) no-repeat 0 8px;margin:0 auto;padding:6px 0 0 2px;width:955px;height:48px;}
-.mainnav ul li {float:left;font-weight:bold;margin-top:1px;height:40px;position:relative;}
-.mainnav ul li a {background:transparent url(../images/back/tabs_link_bg.png) no-repeat right top;color:#017359;display:block;height:17px;font-size:13px;line-height:1.5em;padding:7px 13px 6px 7px;text-decoration:none;float:left;}
-.mainnav ul li a:hover {background-position: right -30px;color: #017359;text-decoration: none;}
+.mainnav ul {list-style:none;background: transparent url(../images/back/tabs_div.png) no-repeat 0 8px;margin:0 auto;padding:5px 0 0 2px;width:955px;height:48px;}
+.mainnav ul li {float:left;font-weight:bold;margin-top:2px;height:40px;position:relative;}
+.mainnav ul li a {background:transparent url(../images/back/tabs_link_bg.png) no-repeat right top 1px;color:#017359;display:block;height:18px;font-size:13px;line-height:1.5em;padding:7px 13px 6px 7px;text-decoration:none;float:left;}
+.mainnav ul li a:hover {background-position: right -29px;color: #017359;text-decoration: none;}
 
 #wrapper {width:955px;margin:0em auto;padding:5px;background:#fff url(../images/back/corners.png) no-repeat -965px top;height:auto;}
 .corners-top {width:955px;margin:5px auto 0px auto;padding:5px;background:#fff url(../images/back/corners.png) no-repeat -965px top;height:auto;}
