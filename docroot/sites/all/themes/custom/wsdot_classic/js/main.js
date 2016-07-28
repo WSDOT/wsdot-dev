@@ -3,6 +3,10 @@
         attach: function (context, settings) {
 			var v = document.getElementsByClassName("youtube-player");
 			for (var n = 0; n < v.length; n++) {
+				var temp_id = v[n].textContent;
+				v[n].setAttribute("data-id", temp_id.trim());
+				v[n].innerHTML = "";
+				temp_id = "";
 				var p = document.createElement("div");
 				p.innerHTML = createThumb(v[n].dataset.id);
 				p.onclick = createIframe;

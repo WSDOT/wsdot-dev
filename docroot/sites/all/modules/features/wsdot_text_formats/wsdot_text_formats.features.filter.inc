@@ -365,6 +365,7 @@ div[class|data-id]',
             132 => 'youtube-container',
             134 => 'youtube-container-news',
             136 => 'youtube-player',
+            138 => 'youtube-player-placeholder',
           ),
           'rule_valid_ids' => array(
             0 => 'regions*',
