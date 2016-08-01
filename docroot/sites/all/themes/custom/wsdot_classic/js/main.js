@@ -3,7 +3,7 @@
         attach: function (context, settings) {
 			var v = document.getElementsByClassName("youtube-player");
 			for (var n = 0; n < v.length; n++) {
-				var temp_id = v[n].getElementsByTagName('div')[0].textContent;
+				var temp_id = v[n].getElementsByTagName("div")[0].textContent;
 				v[n].setAttribute("data-id", temp_id.trim());
 				v[n].innerHTML = "";
 				temp_id = "";
