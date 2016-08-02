@@ -8,7 +8,6 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  If you don't do this, you may notice that browser is ignoring all your changes.
  */
 CKEDITOR.editorConfig = function(config) {
-  config.templates_replaceContent = false;
   config.indentClasses = [ 'rteindent1', 'rteindent2', 'rteindent3', 'rteindent4' ];
 
   // [ Left, Center, Right, Justified ]
@@ -66,6 +65,7 @@ config.bodyId='primary';
 *CustomtemplatefilesspecifictoWSDOTsite
 */
 config.templates_files=[Drupal.settings.basePath+'sites/all/themes/custom/wsdot_classic/js/ckeditor.custom.templates.js'];
+config.templates_replaceContent = false;
 }
 
 /*
