@@ -34,74 +34,76 @@ CKEDITOR.editorConfig = function(config) {
     * config.extraCss = 'body {color:#FF0000;}';
     */
   config.extraCss = '';
-  /**
-    * Sample extraCss code for the "marinelli" theme.
-    */
-  if (Drupal.settings.ckeditor.theme == "marinelli") {
-    config.extraCss += "body{background:#FFF;text-align:left;font-size:0.8em;}";
-    config.extraCss += "#primary ol, #primary ul{margin:10px 0 10px 25px;}";
-  }
-  if (Drupal.settings.ckeditor.theme == "newsflash") {
-    config.extraCss = "body{min-width:400px}";
-  }
+  config.extraCss += ".youtube-player-placeholder{width:130px;height:65px;padding-top:15px;padding-left:95px;font-size:13px;font-weight:bold;background:#eee url(/sites/all/themes/custom/wsdot_classic/images/youtube-logo.png) left center no-repeat;} .youtube-player-placeholder div{width:100px;padding:3px 6px;background:#fff;border:1px solid #bbb;font-weight:normal;}";
+/**
+*SampleextraCsscodeforthe"marinelli"theme.
+*/
+if(Drupal.settings.ckeditor.theme=="marinelli"){
+config.extraCss+="body{background:#FFF;text-align:left;font-size:0.8em;}";
+config.extraCss+="#primaryol,#primaryul{margin:10px010px25px;}";
+}
+if(Drupal.settings.ckeditor.theme=="newsflash"){
+config.extraCss="body{min-width:400px}";
+}
 
-  /**
-    * CKEditor's editing area body ID & class.
-    * See http://drupal.ckeditor.com/tricks
-    * This setting can be used if CKEditor does not work well with your theme by default.
-    */
-  config.bodyClass = '';
-  config.bodyId = '';
-  /**
-    * Sample bodyClass and BodyId for the "marinelli" theme.
-    */
-  if (Drupal.settings.ckeditor.theme == "marinelli") {
-    config.bodyClass = 'singlepage';
-    config.bodyId = 'primary';
-  }
+/**
+*CKEditor'seditingareabodyID&class.
+*Seehttp://drupal.ckeditor.com/tricks
+*ThissettingcanbeusedifCKEditordoesnotworkwellwithyourthemebydefault.
+*/
+config.bodyClass='';
+config.bodyId='';
+/**
+*SamplebodyClassandBodyIdforthe"marinelli"theme.
+*/
+if(Drupal.settings.ckeditor.theme=="marinelli"){
+config.bodyClass='singlepage';
+config.bodyId='primary';
+}
 
-  /**
-   * Custom template files specific to WSDOT site
-   */
-  config.templates_files = [Drupal.settings.basePath + 'sites/all/themes/custom/wsdot_classic/js/ckeditor.custom.templates.js'];
+/**
+*CustomtemplatefilesspecifictoWSDOTsite
+*/
+config.templates_files=[Drupal.settings.basePath+'sites/all/themes/custom/wsdot_classic/js/ckeditor.custom.templates.js'];
+config.templates_replaceContent = false;
 }
 
 /*
- * Sample toolbars
- */
+*Sampletoolbars
+*/
 
-//Toolbar definition for basic buttons
-Drupal.settings.cke_toolbar_DrupalBasic = [ [ 'Format', 'Bold', 'Italic', '-', 'NumberedList','BulletedList', '-', 'Link', 'Unlink', 'Image' ] ];
+//Toolbardefinitionforbasicbuttons
+Drupal.settings.cke_toolbar_DrupalBasic=[['Format','Bold','Italic','-','NumberedList','BulletedList','-','Link','Unlink','Image']];
 
-//Toolbar definition for Advanced buttons
-Drupal.settings.cke_toolbar_DrupalAdvanced = [
-  ['Source'],
-  ['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker', 'Scayt'],
-  ['Undo','Redo','Find','Replace','-','SelectAll'],
-  ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar'],
-  ['Maximize', 'ShowBlocks'],
-  '/',
-  ['Format'],
-  ['Bold','Italic','Underline','Strike','-','Subscript','Superscript','-','RemoveFormat'],
-  ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
-  ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl'],
-  ['Link','Unlink','Anchor','Linkit','LinkToNode','LinkToMenu']
+//ToolbardefinitionforAdvancedbuttons
+Drupal.settings.cke_toolbar_DrupalAdvanced=[
+['Source'],
+['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker','Scayt'],
+['Undo','Redo','Find','Replace','-','SelectAll'],
+['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar'],
+['Maximize','ShowBlocks'],
+'/',
+['Format'],
+['Bold','Italic','Underline','Strike','-','Subscript','Superscript','-','RemoveFormat'],
+['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl'],
+['Link','Unlink','Anchor','Linkit','LinkToNode','LinkToMenu']
 ];
 
-// Toolbar definition for all buttons
-Drupal.settings.cke_toolbar_DrupalFull = [
-  ['Source'],
-  ['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker', 'Scayt'],
-  ['Undo','Redo','Find','Replace','-','SelectAll'],
-  ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','Iframe'],
-  '/',
-  ['Bold','Italic','Underline','Strike','-','Subscript','Superscript','-','RemoveFormat'],
-  ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
-  ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl','-','Language'],
-  ['Link','Unlink','Anchor','Linkit','LinkToNode', 'LinkToMenu'],
-  '/',
-  ['Format','Font','FontSize'],
-  ['TextColor','BGColor'],
-  ['Maximize', 'ShowBlocks'],
-  ['DrupalBreak', 'DrupalPageBreak']
+//Toolbardefinitionforallbuttons
+Drupal.settings.cke_toolbar_DrupalFull=[
+['Source'],
+['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker','Scayt'],
+['Undo','Redo','Find','Replace','-','SelectAll'],
+['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','Iframe'],
+'/',
+['Bold','Italic','Underline','Strike','-','Subscript','Superscript','-','RemoveFormat'],
+['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
+['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl','-','Language'],
+['Link','Unlink','Anchor','Linkit','LinkToNode','LinkToMenu'],
+'/',
+['Format','Font','FontSize'],
+['TextColor','BGColor'],
+['Maximize','ShowBlocks'],
+['DrupalBreak','DrupalPageBreak']
 ];
