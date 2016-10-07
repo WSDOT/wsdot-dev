@@ -1,20 +1,29 @@
 (function($){
+  Drupal.behaviors.CrazyEgg = {
+    attach: function (context,settings){
+	  setTimeout(function(){var a=document.createElement("script");
+	  var b=document.getElementsByTagName("script")[0];
+	  a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0032/9349.js?"+Math.floor(new Date().getTime()/3600000);
+	  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)},1);
+	}
+  };	
+	
   Drupal.behaviors.YouTubePlayer = {
     attach: function (context, settings) {
       var v = document.getElementsByClassName("youtube-player");
       for (var n = 0; n < v.length; n++) {
-	var temp_id = v[n].getElementsByTagName("div")[0].textContent;
-	v[n].setAttribute("data-id", temp_id.trim());
-	v[n].innerHTML = "";
-	temp_id = "";
-	var p = document.createElement("div");
+	    var temp_id = v[n].getElementsByTagName("div")[0].textContent;
+	    v[n].setAttribute("data-id", temp_id.trim());
+	    v[n].innerHTML = "";
+	    temp_id = "";
+	    var p = document.createElement("div");
         if (v[n].dataset !== undefined) {
           p.innerHTML = createThumb(v[n].dataset.id);
         } else {
-	  p.innerHTML = createThumb(v[n].getAttribute("data-id")); // For IE 10
+	      p.innerHTML = createThumb(v[n].getAttribute("data-id")); // For IE 10
         }
-	p.onclick = createIframe;
-	v[n].appendChild(p);
+	    p.onclick = createIframe;
+		v[n].appendChild(p);
       }
     }
   };
