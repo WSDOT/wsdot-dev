@@ -105,6 +105,7 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .mainnav {width:955px;margin:0 auto;}
 .mainnav ul {list-style:none;background: transparent url(../images/back/tabs_div.png) no-repeat 0 8px;margin:0 auto;padding:5px 0 0 2px;width:955px;height:48px;}
 .mainnav ul li {float:left;font-weight:bold;margin-top:2px;height:40px;position:relative;}
+.mainnav ul li ul li {font-size: 1em;}
 .mainnav ul li a {background:transparent url(../images/back/tabs_link_bg.png) no-repeat right top 1px;color:#017359;display:block;height:18px;font-size:13px;line-height:1.5em;padding:7px 13px 6px 7px;text-decoration:none;float:left;}
 .mainnav ul li a:hover {background-position: right -29px;color: #017359;text-decoration: none;}
 
@@ -133,6 +134,7 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnavbox .content a:hover{text-decoration:none;}
 .leftnavbox .content a:visited{color:#017359;}
 .leftnavbox .content ul li {padding:0.2em 0 0.3em 0;}
+.leftnavbox .content ul li ul li {font-size: 1em;}
 .leftnavbox .content ul li.active-trail a.active {font-weight:bold;color:#000;text-decoration:none;}
 
 #block-views-static-left-navigation-block .content,
