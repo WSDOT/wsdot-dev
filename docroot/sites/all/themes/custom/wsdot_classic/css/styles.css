@@ -693,6 +693,9 @@ form.webform-client-form textarea {
 .google_plusone_iframe_widget {
 	width: 52px !important;
 }
+views-exposed-form .views-exposed-widget {
+    padding-right: 0.5em;
+}
 .views-exposed-form .views-exposed-widget .form-submit {
 	margin: 1em 0;
 }
