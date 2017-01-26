@@ -21,7 +21,7 @@
 })(jQuery);
 
 function createThumb(id) {
-  return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><a class="play-button">Play video</a>';
+  return '<img class="youtube-thumb" src="//i.ytimg.com/vi/' + id + '/hqdefault.jpg"><a class="play-button">Play videoAlden242!</a>';
 }
 
 function createIframe() {
@@ -37,7 +37,7 @@ function createIframe() {
   } else {
     videoId = this.parentNode.getAttribute("data-id"); // For IE 10
   }
-  iframe.setAttribute("src", "//www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=0&showinfo=0");
+  iframe.setAttribute("src", "//www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=2&showinfo=0");
   iframe.setAttribute("frameborder", "0");
   iframe.setAttribute("class", "youtube-iframe");
   this.parentNode.replaceChild(iframe, this);
