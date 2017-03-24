@@ -119,7 +119,7 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnav{display:block;width:168px;float:left;}
 .leftnavbox{width:150px;margin-bottom:0px;}
 .leftnavbox p{line-height:1.5em;}
-.leftnavbox .bluebox{border:1px solid #f2f2df;background-color:#f2f2df;}
+.leftnavbox .bluebox{border:1px solid #f5f5e1;background-color:#f5f5e1;}
 .leftnavbox .centered{text-align:center;}
  
 /* new left nav 3/22/17 */
@@ -239,24 +239,24 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 
 .border {border:1px solid #ccc;}
 .greybg {background-color:#f5f7f7;}
-.brownbg {background-color:#f2f2df;}
+.brownbg {background-color:#f5f5e1;}
 .yellowbg {background-color:#f7f6d9;padding-bottom:10px;}
 .blueBg2{background:#eee;padding:5px;height:40px; margin-bottom: -20px;}
 .orangeBg{background:#eee;}
 
 /*** Project status box ***/
-.projectstatusbox {width:500px;border:1px solid #ccc;background-color:#f2f2df;margin-bottom: 30px;}
+.projectstatusbox {width:500px;border:1px solid #ccc;background-color:#f5f5e1;margin-bottom: 30px;}
 .projectstatusbox h4.header{font-size:1.3em;line-height:1.6em;font-weight:bold;border-bottom:1px solid #ccc;padding:0 10px;}
 .projectstatusbox .pane-content {padding: 0 10px;}
 .projectstatusbox .pane-content ul li{padding:0em 1em .3em 0em;}
 
 /*** Local home page news box ***/
-.localnewsbox {width:370px;margin-bottom:25px;border:1px solid #ccc;background-color:#f2f2df;}
+.localnewsbox {width:370px;margin-bottom:25px;border:1px solid #ccc;background-color:#f5f5e1;}
 .localnewsbox h3.header,.localnewsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .localnewsbox .content {padding:10px 10px;}
 
 /*** Main news box ***/
-.newsbox {width:315px;margin-bottom:25px;border:1px solid #ccc;background-color:#f2f2df;}
+.newsbox {width:315px;margin-bottom:25px;border:1px solid #ccc;background-color:#f5f5e1;}
 .newsbox h3.header, .newsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .newsbox .content {padding:10px 10px;}
 
