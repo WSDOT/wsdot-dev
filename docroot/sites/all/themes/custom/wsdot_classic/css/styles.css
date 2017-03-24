@@ -231,7 +231,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 
 /*** Main body content boxes  ***/
 .contentbox{width:370px;margin-bottom:25px;}
-.contentbox h3.header,.contentbox h4.header {box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.3em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
+.contentbox h3.header,.contentbox h4.header {box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .contentbox .content{padding:10px 10px;}
 .contentbox .header a{color:#222;text-decoration:none;}
 .contentbox .header a:hover{text-decoration:underline;}
@@ -252,12 +252,12 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 
 /*** Local home page news box ***/
 .localnewsbox {width:370px;margin-bottom:25px;border:1px solid #ccc;background-color:#f2f2df;}
-.localnewsbox h3.header,.localnewsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.3em;font-weight: bold;line-height: 1.6em;color: #222;border-bottom: 1px solid #ccc;background: #eee;border-radius: 2px;}
+.localnewsbox h3.header,.localnewsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .localnewsbox .content {padding:10px 10px;}
 
 /*** Main news box ***/
 .newsbox {width:315px;margin-bottom:25px;border:1px solid #ccc;background-color:#f2f2df;}
-.newsbox h3.header, .newsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.3em;font-weight: bold;line-height: 1.6em;color: #222;border-bottom: 1px solid #ccc;background: #eee;border-radius: 2px;}
+.newsbox h3.header, .newsbox h4.header{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .newsbox .content {padding:10px 10px;}
 
 /* Widget boxes */
@@ -360,7 +360,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 }
 
 /* Styles specific for Drupal */
-h2.pane-title, h4.pane-title{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.3em;font-weight: bold;line-height: 1.6em;color: #222;border-bottom: 1px solid #ccc;background: #eee;border-radius: 2px;}
+h2.pane-title, h4.pane-title{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
 
