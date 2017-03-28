@@ -130,7 +130,6 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnavbox .content a:hover:not([href]){text-decoration:none;}
 .leftnavbox .content ul,.leftnavbox > ul {margin:0 0 0 1em;padding:0;}
 .leftnavbox .content ul li,.leftnavbox > ul li {display:inline-block;width:100%;margin:0;padding:0.8em 0;border-bottom:1px solid #ddd;font-size:13px;line-height:1.35;background:none;}
-.leftnavbox .content ul li:first,.leftnavbox > ul li:first {padding-top:0;}
 .leftnavbox .content ul li:last-of-type,.leftnavbox .content ul li:only-child,.leftnavbox > ul li:last-of-type,.leftnavbox > ul li:only-child {border-bottom:none;}
 .leftnavbox .content ul li a,.leftnavbox > ul li a {text-decoration:none;}
 .leftnavbox .content ul li a:hover,.leftnavbox > ul li a:hover {text-decoration:underline;}
@@ -409,7 +408,6 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 	font-weight: bold;
 	text-transform: uppercase;
 	border-top: 1px solid #fff;
-	background-color: #eee;
 }
 
 #slideshow p {
