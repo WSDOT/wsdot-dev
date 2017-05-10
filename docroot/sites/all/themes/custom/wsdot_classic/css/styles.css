@@ -25,7 +25,7 @@ img{border:0px;}
 fieldset {border:0;margin:0;padding:0;}
 .skip {position:absolute; left:0px; top:-500px; width:1px; height:1px; overflow:hidden;}
 .hide {display:none;}
-.breadcrumbs {width:950px;margin:0px auto;padding:15px 0 0 16px;height:auto;text-align:left;font-size:1em;background:#fff;}
+.breadcrumbs {width:949px;margin:0px auto;padding:15px 0 0 16px;height:auto;text-align:left;font-size:1em;background:#fff;}
 table,td{font-size:1em;}
 .smalltext{font-size:0.9em;}
 .smalltext ul {font-size: 1.1em}
