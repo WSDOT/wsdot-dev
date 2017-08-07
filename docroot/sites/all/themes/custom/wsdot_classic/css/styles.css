@@ -9,11 +9,11 @@ h1{font-family:Arial,Helvetica,sans-serif;font-size:1.8em;line-height:1.5em;}
 h1 a{color:#000;text-decoration:none;}
 h1 a:hover {text-decoration: underline;}
 h1 a:visited {color:#000;}
-h2{font-size:1.6em;color:#000;}
-h2.title{font-size:1.65em;color:#000;}
-h3{font-size:1.4em;font-weight:bold;color:#000;}
-h4{font-size:1.3em;line-height:1em;font-weight:bold;color:#000;}
-h5 {font-size:1.2em;line-height:1.5em;font-weight:bold;color:#000;}
+h2{font-size:1.6em;color:#222;}
+h2.title{font-size:1.65em;color:#222;}
+h3{font-size:1.4em;font-weight:bold;color:#222;}
+h4{font-size:1.3em;line-height:1em;font-weight:bold;color:#222;}
+h5 {font-size:1.2em;line-height:1.5em;font-weight:bold;color:#222;}
 #main hr{border:none;height:4px;margin:3em 0;color:#eee;background-color:#eee;}
 .bold {font-weight:bold;}
 .row{clear:both;margin-top:15px;}
@@ -140,9 +140,9 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnavbox .content ul li strong,.leftnavbox > ul li strong {color:#000;}
 .leftnavbox h4 {width:100%;box-sizing:border-box;margin:0.8em 0 0.5em 0.25em;padding:0.375em 0.5em;color:#222;background:#eee;border-radius:2px;line-height:1.6;font-size:13px;}
 .leftnavbox h4:empty {height:0.5em;margin:0;padding:0;background:none;}
-.leftnavbox .header a{color:#000;text-decoration:none;}
+.leftnavbox .header a{color:#222;text-decoration:none;}
 .leftnavbox .header a:hover{text-decoration:underline;}
-.leftnavbox .header a:visited{color:#000;}
+.leftnavbox .header a:visited{color:#222;}
 .leftnavbox > ul {width: 100%;box-sizing: border-box;padding: 0 0 0 1em;}
 .leftnav #block-masquerade-masquerade .content {padding:0.5em 0 0.25em 1em;}
 .leftnavbox .content #edit-masquerade-user-field {width:130px;margin-bottom:0.5em;}
@@ -170,7 +170,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 .agencylinks ul {list-style:none;margin:0 0 1em 0;padding:0;}
 
 .secondary {width:945px;margin:0px auto;padding:10px;height:auto;background-color:#fff;}
-.secondary h3 {font-size:1.25em;color:#000;}
+.secondary h3 {font-size:1.25em;color:#222;}
 .secondary a {text-decoration:underline;}
 .secondary a:hover {text-decoration:none;}
 .secondary li {padding-bottom:0.5em;font-size:1em;}
@@ -200,8 +200,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 #main td p {margin:0;}
 #main h2 {max-width:750px;font-size:1.65em; margin-bottom: 15px;}
 #main h3 {margin:1em 0;line-height:1.5;}
-#main h4{font-weight:bold;color:#000;}
-#main h5 {font-weight:bold;color:#000;}
+#main h4{font-weight:bold;color:#222;}
+#main h5 {font-weight:bold;color:#222;}
 #main table {border-collapse: separate;}
 
 #main .columns-2 {
@@ -237,9 +237,9 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 .contentbox{width:370px;margin-bottom:25px;}
 .contentbox h3.header,.contentbox h4.header {box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 .contentbox .content{padding:10px 10px;}
-.contentbox .header a{color:#000;text-decoration:none;}
+.contentbox .header a{color:#222;text-decoration:none;}
 .contentbox .header a:hover{text-decoration:underline;}
-.contentbox .header a:visited{color:#000;}
+.contentbox .header a:visited{color:#222;}
 
 .border {border:1px solid #ccc;}
 .greybg {background-color:#f5f7f7;}
@@ -267,14 +267,14 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /* Widget boxes */
 .widget {margin: 10px 0 0 10px;display:inline;float:left;width:306px;color:#000;position:relative;z-index:1;background:#fff url(../images/back/gradients_bg.png) repeat-x left 0px;}
 .widgetcol {float:left;width:315px;}
-.widget h2 {font-size:1.5em;margin:0;padding:8px 30px;color:#000;}
-.static h2 {font-size:1.5em;margin:0;padding:8px 10px;color:#000;}
-.widget h2 a {font-weight:bold;color:#000;text-decoration:none;}
+.widget h2 {font-size:1.5em;margin:0;padding:8px 30px;color:#222;}
+.static h2 {font-size:1.5em;margin:0;padding:8px 10px;color:#222;}
+.widget h2 a {font-weight:bold;color:#222;text-decoration:none;}
 .widget h2 a:hover {text-decoration:none;color:#898989;}
 .widgetdata {padding:10px;}
 .widgetdata h3 {padding:5px 10px;background-color:#eee;font-size:1.1em;text-transform:uppercase;border-top:1px solid #fff;font-weight:bold;}
 .widgetdata h4 {padding:10px 0px;font-size:1em;text-transform:uppercase;font-weight:bold;}
-.widgetdata h3 a {color:#000;padding-left:0px;text-decoration:underline;}
+.widgetdata h3 a {color:#222;padding-left:0px;text-decoration:underline;}
 .widgetdata h3 a:hover {text-decoration:none;}
 .widgetdata ul, .widgetdata p {margin:0 0 0.75em 0; padding: 0;}
 .widgetdata .onecol li{float:left;margin: 0 0 0.25em 1.5em; padding: 0;}
