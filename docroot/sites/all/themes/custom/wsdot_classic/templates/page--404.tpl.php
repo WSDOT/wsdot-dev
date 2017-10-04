@@ -87,7 +87,7 @@
 	  var heading_copy = ["Time to circle around!","You're off the map!","You missed the bus!","You're off the map!","You're a little off course!","Time to backtrack!"];
 	  var message_copy = ["For another run at the landing strip....","But there's a trail leading back....","But there's another one coming along....","But you're still in the driver's seat....","But you can see the shore from here....","Luckily there are no one-way sidewalks...."];
 	
-	  $wheel.attr("src","https://www.wsdot.wa.gov/media/images/wheels/"+wheels[random_number]+".png");
+	  $wheel.attr("src","https://www.wsdot.wa.gov/sites/all/themes/custom/wsdot_classic/images/wheels/"+wheels[random_number]+".png");
 	  $heading.text(heading_copy[random_number]);
 	  $message.text(message_copy[random_number]);
 	
