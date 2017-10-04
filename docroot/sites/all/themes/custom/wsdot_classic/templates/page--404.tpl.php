@@ -38,17 +38,17 @@
 </div>
 
 <div id="wrapper">
-  <div id="main">
+  <div id="main" class="main-404">
     <img src="https://www.wsdot.wa.gov/media/images/4.png">
     <img id="wheel">
     <img src="https://www.wsdot.wa.gov/media/images/4.png">
     <div id="section">
       <br><br>
-      <h2 id="heading"></h2>
-      <p id="message"></p>
+      <h2 id="heading-404"></h2>
+      <p id="message-404"></p>
       <br>
-      <form id="searchform" method="get" action="https://www.wsdot.com/search/">
-        <input type="submit" value="Search" id="search_button" /><input type="text" autocomplete="off" name="q" class="search_box" alt="Insert search text" />
+      <form id="search-form-404" method="get" action="https://www.wsdot.com/search/">
+        <input type="submit" value="Search" id="search-button-404" /><input type="text" autocomplete="off" name="q" class="search-box-404" alt="Insert search text" />
       </form>
       </div>
     </div>
@@ -80,8 +80,8 @@
   var random_number = Math.floor(Math.random()*(6));
 	
 	$(function(){
-	  var $heading = $('#heading');
-	  var $message = $('#message');
+	  var $heading = $('#heading-404');
+	  var $message = $('#message-404');
 	  var $wheel = $('#wheel');
 	  var wheels = ["aircraft","bicycle","bus-freight","car","ferry","pedestrian"];
 	  var heading_copy = ["Time to circle around!","You're off the map!","You missed the bus!","You're off the map!","You're a little off course!","Time to backtrack!"];
