@@ -845,3 +845,8 @@ img.youtube-thumb {display:block;position:absolute;top:0;right:0;bottom:0;left:0
 .node-publication {margin-bottom: 15px;}
 .view-research-reports-index {font-size: 1.2em; line-height: 1.5em; margin-bottom: 1.5em;}
 #main .wsdot-field-name-body-summary > p {margin-top: 0;}
+
+/* reCAPTCHA */
+.captcha .fieldset-legend {line-height: 2.5em; font-size: 1.2em; font-weight: bold;}
+.captcha .fieldset-description {line-height: 1.5em; font-size: 1.2em; font-weight: normal;}
+.g-recaptcha {padding-top: 10px;}
