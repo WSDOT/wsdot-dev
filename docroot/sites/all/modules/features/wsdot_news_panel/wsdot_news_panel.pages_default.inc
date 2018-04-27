@@ -84,21 +84,17 @@ function wsdot_news_panel_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => 'Most Requested',
+    'title' => 'Agency news',
     'body' => '<div class="content bluebox">
 <ul>
-	<li><a href="http://www.wsdot.wa.gov/traffic/seattle/">Seattle Area Traffic</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/passes/snoqualmie/">Snoqualmie Pass</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/forecast/">Weather Forecast</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/trafficalerts/">Traffic Conditions</a></li>
-	<li><a href="http://www.wsdot.wa.gov/ferries/schedules/current/">Ferry Schedules</a></li>
-	<li><a href="http://www.wsdot.wa.gov/employment/">Employment</a></li>
-	<li><a href="http://dol.wa.gov/">Licensing</a></li>
+	<li><strong>News home</strong></li>
+	<li><a href="http://wsdot.wa.gov/Communications/default.htm">Media contacts</a></li>
 </ul>
 </div>
 ',
     'format' => 'wysiwyg',
     'substitute' => TRUE,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -124,12 +120,13 @@ function wsdot_news_panel_default_page_manager_pages() {
     'body' => '<div class="content">
 <ul>
 	<li><a class="rss" href="/news/rss.xml">RSS</a></li>
-	<li><a href="http://service.govdelivery.com/service/multi_subscribe.html?code=WADOT" title="Sign up for e-mail updates">E-mail updates</a></li>
+	<li><a href="https://public.govdelivery.com/accounts/WADOT/subscriber/new" title="Sign up for e-mail updates">E-mail updates</a></li>
 </ul>
 </div>
 ',
     'format' => 'wysiwyg',
     'substitute' => TRUE,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -147,7 +144,7 @@ function wsdot_news_panel_default_page_manager_pages() {
   $pane->panel = 'left';
   $pane->type = 'custom';
   $pane->subtype = 'custom';
-  $pane->shown = TRUE;
+  $pane->shown = FALSE;
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
