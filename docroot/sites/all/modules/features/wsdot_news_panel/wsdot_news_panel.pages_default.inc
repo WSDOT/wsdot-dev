@@ -140,8 +140,108 @@ function wsdot_news_panel_default_page_manager_pages() {
   $display->content['new-54b31b7a-91ce-40bb-a152-15e1c71c9545'] = $pane;
   $display->panels['left'][1] = 'new-54b31b7a-91ce-40bb-a152-15e1c71c9545';
   $pane = new stdClass();
-  $pane->pid = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
+  $pane->pid = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
   $pane->panel = 'left';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => 'Follow Along',
+    'body' => '<div class="content">
+<ul>
+	<li><a href="http://wsdotblog.blogspot.com/">The WSDOT Blog</a></li>
+	<li><a href="http://facebook.com/wsdot">Facebook</a></li>
+	<li><a href="http://flickr.com/wsdot">Flickr</a></li>
+	<li><a href="http://youtube.com/wsdot">YouTube</a></li>
+</ul>
+</div>
+',
+    'format' => 'wysiwyg',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 2;
+  $pane->locks = array();
+  $pane->uuid = 'bbdf2804-1100-404a-a281-42cf0485d6a2';
+  $display->content['new-bbdf2804-1100-404a-a281-42cf0485d6a2'] = $pane;
+  $display->panels['left'][2] = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
+  $pane = new stdClass();
+  $pane->pid = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $pane->panel = 'left';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = FALSE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => 'Contact Us',
+    'body' => '<div class="content">
+<ul>
+<li><a href="http://www.wsdot.wa.gov/Communications/default.htm">Media Contacts</a></li>
+<li><a href="http://www.wsdot.wa.gov/contact/feedback.htm">Ask Us a Question</a></li></ul></div>',
+    'format' => 'wysiwyg',
+    'substitute' => TRUE,
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 3;
+  $pane->locks = array();
+  $pane->uuid = '6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $display->content['new-6c2d90fb-24cb-4f9b-951a-ab50e7071945'] = $pane;
+  $display->panels['left'][3] = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $pane = new stdClass();
+  $pane->pid = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'news-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'default',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $display->content['new-436a1880-5ecf-46c5-a55f-22273fe5298f'] = $pane;
+  $display->panels['middle'][0] = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $pane = new stdClass();
+  $pane->pid = 'new-ec55703d-e85d-4f58-8493-742b2a86e210';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'news_archive-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'ec55703d-e85d-4f58-8493-742b2a86e210';
+  $display->content['new-ec55703d-e85d-4f58-8493-742b2a86e210'] = $pane;
+  $display->panels['right'][0] = 'new-ec55703d-e85d-4f58-8493-742b2a86e210';
+  $pane = new stdClass();
+  $pane->pid = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
+  $pane->panel = 'right';
   $pane->type = 'custom';
   $pane->subtype = 'custom';
   $pane->shown = TRUE;
@@ -177,92 +277,11 @@ function wsdot_news_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 1;
   $pane->locks = array();
   $pane->uuid = 'cc494f90-da88-4098-bf01-8d9c6b8ea29d';
   $display->content['new-cc494f90-da88-4098-bf01-8d9c6b8ea29d'] = $pane;
-  $display->panels['left'][2] = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
-  $pane = new stdClass();
-  $pane->pid = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
-  $pane->panel = 'left';
-  $pane->type = 'custom';
-  $pane->subtype = 'custom';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'admin_title' => '',
-    'title' => 'Follow Along',
-    'body' => '<div class="content">
-<ul>
-	<li><a href="http://wsdotblog.blogspot.com/">The WSDOT Blog</a></li>
-	<li><a href="http://facebook.com/wsdot">Facebook</a></li>
-	<li><a href="http://flickr.com/wsdot">Flickr</a></li>
-	<li><a href="http://youtube.com/wsdot">YouTube</a></li>
-</ul>
-</div>
-',
-    'format' => 'wysiwyg',
-    'substitute' => TRUE,
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 3;
-  $pane->locks = array();
-  $pane->uuid = 'bbdf2804-1100-404a-a281-42cf0485d6a2';
-  $display->content['new-bbdf2804-1100-404a-a281-42cf0485d6a2'] = $pane;
-  $display->panels['left'][3] = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
-  $pane = new stdClass();
-  $pane->pid = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $pane->panel = 'left';
-  $pane->type = 'custom';
-  $pane->subtype = 'custom';
-  $pane->shown = FALSE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'admin_title' => '',
-    'title' => 'Contact Us',
-    'body' => '<div class="content">
-<ul>
-<li><a href="http://www.wsdot.wa.gov/Communications/default.htm">Media Contacts</a></li>
-<li><a href="http://www.wsdot.wa.gov/contact/feedback.htm">Ask Us a Question</a></li></ul></div>',
-    'format' => 'wysiwyg',
-    'substitute' => TRUE,
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 4;
-  $pane->locks = array();
-  $pane->uuid = '6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $display->content['new-6c2d90fb-24cb-4f9b-951a-ab50e7071945'] = $pane;
-  $display->panels['left'][4] = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $pane = new stdClass();
-  $pane->pid = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'news-panel_pane_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-    'style' => 'default',
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '436a1880-5ecf-46c5-a55f-22273fe5298f';
-  $display->content['new-436a1880-5ecf-46c5-a55f-22273fe5298f'] = $pane;
-  $display->panels['middle'][0] = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $display->panels['right'][1] = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
