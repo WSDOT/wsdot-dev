@@ -391,7 +391,9 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 
 /* Wetland Monitoring Reports View - Grouping by Region */
 .view-grouping-header {
-  font-size:1.4em;font-weight:bold;color:#003366;
+  font-size:1.4em;
+  font-weight:bold;
+  padding-top: 0.7em;
 }
 
 .date-nav.item-list {
