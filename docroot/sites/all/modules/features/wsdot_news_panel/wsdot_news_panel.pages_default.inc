@@ -84,21 +84,17 @@ function wsdot_news_panel_default_page_manager_pages() {
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => 'Most Requested',
+    'title' => 'Agency news',
     'body' => '<div class="content bluebox">
 <ul>
-	<li><a href="http://www.wsdot.wa.gov/traffic/seattle/">Seattle Area Traffic</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/passes/snoqualmie/">Snoqualmie Pass</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/forecast/">Weather Forecast</a></li>
-	<li><a href="http://www.wsdot.wa.gov/traffic/trafficalerts/">Traffic Conditions</a></li>
-	<li><a href="http://www.wsdot.wa.gov/ferries/schedules/current/">Ferry Schedules</a></li>
-	<li><a href="http://www.wsdot.wa.gov/employment/">Employment</a></li>
-	<li><a href="http://dol.wa.gov/">Licensing</a></li>
+	<li><strong>News home</strong></li>
+	<li><a href="http://wsdot.wa.gov/Communications/default.htm">Media contacts</a></li>
 </ul>
 </div>
 ',
     'format' => 'wysiwyg',
     'substitute' => TRUE,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -124,97 +120,7 @@ function wsdot_news_panel_default_page_manager_pages() {
     'body' => '<div class="content">
 <ul>
 	<li><a class="rss" href="/news/rss.xml">RSS</a></li>
-	<li><a href="http://service.govdelivery.com/service/multi_subscribe.html?code=WADOT" title="Sign up for e-mail updates">E-mail updates</a></li>
-</ul>
-</div>
-',
-    'format' => 'wysiwyg',
-    'substitute' => TRUE,
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 1;
-  $pane->locks = array();
-  $pane->uuid = '54b31b7a-91ce-40bb-a152-15e1c71c9545';
-  $display->content['new-54b31b7a-91ce-40bb-a152-15e1c71c9545'] = $pane;
-  $display->panels['left'][1] = 'new-54b31b7a-91ce-40bb-a152-15e1c71c9545';
-  $pane = new stdClass();
-  $pane->pid = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $pane->panel = 'left';
-  $pane->type = 'custom';
-  $pane->subtype = 'custom';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'admin_title' => '',
-    'title' => 'Contact Us',
-    'body' => '<div class="content">
-<ul>
-<li><a href="http://www.wsdot.wa.gov/Communications/default.htm">Media Contacts</a></li>
-<li><a href="http://www.wsdot.wa.gov/contact/feedback.htm">Ask Us a Question</a></li></ul></div>',
-    'format' => 'wysiwyg',
-    'substitute' => TRUE,
-  );
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 2;
-  $pane->locks = array();
-  $pane->uuid = '6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $display->content['new-6c2d90fb-24cb-4f9b-951a-ab50e7071945'] = $pane;
-  $display->panels['left'][2] = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
-  $pane = new stdClass();
-  $pane->pid = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'news-panel_pane_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-    'style' => 'default',
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 0;
-  $pane->locks = array();
-  $pane->uuid = '436a1880-5ecf-46c5-a55f-22273fe5298f';
-  $display->content['new-436a1880-5ecf-46c5-a55f-22273fe5298f'] = $pane;
-  $display->panels['middle'][0] = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
-  $pane = new stdClass();
-  $pane->pid = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
-  $pane->panel = 'right';
-  $pane->type = 'custom';
-  $pane->subtype = 'custom';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array(
-    'admin_title' => '',
-    'title' => 'What\'s Going On?',
-    'body' => '<div class="content bluebox">
-<ul style="list-style:none">
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot" title="Main account">@wsdot</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_traffic" title="Puget Sound traffic reports">@wsdot_traffic</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="https://twitter.com/goodtogowsdot" title="Good To Go! and tolling information">@GoodToGoWSDOT</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_passes" title="Mountain pass reports">@wsdot_passes</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_sw">@wsdot_sw</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_tacoma" title="Tacoma traffic">@wsdot_tacoma</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_520" title="520 Project">@wsdot_520</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/berthadigssr99" title="Bertha">@berthadigssr99</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_east" title="Tweets from east of the cascades">@wsdot_east</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="https://twitter.com/wsdot_north">@wsdot_north</a></li>
-    <li style="padding-left:0px"><a class="twitter" href="http://twitter.com/snoqualmiepass" title="Snoqualmie Pass">@SnoqualmiePass</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsferries" title="Washington Sate Ferries">@wsferries</a></li>
-	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdotjobs">@wsdotjobs</a></li>
+	<li><a href="https://public.govdelivery.com/accounts/WADOT/subscriber/new" title="Sign up for e-mail updates">E-mail updates</a></li>
 </ul>
 </div>
 ',
@@ -228,14 +134,14 @@ function wsdot_news_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 0;
+  $pane->position = 1;
   $pane->locks = array();
-  $pane->uuid = 'cc494f90-da88-4098-bf01-8d9c6b8ea29d';
-  $display->content['new-cc494f90-da88-4098-bf01-8d9c6b8ea29d'] = $pane;
-  $display->panels['right'][0] = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
+  $pane->uuid = '54b31b7a-91ce-40bb-a152-15e1c71c9545';
+  $display->content['new-54b31b7a-91ce-40bb-a152-15e1c71c9545'] = $pane;
+  $display->panels['left'][1] = 'new-54b31b7a-91ce-40bb-a152-15e1c71c9545';
   $pane = new stdClass();
   $pane->pid = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
-  $pane->panel = 'right';
+  $pane->panel = 'left';
   $pane->type = 'custom';
   $pane->subtype = 'custom';
   $pane->shown = TRUE;
@@ -261,27 +167,25 @@ function wsdot_news_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 1;
+  $pane->position = 2;
   $pane->locks = array();
   $pane->uuid = 'bbdf2804-1100-404a-a281-42cf0485d6a2';
   $display->content['new-bbdf2804-1100-404a-a281-42cf0485d6a2'] = $pane;
-  $display->panels['right'][1] = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
+  $display->panels['left'][2] = 'new-bbdf2804-1100-404a-a281-42cf0485d6a2';
   $pane = new stdClass();
-  $pane->pid = 'new-52dbb385-2c97-49e7-85c9-47d87cc957e9';
-  $pane->panel = 'right';
+  $pane->pid = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $pane->panel = 'left';
   $pane->type = 'custom';
   $pane->subtype = 'custom';
   $pane->shown = FALSE;
   $pane->access = array();
   $pane->configuration = array(
     'admin_title' => '',
-    'title' => 'Photos',
+    'title' => 'Contact Us',
     'body' => '<div class="content">
 <ul>
-	<li>Insert Flickr widget</li>
-</ul>
-</div>
-',
+<li><a href="http://www.wsdot.wa.gov/Communications/default.htm">Media Contacts</a></li>
+<li><a href="http://www.wsdot.wa.gov/contact/feedback.htm">Ask Us a Question</a></li></ul></div>',
     'format' => 'wysiwyg',
     'substitute' => TRUE,
   );
@@ -291,11 +195,93 @@ function wsdot_news_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 2;
+  $pane->position = 3;
   $pane->locks = array();
-  $pane->uuid = '52dbb385-2c97-49e7-85c9-47d87cc957e9';
-  $display->content['new-52dbb385-2c97-49e7-85c9-47d87cc957e9'] = $pane;
-  $display->panels['right'][2] = 'new-52dbb385-2c97-49e7-85c9-47d87cc957e9';
+  $pane->uuid = '6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $display->content['new-6c2d90fb-24cb-4f9b-951a-ab50e7071945'] = $pane;
+  $display->panels['left'][3] = 'new-6c2d90fb-24cb-4f9b-951a-ab50e7071945';
+  $pane = new stdClass();
+  $pane->pid = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $pane->panel = 'middle';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'news-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+    'style' => 'default',
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = '436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $display->content['new-436a1880-5ecf-46c5-a55f-22273fe5298f'] = $pane;
+  $display->panels['middle'][0] = 'new-436a1880-5ecf-46c5-a55f-22273fe5298f';
+  $pane = new stdClass();
+  $pane->pid = 'new-ec55703d-e85d-4f58-8493-742b2a86e210';
+  $pane->panel = 'right';
+  $pane->type = 'views_panes';
+  $pane->subtype = 'news_archive-panel_pane_1';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array();
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 0;
+  $pane->locks = array();
+  $pane->uuid = 'ec55703d-e85d-4f58-8493-742b2a86e210';
+  $display->content['new-ec55703d-e85d-4f58-8493-742b2a86e210'] = $pane;
+  $display->panels['right'][0] = 'new-ec55703d-e85d-4f58-8493-742b2a86e210';
+  $pane = new stdClass();
+  $pane->pid = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
+  $pane->panel = 'right';
+  $pane->type = 'custom';
+  $pane->subtype = 'custom';
+  $pane->shown = TRUE;
+  $pane->access = array();
+  $pane->configuration = array(
+    'admin_title' => '',
+    'title' => 'What\'s Going On?',
+    'body' => '<div class="content bluebox">
+<ul style="list-style:none;padding-left:20px;">
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot" title="Main account">@wsdot</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_traffic" title="Puget Sound traffic reports">@wsdot_traffic</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="https://twitter.com/goodtogowsdot" title="Good To Go! and tolling information">@GoodToGoWSDOT</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_passes" title="Mountain pass reports">@wsdot_passes</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_sw">@wsdot_sw</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_tacoma" title="Tacoma traffic">@wsdot_tacoma</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_520" title="520 Project">@wsdot_520</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/berthadigssr99" title="Bertha">@berthadigssr99</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdot_east" title="Tweets from east of the cascades">@wsdot_east</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="https://twitter.com/wsdot_north">@wsdot_north</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/snoqualmiepass" title="Snoqualmie Pass">@SnoqualmiePass</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsferries" title="Washington Sate Ferries">@wsferries</a></li>
+	<li style="padding-left:0px"><a class="twitter" href="http://twitter.com/wsdotjobs">@wsdotjobs</a></li>
+</ul>
+</div>
+',
+    'format' => 'wysiwyg',
+    'substitute' => TRUE,
+    'title_heading' => 'h2',
+  );
+  $pane->cache = array();
+  $pane->style = array(
+    'settings' => NULL,
+  );
+  $pane->css = array();
+  $pane->extras = array();
+  $pane->position = 1;
+  $pane->locks = array();
+  $pane->uuid = 'cc494f90-da88-4098-bf01-8d9c6b8ea29d';
+  $display->content['new-cc494f90-da88-4098-bf01-8d9c6b8ea29d'] = $pane;
+  $display->panels['right'][1] = 'new-cc494f90-da88-4098-bf01-8d9c6b8ea29d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
