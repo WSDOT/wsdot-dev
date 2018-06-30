@@ -126,7 +126,7 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnavbox .bluebox{border:1px solid #f5f5e1;background-color:#f5f5e1;}
 .leftnavbox .centered{text-align:center;}
 
-.facetapi-limit-link {display:inline-block;font-size:13px;padding:0.8em 0;line-height:1.35}
+.facetapi-limit-link {display:inline-block;font-size:13px;padding:0.8em 1.2em;line-height:1.35}
  
 /* new left nav 3/22/17 */
 .leftnavbox .content {width:100%;box-sizing:border-box;padding:0;}
