@@ -120,10 +120,13 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .greyBg{background:#eee;}
 .blueBg{background:#eee;}
 .leftnav{display:block;width:168px;float:left;}
+.rightnav{display:block;width:168px;float:right;padding-top:40px;}
 .leftnavbox{width:150px;margin-bottom:0px;}
 .leftnavbox p{line-height:1.5em;}
 .leftnavbox .bluebox{border:1px solid #f5f5e1;background-color:#f5f5e1;}
 .leftnavbox .centered{text-align:center;}
+
+.facetapi-limit-link {display:inline-block;font-size:13px;padding:0.8em 1.2em;line-height:1.35}
  
 /* new left nav 3/22/17 */
 .leftnavbox .content {width:100%;box-sizing:border-box;padding:0;}
@@ -146,7 +149,6 @@ input.searchButton {height: 23px;margin: 0;font-family: "trebuchet ms",helvetica
 .leftnavbox > ul {width: 100%;box-sizing: border-box;padding: 0 0 0 1em;}
 .leftnav #block-masquerade-masquerade .content {padding:0.5em 0 0.25em 1em;}
 .leftnavbox .content #edit-masquerade-user-field {width:130px;margin-bottom:0.5em;}
-
 .leftnavbox .content ul li a.active-trail.active {font-weight: bold;}
 .leftnavbox .content ul li a.active-trail.active:visited {color: #000;}
 
@@ -379,10 +381,6 @@ div#home-page-slideshow {margin-bottom:4.5em;}
 
 /* Squash the p tags surrounding project map under the phase image */
 div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
-
-.item-list {
-    padding: 10px;
-}
 
 /* Wetland Monitoring Reports View - Grouping by County  */
 .item-list > h3 {

@@ -54,6 +54,17 @@
     </div>
   <?php endif; ?>
 
+  <?php if ($page['sidebar_second']): ?>
+    <div class="rightnav">
+      <a name="skipnav"></a>
+      <!-- Begin: Right navigation box -->
+      <div class="leftnavbox" style="width:160px;">
+        <?php print render($page['sidebar_second']); ?>
+      </div>
+      <!-- End: Right navigation box -->
+    </div>
+  <?php endif; ?>
+
   <div id="main">
     <a name="main-content"></a>
     <?php print render($title_prefix); ?>
@@ -64,7 +75,8 @@
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
     <?php print render($page['content']) ?>
   </div>
-  <div class="cl"></div>
+
+  <div class="cb"></div>
 </div>
 <div class="corners-bottom"></div>
 
