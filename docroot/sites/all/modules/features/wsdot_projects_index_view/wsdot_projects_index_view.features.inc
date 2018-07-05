@@ -5,6 +5,15 @@
  */
 
 /**
+ * Implements hook_ctools_plugin_api().
+ */
+function wsdot_projects_index_view_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "apachesolr" && $api == "apachesolr_environments") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_views_api().
  */
 function wsdot_projects_index_view_views_api($module = NULL, $api = NULL) {
@@ -20,7 +29,7 @@ function wsdot_projects_index_view_default_search_api_index() {
     "name" : "Project Index",
     "machine_name" : "project_index",
     "description" : "Default index for project content type nodes",
-    "server" : "localhost",
+    "server" : "acquia_search",
     "item_type" : "node",
     "options" : {
       "datasource" : { "bundles" : [ "project" ] },
@@ -34,6 +43,7 @@ function wsdot_projects_index_view_default_search_api_index() {
         "field_project_status" : { "type" : "string" },
         "field_regions" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "search_api_language" : { "type" : "string" },
+        "status" : { "type" : "integer" },
         "title" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
@@ -98,7 +108,74 @@ function wsdot_projects_index_view_default_search_api_index() {
       }
     },
     "enabled" : "1",
-    "read_only" : "0",
+    "read_only" : "1",
+    "rdf_mapping" : []
+  }');
+  return $items;
+}
+
+/**
+ * Implements hook_default_search_api_server().
+ */
+function wsdot_projects_index_view_default_search_api_server() {
+  $items = array();
+  $items['acquia_search'] = entity_import('search_api_server', '{
+    "name" : "Acquia Search",
+    "machine_name" : "acquia_search",
+    "description" : "Acquia Solr search",
+    "class" : "acquia_search_service",
+    "options" : {
+      "clean_ids" : true,
+      "site_hash" : true,
+      "scheme" : "http",
+      "host" : "useast1-c1.acquia-search.com",
+      "port" : "80",
+      "path" : "\\/solr\\/CDGZ-73191",
+      "edismax" : 0,
+      "modify_acquia_connection" : 0,
+      "http_user" : "",
+      "http_pass" : "",
+      "excerpt" : 0,
+      "retrieve_data" : 0,
+      "highlight_data" : 0,
+      "skip_schema_check" : 0,
+      "solr_version" : "",
+      "http_method" : "AUTO",
+      "log_query" : 0,
+      "log_response" : 0,
+      "commits_disabled" : 0,
+      "derived_key" : "fe410ec3dc58d2267adfd77da42659cec9d55271",
+      "acquia_search_possible_cores" : [],
+      "overridden_by_acquia_search" : 4
+    },
+    "enabled" : "1",
+    "rdf_mapping" : []
+  }');
+  $items['solr_server'] = entity_import('search_api_server', '{
+    "name" : "Solr server",
+    "machine_name" : "solr_server",
+    "description" : "",
+    "class" : "search_api_solr_service",
+    "options" : {
+      "clean_ids" : true,
+      "site_hash" : true,
+      "scheme" : "http",
+      "host" : "localhost",
+      "port" : "8983",
+      "path" : "\\/solr\\/collection1",
+      "http_user" : "",
+      "http_pass" : "",
+      "excerpt" : 0,
+      "retrieve_data" : 0,
+      "highlight_data" : 0,
+      "skip_schema_check" : 0,
+      "solr_version" : "",
+      "http_method" : "AUTO",
+      "log_query" : 0,
+      "log_response" : 0,
+      "commits_disabled" : 0
+    },
+    "enabled" : "0",
     "rdf_mapping" : []
   }');
   return $items;
