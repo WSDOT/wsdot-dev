@@ -17,7 +17,9 @@ function wsdot_projects_index_view_apachesolr_environments() {
   $environment->url = 'http://useast1-c1.acquia-search.com/solr/CDGZ-73191';
   $environment->service_class = 'AcquiaSearchService';
   $environment->conf = array(
+    'apachesolr_direct_commit' => 0,
     'apachesolr_read_only' => 1,
+    'apachesolr_soft_commit' => 0,
   );
   $environment->index_bundles = array();
   $export['acquia_search_server_1'] = $environment;
