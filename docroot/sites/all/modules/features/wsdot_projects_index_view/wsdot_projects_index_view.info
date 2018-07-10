@@ -17,5 +17,3 @@ features[search_api_index][] = project_index
 features[search_api_server][] = acquia_search
 features[search_api_server][] = solr_server
 features[views_view][] = project_index
-features_exclude[dependencies][ctools] = ctools
-features_exclude[dependencies][entity] = entity
