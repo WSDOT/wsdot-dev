@@ -101,13 +101,36 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'glossary' => array(
+      'name' => 'Glossary',
+      'machine_name' => 'glossary',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => -5,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'highways' => array(
       'name' => 'Highways',
       'machine_name' => 'highways',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -5,
+      'weight' => -4,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -130,7 +153,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'A list of modes of transportation. Like walking. Silly walking.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -4,
+      'weight' => -3,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -153,7 +176,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Mountain Passes',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -3,
+      'weight' => -2,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -176,7 +199,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Organizations include people. And gerbils.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -2,
+      'weight' => -1,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -199,7 +222,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Hierarchical Taxonomy of WSDOT Project Categories',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => -1,
+      'weight' => 0,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -222,7 +245,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Like the moon, projects have phases. Project phases don\'t make werewolves, though.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 0,
+      'weight' => 1,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -245,7 +268,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Regions',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 2,
+      'weight' => 4,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -266,9 +289,32 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'name' => 'Site Structure',
       'machine_name' => 'site_structure',
       'description' => 'Hierarchical term list based on WSDOT classic Web site structure.',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => -10,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'source' => array(
+      'name' => 'Source',
+      'machine_name' => 'source',
+      'description' => 'List of manuals that glossary terms belong to',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 2,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
@@ -291,7 +337,7 @@ function wsdot_taxonomies_taxonomy_default_vocabularies() {
       'description' => 'Use tags to group articles on similar topics into categories.',
       'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => 4,
+      'weight' => 6,
       'rdf_mapping' => array(
         'rdftype' => array(
           0 => 'skos:ConceptScheme',
