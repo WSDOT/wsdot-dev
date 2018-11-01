@@ -41,6 +41,13 @@ function wsdot_taxonomies_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_glossary_pattern';
+  $strongarm->value = 'engineering-standards/manuals/[term:vocabulary]/[term:name]';
+  $export['pathauto_taxonomy_term_glossary_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_highways_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_highways_pattern'] = $strongarm;
@@ -84,7 +91,7 @@ function wsdot_taxonomies_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_regions_pattern';
-  $strongarm->value = 'region/[term:name]';
+  $strongarm->value = '';
   $export['pathauto_taxonomy_term_regions_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -93,6 +100,13 @@ function wsdot_taxonomies_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_site_structure_pattern';
   $strongarm->value = '[term:parents:join:/]/[term:name]';
   $export['pathauto_taxonomy_term_site_structure_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_source_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_source_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

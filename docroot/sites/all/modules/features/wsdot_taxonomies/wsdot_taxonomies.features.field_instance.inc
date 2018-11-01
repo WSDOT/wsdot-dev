@@ -274,6 +274,109 @@ function wsdot_taxonomies_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-glossary-field_citation'.
+  $field_instances['taxonomy_term-glossary-field_citation'] = array(
+    'bundle' => 'glossary',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_citation',
+    'label' => 'Citation',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'taxonomy_term-glossary-field_see_also'.
+  $field_instances['taxonomy_term-glossary-field_see_also'] = array(
+    'bundle' => 'glossary',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_see_also',
+    'label' => 'See also',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-glossary-field_source'.
+  $field_instances['taxonomy_term-glossary-field_source'] = array(
+    'bundle' => 'glossary',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 2,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_source',
+    'label' => 'Source',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'taxonomy_term-project_phases-field_image'.
   $field_instances['taxonomy_term-project_phases-field_image'] = array(
     'bundle' => 'project_phases',
@@ -390,6 +493,7 @@ function wsdot_taxonomies_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -419,6 +523,7 @@ function wsdot_taxonomies_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Alternate contact');
+  t('Citation');
   t('Contact');
   t('Counties');
   t('Email');
@@ -426,6 +531,8 @@ function wsdot_taxonomies_field_default_field_instances() {
   t('Name');
   t('Phone');
   t('Regions');
+  t('See also');
+  t('Source');
   t('Title');
 
   return $field_instances;
