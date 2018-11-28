@@ -382,31 +382,6 @@ div#home-page-slideshow {margin-bottom:4.5em;}
 /* Squash the p tags surrounding project map under the phase image */
 div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 
-/* Wetland Monitoring Reports View - Grouping by County  */
-.item-list > h3 {
-  font-size:1.2em;line-height:1.5em;font-weight:bold;color:black;
-}
-
-/* Wetland Monitoring Reports View - Grouping by Region */
-.view-grouping-header {
-  font-size:1.4em;
-  font-weight:bold;
-  padding-top: 0.7em;
-}
-
-.date-nav.item-list {
-    padding: 0;
-    padding-bottom: 1.5em;
-}
-
-.more-link {
-    padding-right: 10px;
-}
-
-.block-title {
-    margin-bottom: 15px;
-}
-
 /* Flex Slider */
 #slideshow {
 	margin-bottom: 5em;
