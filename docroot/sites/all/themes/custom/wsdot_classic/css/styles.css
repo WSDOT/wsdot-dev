@@ -333,16 +333,6 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 #regions-eastern a:hover {background: url(../images/map/regions_map.png) -103px -500px no-repeat;}
 #regions-northcentral a:hover {background: url(../images/map/regions_map.png) -65px -600px no-repeat;}
 
-/* Override search.usa.gov style for type-ahead box */
-.ui-menu .ui-menu-item a {
-    color: #1445AC;
-    display: block;
-    font-size: 1.4em !important;
-    line-height: 1.5;
-    padding: 0.2em 0.4em;
-    text-decoration: none;
-}
-
 /* Styles specific for Drupal */
 h2.pane-title, h4.pane-title{box-sizing: border-box;padding: 0.33em 0.66em;font-size: 1.2em;font-weight: bold;line-height: 1.6em;color: #222;background: #eee;border-radius: 2px;}
 /* feature box spacing, provided id */
