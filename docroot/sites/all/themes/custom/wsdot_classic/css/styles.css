@@ -344,6 +344,20 @@ div#home-page-slideshow {margin-bottom:4.5em;}
 /* Squash the p tags surrounding project map under the phase image */
 div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 
+/* Views with one more grouping fields (e.g. News) */
+.view-grouping-header {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 0.7em;
+}
+
+.item-list > h3 {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
 /* Flex Slider */
 #slideshow {
     margin-bottom: 5em;
