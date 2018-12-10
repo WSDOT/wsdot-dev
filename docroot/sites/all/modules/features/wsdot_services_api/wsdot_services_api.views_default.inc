@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_services_api.views_default.inc
@@ -72,7 +73,16 @@ function wsdot_services_api_views_default_views() {
   $handler->display->display_options['fields']['field_funding_types']['label'] = 'funding';
   $handler->display->display_options['fields']['field_funding_types']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_funding_types']['delta_offset'] = '0';
-  /* Field: Content: Highway */
+  /* Field: Content: Funding Table */
+  $handler->display->display_options['fields']['field_funding_table']['id'] = 'field_funding_table';
+  $handler->display->display_options['fields']['field_funding_table']['table'] = 'field_data_field_funding_table';
+  $handler->display->display_options['fields']['field_funding_table']['field'] = 'field_funding_table';
+  $handler->display->display_options['fields']['field_funding_table']['label'] = 'funding_table';
+  $handler->display->display_options['fields']['field_funding_table']['settings'] = array(
+    'bypass_access' => 0,
+    'link' => 0,
+  );
+  /* Field: Content: Highways */
   $handler->display->display_options['fields']['field_highways']['id'] = 'field_highways';
   $handler->display->display_options['fields']['field_highways']['table'] = 'field_data_field_highways';
   $handler->display->display_options['fields']['field_highways']['field'] = 'field_highways';
@@ -90,6 +100,15 @@ function wsdot_services_api_views_default_views() {
   $handler->display->display_options['fields']['field_project_phase']['field'] = 'field_project_phase';
   $handler->display->display_options['fields']['field_project_phase']['label'] = 'phase';
   $handler->display->display_options['fields']['field_project_phase']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: PIN Report */
+  $handler->display->display_options['fields']['field_pin_report']['id'] = 'field_pin_report';
+  $handler->display->display_options['fields']['field_pin_report']['table'] = 'field_data_field_pin_report';
+  $handler->display->display_options['fields']['field_pin_report']['field'] = 'field_pin_report';
+  $handler->display->display_options['fields']['field_pin_report']['label'] = 'pin_report';
+  $handler->display->display_options['fields']['field_pin_report']['settings'] = array(
+    'bypass_access' => 0,
+    'link' => 0,
+  );
   /* Field: Field: Regions */
   $handler->display->display_options['fields']['field_regions']['id'] = 'field_regions';
   $handler->display->display_options['fields']['field_regions']['table'] = 'field_data_field_regions';
