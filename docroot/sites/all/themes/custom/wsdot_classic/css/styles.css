@@ -211,6 +211,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 #main h4 {font-weight:bold;color:#000;}
 #main h5 {font-weight:bold;color:#000;}
 #main table {border-collapse: separate;}
+#main .pane-node-created {font-size: 1.2em;}
 
 #main .columns-2 {
     -webkit-columns: 2;
