@@ -49,10 +49,11 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['label'] = 'Source';
   $handler->display->display_options['fields']['field_source']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
@@ -68,6 +69,10 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['field_see_also']['field'] = 'field_see_also';
   $handler->display->display_options['fields']['field_see_also']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_see_also']['hide_empty'] = TRUE;
+  /* Sort criterion: Taxonomy term: Name */
+  $handler->display->display_options['sorts']['name']['id'] = 'name';
+  $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['sorts']['name']['field'] = 'name';
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
@@ -79,6 +84,14 @@ function wsdot_manuals_glossary_view_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<p>This glossary consolidates all the terms included on our published <a href="http://www.wsdot.wa.gov/publications/manuals/index.htm">WSDOT Manuals</a> website.
+Terms are listed alphabetically and identified by the manual (and occasionally manuals) they appear in. Where a term has entries in multiple manuals with differing definitions, the entries from each manual are distinguished using parentheses, e.g. ‘right of way (Design)’ vs ‘right of way (Highway Runoff).</p>
+<p>The Library and WSDOT Knowledge Services are interested in further development of this glossary, both to improve consistency and increase ease of access. If you have any questions, comments, or see any errors, please send them to <a href="mailto:woodwaf@wsdot.wa.gov">Riley Woodward-Pratt</a>.</p>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Header: Global: View area */
   $handler->display->display_options['header']['view']['id'] = 'view';
   $handler->display->display_options['header']['view']['table'] = 'views';
@@ -101,7 +114,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -193,7 +206,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -233,7 +246,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -272,7 +285,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -312,7 +325,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -351,7 +364,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -391,7 +404,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -430,7 +443,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -470,7 +483,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -509,7 +522,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -549,7 +562,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -588,7 +601,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -628,7 +641,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -667,7 +680,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -707,7 +720,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -746,7 +759,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -786,7 +799,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -825,7 +838,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -865,7 +878,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -904,7 +917,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -944,7 +957,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -983,7 +996,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -1023,7 +1036,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
@@ -1062,7 +1075,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source */
+  /* Field: Taxonomy term: Source document */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -1102,7 +1115,7 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source (field_source) */
+  /* Filter criterion: Taxonomy term: Source document (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
