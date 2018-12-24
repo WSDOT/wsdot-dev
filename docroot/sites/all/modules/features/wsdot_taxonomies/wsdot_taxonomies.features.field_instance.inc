@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_taxonomies.features.field_instance.inc
@@ -325,14 +326,16 @@ function wsdot_taxonomies_field_default_field_instances() {
         'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_see_also',
     'label' => 'See also',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'options',
       'settings' => array(
         'apply_chosen' => '',
@@ -340,6 +343,7 @@ function wsdot_taxonomies_field_default_field_instances() {
       'type' => 'options_select',
       'weight' => 4,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'taxonomy_term-glossary-field_source'.
@@ -360,7 +364,7 @@ function wsdot_taxonomies_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_source',
-    'label' => 'Source',
+    'label' => 'Source document',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -532,7 +536,7 @@ function wsdot_taxonomies_field_default_field_instances() {
   t('Phone');
   t('Regions');
   t('See also');
-  t('Source');
+  t('Source document');
   t('Title');
 
   return $field_instances;
