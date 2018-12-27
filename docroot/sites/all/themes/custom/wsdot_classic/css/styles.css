@@ -576,7 +576,9 @@ div#highlight div.widgetdata h3 {
     line-height: 1.6;
     color: #fff;
     background-color: #ff6600;
-    border-radius: 2px;	
+    border-radius: 2px;
+    text-transform: none;
+    font-size: 1.2em;
 }
 
 div#highlight ul.content {
