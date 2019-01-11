@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_publication_content_type.features.field_instance.inc
@@ -452,12 +453,14 @@ function wsdot_publication_content_type_field_default_field_instances() {
         'input_format' => 'm/d/Y - H:i:s',
         'input_format_custom' => '',
         'label_position' => 'above',
+        'no_fieldset' => 0,
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '1970:+0',
       ),
       'type' => 'date_select',
       'weight' => 8,
     ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-publication-field_publication_number'.
