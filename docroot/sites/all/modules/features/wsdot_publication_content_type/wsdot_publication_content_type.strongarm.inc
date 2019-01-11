@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_publication_content_type.strongarm.inc
