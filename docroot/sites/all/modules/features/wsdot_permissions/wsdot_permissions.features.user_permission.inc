@@ -572,15 +572,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'feeds_tamper',
   );
 
-  // Exported permission: 'administer field collections'.
-  $permissions['administer field collections'] = array(
-    'name' => 'administer field collections',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_collection',
-  );
-
   // Exported permission: 'administer fieldgroups'.
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
