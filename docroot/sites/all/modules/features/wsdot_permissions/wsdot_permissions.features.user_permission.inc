@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_permissions.features.user_permission.inc
@@ -15,6 +16,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -24,21 +27,27 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Library Author' => 'Library Author',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -50,6 +59,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -59,21 +70,27 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Library Author' => 'Library Author',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -103,6 +120,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access ckeditor link',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -112,21 +131,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -137,6 +161,8 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'Audit Editor' => 'Audit Editor',
+      'Safety Editor' => 'Safety Editor',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -149,6 +175,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -158,21 +186,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -211,6 +244,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access media browser',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -220,21 +255,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -245,32 +285,6 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
     'roles' => array(
-      'Asset Editor' => 'Asset Editor',
-      'Business Editor' => 'Business Editor',
-      'ER Editor' => 'ER Editor',
-      'Employment Editor' => 'Employment Editor',
-      'Environment Editor' => 'Environment Editor',
-      'Equal Opportunity Editor' => 'Equal Opportunity Editor',
-      'Ferries Editor' => 'Ferries Editor',
-      'Finance Editor' => 'Finance Editor',
-      'Good To Go Editor' => 'Good To Go Editor',
-      'HQ Communication Editor' => 'HQ Communication Editor',
-      'NC Editor' => 'NC Editor',
-      'NW Editor' => 'NW Editor',
-      'News Editor' => 'News Editor',
-      'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
-      'Planning Editor' => 'Planning Editor',
-      'Policy Editor' => 'Policy Editor',
-      'Rail Editor' => 'Rail Editor',
-      'Research Editor' => 'Research Editor',
-      'SC Editor' => 'SC Editor',
-      'SW Editor' => 'SW Editor',
-      'Tolling Editor' => 'Tolling Editor',
-      'Traffic Editor' => 'Traffic Editor',
-      'Training Editor' => 'Training Editor',
-      'Transit Editor' => 'Transit Editor',
-      'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'overlay',
@@ -326,6 +340,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access workbench',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -335,21 +351,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -361,6 +382,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'access workbench access by role',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -370,21 +393,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -544,15 +572,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'feeds_tamper',
   );
 
-  // Exported permission: 'administer field collections'.
-  $permissions['administer field collections'] = array(
-    'name' => 'administer field collections',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_collection',
-  );
-
   // Exported permission: 'administer fieldgroups'.
   $permissions['administer fieldgroups'] = array(
     'name' => 'administer fieldgroups',
@@ -576,6 +595,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'administer files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -585,21 +606,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -638,6 +664,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'administer main-menu menu items',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -647,20 +675,25 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -839,37 +872,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node advertisements defaults'.
-  $permissions['administer panelizer node advertisements defaults'] = array(
-    'name' => 'administer panelizer node advertisements defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node article defaults'.
   $permissions['administer panelizer node article defaults'] = array(
     'name' => 'administer panelizer node article defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node auction_parcel defaults'.
-  $permissions['administer panelizer node auction_parcel defaults'] = array(
-    'name' => 'administer panelizer node auction_parcel defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node event defaults'.
-  $permissions['administer panelizer node event defaults'] = array(
-    'name' => 'administer panelizer node event defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node flexslider_example defaults'.
-  $permissions['administer panelizer node flexslider_example defaults'] = array(
-    'name' => 'administer panelizer node flexslider_example defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
@@ -930,23 +935,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node park_and_ride_lots defaults'.
-  $permissions['administer panelizer node park_and_ride_lots defaults'] = array(
-    'name' => 'administer panelizer node park_and_ride_lots defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node pin_report defaults'.
   $permissions['administer panelizer node pin_report defaults'] = array(
     'name' => 'administer panelizer node pin_report defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node plan_sheet defaults'.
-  $permissions['administer panelizer node plan_sheet defaults'] = array(
-    'name' => 'administer panelizer node plan_sheet defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
@@ -1000,20 +991,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'panelizer',
   );
 
-  // Exported permission: 'administer panelizer node rest_area defaults'.
-  $permissions['administer panelizer node rest_area defaults'] = array(
-    'name' => 'administer panelizer node rest_area defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node roadwork defaults'.
-  $permissions['administer panelizer node roadwork defaults'] = array(
-    'name' => 'administer panelizer node roadwork defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
   // Exported permission: 'administer panelizer node slideshow defaults'.
   $permissions['administer panelizer node slideshow defaults'] = array(
     'name' => 'administer panelizer node slideshow defaults',
@@ -1024,13 +1001,6 @@ function wsdot_permissions_user_default_permissions() {
   // Exported permission: 'administer panelizer node webform defaults'.
   $permissions['administer panelizer node webform defaults'] = array(
     'name' => 'administer panelizer node webform defaults',
-    'roles' => array(),
-    'module' => 'panelizer',
-  );
-
-  // Exported permission: 'administer panelizer node wetland_monitoring_reports defaults'.
-  $permissions['administer panelizer node wetland_monitoring_reports defaults'] = array(
-    'name' => 'administer panelizer node wetland_monitoring_reports defaults',
     'roles' => array(),
     'module' => 'panelizer',
   );
@@ -1475,13 +1445,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'context_ui',
   );
 
-  // Exported permission: 'create advertisements content'.
-  $permissions['create advertisements content'] = array(
-    'name' => 'create advertisements content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
@@ -1491,25 +1454,13 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create auction_parcel content'.
-  $permissions['create auction_parcel content'] = array(
-    'name' => 'create auction_parcel content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create event content'.
-  $permissions['create event content'] = array(
-    'name' => 'create event content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1519,32 +1470,30 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'create flexslider_example content'.
-  $permissions['create flexslider_example content'] = array(
-    'name' => 'create flexslider_example content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'create funding_table content'.
@@ -1578,6 +1527,7 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1587,20 +1537,25 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -1616,23 +1571,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create park_and_ride_lots content'.
-  $permissions['create park_and_ride_lots content'] = array(
-    'name' => 'create park_and_ride_lots content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create pin_report content'.
   $permissions['create pin_report content'] = array(
     'name' => 'create pin_report content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create plan_sheet content'.
-  $permissions['create plan_sheet content'] = array(
-    'name' => 'create plan_sheet content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -1646,6 +1587,7 @@ function wsdot_permissions_user_default_permissions() {
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
+      'Project Editor' => 'Project Editor',
       'Rail Editor' => 'Rail Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
@@ -1657,22 +1599,9 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['create publication content'] = array(
     'name' => 'create publication content',
     'roles' => array(
+      'Publications Editor' => 'Publications Editor',
       'Research Editor' => 'Research Editor',
     ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create rest_area content'.
-  $permissions['create rest_area content'] = array(
-    'name' => 'create rest_area content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create roadwork content'.
-  $permissions['create roadwork content'] = array(
-    'name' => 'create roadwork content',
-    'roles' => array(),
     'module' => 'node',
   );
 
@@ -1695,13 +1624,6 @@ function wsdot_permissions_user_default_permissions() {
   // Exported permission: 'create webform content'.
   $permissions['create webform content'] = array(
     'name' => 'create webform content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create wetland_monitoring_reports content'.
-  $permissions['create wetland_monitoring_reports content'] = array(
-    'name' => 'create wetland_monitoring_reports content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -1733,13 +1655,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: 'delete any advertisements content'.
-  $permissions['delete any advertisements content'] = array(
-    'name' => 'delete any advertisements content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any article content'.
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
@@ -1749,18 +1664,13 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any auction_parcel content'.
-  $permissions['delete any auction_parcel content'] = array(
-    'name' => 'delete any auction_parcel content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any audio files'.
   $permissions['delete any audio files'] = array(
     'name' => 'delete any audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1770,21 +1680,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -1796,6 +1711,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1805,39 +1722,30 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete any event content'.
-  $permissions['delete any event content'] = array(
-    'name' => 'delete any event content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any flexslider_example content'.
-  $permissions['delete any flexslider_example content'] = array(
-    'name' => 'delete any flexslider_example content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete any funding_table content'.
@@ -1852,6 +1760,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1861,21 +1771,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -1887,7 +1802,6 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete any news_article content',
     'roles' => array(
       'News Editor' => 'News Editor',
-      'Training Editor' => 'Training Editor',
     ),
     'module' => 'node',
   );
@@ -1896,7 +1810,6 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['delete any page content'] = array(
     'name' => 'delete any page content',
     'roles' => array(
-      'Training Editor' => 'Training Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1911,23 +1824,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any park_and_ride_lots content'.
-  $permissions['delete any park_and_ride_lots content'] = array(
-    'name' => 'delete any park_and_ride_lots content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any pin_report content'.
   $permissions['delete any pin_report content'] = array(
     'name' => 'delete any pin_report content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any plan_sheet content'.
-  $permissions['delete any plan_sheet content'] = array(
-    'name' => 'delete any plan_sheet content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -1946,20 +1845,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any rest_area content'.
-  $permissions['delete any rest_area content'] = array(
-    'name' => 'delete any rest_area content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any roadwork content'.
-  $permissions['delete any roadwork content'] = array(
-    'name' => 'delete any roadwork content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete any slideshow content'.
   $permissions['delete any slideshow content'] = array(
     'name' => 'delete any slideshow content',
@@ -1972,6 +1857,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete any video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -1981,17 +1868,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -2009,20 +1900,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any wetland_monitoring_reports content'.
-  $permissions['delete any wetland_monitoring_reports content'] = array(
-    'name' => 'delete any wetland_monitoring_reports content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own advertisements content'.
-  $permissions['delete own advertisements content'] = array(
-    'name' => 'delete own advertisements content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own article content'.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
@@ -2032,18 +1909,13 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own auction_parcel content'.
-  $permissions['delete own auction_parcel content'] = array(
-    'name' => 'delete own auction_parcel content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own audio files'.
   $permissions['delete own audio files'] = array(
     'name' => 'delete own audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2053,21 +1925,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2079,6 +1956,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2088,39 +1967,30 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own event content'.
-  $permissions['delete own event content'] = array(
-    'name' => 'delete own event content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own flexslider_example content'.
-  $permissions['delete own flexslider_example content'] = array(
-    'name' => 'delete own flexslider_example content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own funding_table content'.
@@ -2135,6 +2005,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2144,21 +2016,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2170,7 +2047,6 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete own news_article content',
     'roles' => array(
       'News Editor' => 'News Editor',
-      'Training Editor' => 'Training Editor',
     ),
     'module' => 'node',
   );
@@ -2179,7 +2055,7 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['delete own page content'] = array(
     'name' => 'delete own page content',
     'roles' => array(
-      'Training Editor' => 'Training Editor',
+      'Audit Editor' => 'Audit Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -2194,23 +2070,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own park_and_ride_lots content'.
-  $permissions['delete own park_and_ride_lots content'] = array(
-    'name' => 'delete own park_and_ride_lots content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own pin_report content'.
   $permissions['delete own pin_report content'] = array(
     'name' => 'delete own pin_report content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own plan_sheet content'.
-  $permissions['delete own plan_sheet content'] = array(
-    'name' => 'delete own plan_sheet content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -2229,20 +2091,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own rest_area content'.
-  $permissions['delete own rest_area content'] = array(
-    'name' => 'delete own rest_area content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own roadwork content'.
-  $permissions['delete own roadwork content'] = array(
-    'name' => 'delete own roadwork content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own slideshow content'.
   $permissions['delete own slideshow content'] = array(
     'name' => 'delete own slideshow content',
@@ -2255,6 +2103,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2264,17 +2114,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -2299,13 +2153,6 @@ function wsdot_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'webform',
-  );
-
-  // Exported permission: 'delete own wetland_monitoring_reports content'.
-  $permissions['delete own wetland_monitoring_reports content'] = array(
-    'name' => 'delete own wetland_monitoring_reports content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete revisions'.
@@ -2431,6 +2278,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download any audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2440,21 +2289,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2466,6 +2320,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2475,20 +2331,25 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2500,6 +2361,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2509,21 +2372,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2535,6 +2403,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download any video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2544,17 +2414,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -2570,6 +2444,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download own audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2579,21 +2455,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2605,6 +2486,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download own document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2614,21 +2497,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2640,6 +2528,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2649,21 +2539,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2675,6 +2570,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'download own video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2684,17 +2581,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -2714,13 +2615,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'webform',
   );
 
-  // Exported permission: 'edit any advertisements content'.
-  $permissions['edit any advertisements content'] = array(
-    'name' => 'edit any advertisements content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -2730,18 +2624,13 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any auction_parcel content'.
-  $permissions['edit any auction_parcel content'] = array(
-    'name' => 'edit any auction_parcel content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2751,21 +2640,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2777,6 +2671,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2786,39 +2682,30 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit any event content'.
-  $permissions['edit any event content'] = array(
-    'name' => 'edit any event content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any flexslider_example content'.
-  $permissions['edit any flexslider_example content'] = array(
-    'name' => 'edit any flexslider_example content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit any funding_table content'.
@@ -2833,6 +2720,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2842,21 +2731,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2878,6 +2772,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2887,20 +2783,25 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -2916,23 +2817,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any park_and_ride_lots content'.
-  $permissions['edit any park_and_ride_lots content'] = array(
-    'name' => 'edit any park_and_ride_lots content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any pin_report content'.
   $permissions['edit any pin_report content'] = array(
     'name' => 'edit any pin_report content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any plan_sheet content'.
-  $permissions['edit any plan_sheet content'] = array(
-    'name' => 'edit any plan_sheet content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -2946,6 +2833,7 @@ function wsdot_permissions_user_default_permissions() {
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
+      'Project Editor' => 'Project Editor',
       'Rail Editor' => 'Rail Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
@@ -2957,22 +2845,9 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['edit any publication content'] = array(
     'name' => 'edit any publication content',
     'roles' => array(
+      'Publications Editor' => 'Publications Editor',
       'Research Editor' => 'Research Editor',
     ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any rest_area content'.
-  $permissions['edit any rest_area content'] = array(
-    'name' => 'edit any rest_area content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any roadwork content'.
-  $permissions['edit any roadwork content'] = array(
-    'name' => 'edit any roadwork content',
-    'roles' => array(),
     'module' => 'node',
   );
 
@@ -2988,6 +2863,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -2997,17 +2874,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -3025,20 +2906,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any wetland_monitoring_reports content'.
-  $permissions['edit any wetland_monitoring_reports content'] = array(
-    'name' => 'edit any wetland_monitoring_reports content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own advertisements content'.
-  $permissions['edit own advertisements content'] = array(
-    'name' => 'edit own advertisements content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own article content'.
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
@@ -3048,18 +2915,13 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own auction_parcel content'.
-  $permissions['edit own auction_parcel content'] = array(
-    'name' => 'edit own auction_parcel content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own audio files'.
   $permissions['edit own audio files'] = array(
     'name' => 'edit own audio files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3069,21 +2931,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -3095,6 +2962,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit own document files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3104,39 +2973,30 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own event content'.
-  $permissions['edit own event content'] = array(
-    'name' => 'edit own event content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own flexslider_example content'.
-  $permissions['edit own flexslider_example content'] = array(
-    'name' => 'edit own flexslider_example content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own funding_table content'.
@@ -3151,6 +3011,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit own image files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3160,21 +3022,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -3196,6 +3063,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3205,20 +3074,25 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -3234,23 +3108,9 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own park_and_ride_lots content'.
-  $permissions['edit own park_and_ride_lots content'] = array(
-    'name' => 'edit own park_and_ride_lots content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own pin_report content'.
   $permissions['edit own pin_report content'] = array(
     'name' => 'edit own pin_report content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own plan_sheet content'.
-  $permissions['edit own plan_sheet content'] = array(
-    'name' => 'edit own plan_sheet content',
     'roles' => array(),
     'module' => 'node',
   );
@@ -3264,6 +3124,7 @@ function wsdot_permissions_user_default_permissions() {
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'OR Editor' => 'OR Editor',
+      'Project Editor' => 'Project Editor',
       'Rail Editor' => 'Rail Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
@@ -3275,22 +3136,9 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['edit own publication content'] = array(
     'name' => 'edit own publication content',
     'roles' => array(
+      'Publications Editor' => 'Publications Editor',
       'Research Editor' => 'Research Editor',
     ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own rest_area content'.
-  $permissions['edit own rest_area content'] = array(
-    'name' => 'edit own rest_area content',
-    'roles' => array(),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own roadwork content'.
-  $permissions['edit own roadwork content'] = array(
-    'name' => 'edit own roadwork content',
-    'roles' => array(),
     'module' => 'node',
   );
 
@@ -3306,6 +3154,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'edit own video files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3315,17 +3165,21 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
@@ -3350,13 +3204,6 @@ function wsdot_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'webform',
-  );
-
-  // Exported permission: 'edit own wetland_monitoring_reports content'.
-  $permissions['edit own wetland_monitoring_reports content'] = array(
-    'name' => 'edit own wetland_monitoring_reports content',
-    'roles' => array(),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit terms in amenities'.
@@ -3502,15 +3349,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'import users'.
-  $permissions['import users'] = array(
-    'name' => 'import users',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'user_import',
-  );
-
   // Exported permission: 'import wsdot_public_default_import feeds'.
   $permissions['import wsdot_public_default_import feeds'] = array(
     'name' => 'import wsdot_public_default_import feeds',
@@ -3551,15 +3389,6 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'import wsdot_public_projectspecifics_import feeds',
     'roles' => array(),
     'module' => 'feeds',
-  );
-
-  // Exported permission: 'limited user import'.
-  $permissions['limited user import'] = array(
-    'name' => 'limited user import',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'user_import',
   );
 
   // Exported permission: 'manage features'.
@@ -3621,6 +3450,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'moderate content from draft to needs_review',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3630,66 +3461,27 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
-      'NC Editor' => 'NC Editor',
-      'NW Editor' => 'NW Editor',
-      'News Editor' => 'News Editor',
-      'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
-      'Planning Editor' => 'Planning Editor',
-      'Policy Editor' => 'Policy Editor',
-      'Rail Editor' => 'Rail Editor',
-      'Research Editor' => 'Research Editor',
-      'SC Editor' => 'SC Editor',
-      'SW Editor' => 'SW Editor',
-      'Tolling Editor' => 'Tolling Editor',
-      'Traffic Editor' => 'Traffic Editor',
-      'Training Editor' => 'Training Editor',
-      'Transit Editor' => 'Transit Editor',
-      'Tribal Editor' => 'Tribal Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'moderate content from needs_moderation to draft'.
-  $permissions['moderate content from needs_moderation to draft'] = array(
-    'name' => 'moderate content from needs_moderation to draft',
-    'roles' => array(
-      'Asset Editor' => 'Asset Editor',
-      'Business Editor' => 'Business Editor',
-      'ER Editor' => 'ER Editor',
-      'Employment Editor' => 'Employment Editor',
-      'Environment Editor' => 'Environment Editor',
-      'Equal Opportunity Editor' => 'Equal Opportunity Editor',
-      'Ferries Editor' => 'Ferries Editor',
-      'Finance Editor' => 'Finance Editor',
-      'Good To Go Editor' => 'Good To Go Editor',
-      'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'moderate content from needs_moderation to published'.
-  $permissions['moderate content from needs_moderation to published'] = array(
-    'name' => 'moderate content from needs_moderation to published',
-    'roles' => array(
-      'Environment Editor' => 'Environment Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'workbench_moderation',
@@ -3699,66 +3491,6 @@ function wsdot_permissions_user_default_permissions() {
   $permissions['moderate content from needs_review to draft'] = array(
     'name' => 'moderate content from needs_review to draft',
     'roles' => array(
-      'Asset Editor' => 'Asset Editor',
-      'Business Editor' => 'Business Editor',
-      'ER Editor' => 'ER Editor',
-      'Employment Editor' => 'Employment Editor',
-      'Environment Editor' => 'Environment Editor',
-      'Equal Opportunity Editor' => 'Equal Opportunity Editor',
-      'Ferries Editor' => 'Ferries Editor',
-      'Finance Editor' => 'Finance Editor',
-      'Good To Go Editor' => 'Good To Go Editor',
-      'HQ Communication Editor' => 'HQ Communication Editor',
-      'NC Editor' => 'NC Editor',
-      'NW Editor' => 'NW Editor',
-      'News Editor' => 'News Editor',
-      'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
-      'Planning Editor' => 'Planning Editor',
-      'Policy Editor' => 'Policy Editor',
-      'Rail Editor' => 'Rail Editor',
-      'Research Editor' => 'Research Editor',
-      'SC Editor' => 'SC Editor',
-      'SW Editor' => 'SW Editor',
-      'Tolling Editor' => 'Tolling Editor',
-      'Traffic Editor' => 'Traffic Editor',
-      'Training Editor' => 'Training Editor',
-      'Transit Editor' => 'Transit Editor',
-      'Tribal Editor' => 'Tribal Editor',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: 'moderate content from needs_review to needs_moderation'.
-  $permissions['moderate content from needs_review to needs_moderation'] = array(
-    'name' => 'moderate content from needs_review to needs_moderation',
-    'roles' => array(
-      'Asset Editor' => 'Asset Editor',
-      'Business Editor' => 'Business Editor',
-      'ER Editor' => 'ER Editor',
-      'Employment Editor' => 'Employment Editor',
-      'Environment Editor' => 'Environment Editor',
-      'Equal Opportunity Editor' => 'Equal Opportunity Editor',
-      'Ferries Editor' => 'Ferries Editor',
-      'Finance Editor' => 'Finance Editor',
-      'Good To Go Editor' => 'Good To Go Editor',
-      'HQ Communication Editor' => 'HQ Communication Editor',
-      'NC Editor' => 'NC Editor',
-      'NW Editor' => 'NW Editor',
-      'News Editor' => 'News Editor',
-      'OR Editor' => 'OR Editor',
-      'Planning Editor' => 'Planning Editor',
-      'Policy Editor' => 'Policy Editor',
-      'Rail Editor' => 'Rail Editor',
-      'Research Editor' => 'Research Editor',
-      'SC Editor' => 'SC Editor',
-      'SW Editor' => 'SW Editor',
-      'Tolling Editor' => 'Tolling Editor',
-      'Traffic Editor' => 'Traffic Editor',
-      'Training Editor' => 'Training Editor',
-      'Transit Editor' => 'Transit Editor',
-      'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
     'module' => 'workbench_moderation',
@@ -3771,15 +3503,6 @@ function wsdot_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'pathauto',
-  );
-
-  // Exported permission: 'preview focal point'.
-  $permissions['preview focal point'] = array(
-    'name' => 'preview focal point',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'focal_point',
   );
 
   // Exported permission: 'rename features'.
@@ -3796,29 +3519,37 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
+      'Environment Editor' => 'Environment Editor',
       'Equal Opportunity Editor' => 'Equal Opportunity Editor',
       'Ferries Editor' => 'Ferries Editor',
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -3830,6 +3561,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'schedule publishing of nodes',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -3839,21 +3572,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4012,6 +3750,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'use media wysiwyg',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4021,21 +3761,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4116,6 +3861,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'use text format wysiwyg',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4125,21 +3872,27 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Library Author' => 'Library Author',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4160,6 +3913,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'use workbench_moderation my drafts tab',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4169,21 +3924,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4195,6 +3955,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'use workbench_moderation needs review tab',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4204,21 +3966,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4230,6 +3997,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view all unpublished content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4239,21 +4008,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4276,6 +4050,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view moderation history',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4285,21 +4061,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4311,6 +4092,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4320,21 +4103,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4346,6 +4134,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4355,21 +4145,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4390,6 +4185,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4399,21 +4196,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4443,6 +4245,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4452,21 +4256,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4478,6 +4287,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view scheduled content',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4487,21 +4298,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4513,6 +4329,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4522,21 +4340,27 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Library Author' => 'Library Author',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
@@ -4548,6 +4372,8 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'view workbench access information',
     'roles' => array(
       'Asset Editor' => 'Asset Editor',
+      'Audit Editor' => 'Audit Editor',
+      'Bridge Editor' => 'Bridge Editor',
       'Business Editor' => 'Business Editor',
       'ER Editor' => 'ER Editor',
       'Employment Editor' => 'Employment Editor',
@@ -4557,21 +4383,26 @@ function wsdot_permissions_user_default_permissions() {
       'Finance Editor' => 'Finance Editor',
       'Good To Go Editor' => 'Good To Go Editor',
       'HQ Communication Editor' => 'HQ Communication Editor',
+      'Local Programs Editor' => 'Local Programs Editor',
       'NC Editor' => 'NC Editor',
       'NW Editor' => 'NW Editor',
       'News Editor' => 'News Editor',
       'OR Editor' => 'OR Editor',
-      'Planning Author' => 'Planning Author',
       'Planning Editor' => 'Planning Editor',
       'Policy Editor' => 'Policy Editor',
+      'Practical Solutions Editor' => 'Practical Solutions Editor',
+      'Project Editor' => 'Project Editor',
+      'Publications Editor' => 'Publications Editor',
       'Rail Editor' => 'Rail Editor',
       'Research Editor' => 'Research Editor',
       'SC Editor' => 'SC Editor',
       'SW Editor' => 'SW Editor',
+      'Safety Editor' => 'Safety Editor',
       'Tolling Editor' => 'Tolling Editor',
       'Traffic Editor' => 'Traffic Editor',
       'Training Editor' => 'Training Editor',
       'Transit Editor' => 'Transit Editor',
+      'Travel Editor' => 'Travel Editor',
       'Tribal Editor' => 'Tribal Editor',
       'administrator' => 'administrator',
     ),
