@@ -3349,15 +3349,6 @@ function wsdot_permissions_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'import users'.
-  $permissions['import users'] = array(
-    'name' => 'import users',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'user_import',
-  );
-
   // Exported permission: 'import wsdot_public_default_import feeds'.
   $permissions['import wsdot_public_default_import feeds'] = array(
     'name' => 'import wsdot_public_default_import feeds',
@@ -3398,15 +3389,6 @@ function wsdot_permissions_user_default_permissions() {
     'name' => 'import wsdot_public_projectspecifics_import feeds',
     'roles' => array(),
     'module' => 'feeds',
-  );
-
-  // Exported permission: 'limited user import'.
-  $permissions['limited user import'] = array(
-    'name' => 'limited user import',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'user_import',
   );
 
   // Exported permission: 'manage features'.
