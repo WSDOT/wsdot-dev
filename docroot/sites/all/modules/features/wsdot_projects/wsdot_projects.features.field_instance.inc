@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * wsdot_projects.features.field_instance.inc
@@ -753,65 +752,6 @@ function wsdot_projects_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-project-field_modes'.
-  $field_instances['node-project-field_modes'] = array(
-    'bundle' => 'project',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'hs_taxonomy',
-        'settings' => array(),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_text',
-        'weight' => 13,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
-      ),
-      'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 9,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_modes',
-    'label' => 'Modes',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'apply_chosen' => 1,
-      ),
-      'type' => 'options_select',
-      'weight' => 17,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-project-field_organization_term_ref'.
   $field_instances['node-project-field_organization_term_ref'] = array(
     'bundle' => 'project',
@@ -912,11 +852,7 @@ function wsdot_projects_field_default_field_instances() {
   // Exported field_instance: 'node-project-field_project_id'.
   $field_instances['node-project-field_project_id'] = array(
     'bundle' => 'project',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -956,7 +892,7 @@ function wsdot_projects_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_project_id',
     'label' => 'Project ID',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -1381,7 +1317,6 @@ function wsdot_projects_field_default_field_instances() {
   t('Images');
   t('Legacy Map');
   t('Location of this page in the website.');
-  t('Modes');
   t('Organization');
   t('PIN Report');
   t('Phase');

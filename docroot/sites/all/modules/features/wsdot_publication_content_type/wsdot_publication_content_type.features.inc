@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * wsdot_publication_content_type.features.inc
