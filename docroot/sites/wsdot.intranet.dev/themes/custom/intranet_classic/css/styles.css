@@ -1,0 +1,139 @@
+body {font:80% arial,helvetica,sans-serif; margin: 5px; padding: 0px;}
+table, tr,td {font-size:inherit;}
+a {color:#336699;text-decoration:none;}
+a:hover {color:#003366;text-decoration:underline;}
+/*a:visited {color:#666;text-decoration:underline;}*/
+a img {border:0;}
+h1,h2,h3 {color: #494949;line-height:1.0;}
+h3,h4,h5 {font-weight:bold;color: #494949; padding:0px 0px 5px 5px; margin: 0px;  }
+h1 {font-size:152%} 
+h2 {font-size:129%} 
+h3 {font-size:114%} 
+h4 {font-size:107%; margin: 0px; padding: 0px;} 
+p {line-height:1.35;margin:1em 0; font-size:95%;}
+hr {height:0;border:0;border-bottom:1px solid #ddd;}
+.input
+#wrapper {width:800px;position:relative;margin:0px;padding:0px;text-align:left; }
+.pagehead {position:relative;margin: 0px;padding: 0px}
+#main { margin-top: 15px;  width:inherit; }
+.tagline {position:absolute;top:30px;right:0px;font-size: 90%;}
+.toplinks {position:absolute;top:5px;right:-3px;}
+.toplinks,.bottomlinks {font-size:92%;color:#666;}
+.toplinks a,.bottomlinks a {padding:0 3px;color:#666;text-decoration:none;}
+.toplinks a:hover,.bottomlinks a:hover {color:#666;text-decoration:underline;}
+#navbar {padding:0;margin:0;height:41px;background:#2576b8 url("../images/topnav/navbar_bg.gif") 0 0 repeat-x;position:relative;top:0;left:0;}
+#mainnav ul{margin:0;margin-left:1.5em;padding:0;list-style:none;height:31px;text-align:center;}
+#mainnav li{float:left;display:inline;font-size:114%;background:url("../images/topnav/mainnav_tick.gif") 100% 0 no-repeat;}
+#mainnav a {float:left;padding:0 0 0 8px;font-weight:bold;color:#fff;text-decoration:none;}
+#mainnav a span {float:left;display:block;padding:8px 12px 5px 4px;font-weight:bold;color: #ffffff;}
+#mainnav a:hover {background:url("../images/topnav/tab.gif") no-repeat left top;}
+#mainnav a:hover span {color: #000000;background:url("../images/topnav/tab.gif") no-repeat right top;cursor:pointer;}
+#mainnav .active {background:url("../images/topnav/tab.gif") no-repeat left top;}
+#mainnav .active span {color: #000000;background:url("../images/topnav/tab.gif") no-repeat right top;}
+#logo a {display:block;height:50px;width:240px;text-indent:-23456px;background: url("../images/topnav/wsdot2g4.gif") 0 0 no-repeat;}
+.orangebox  {font-size: 100%;width:90%;padding: 5px;margin:5px;background:#d0d0d0 url("../images/topnav/orange_shade.gif") 0 0 repeat-x; border:1px solid #fcc662;color:#444;}
+.greenbox  {font-size: 100%;width:90%;padding: 5px;margin:5px;background:#9bc268  url("../images/topnav/green_shade.gif") 0 0 repeat-x; border:1px solid #96c25d;color:#444;}
+.breadcrumbs {clear:both;padding: 7px 0 0 5px;font-size:92%;color:#666;}
+.breadcrumbs a {text-decoration:none;}
+.breadcrumbs a:hover {text-decoration:underline;}
+.under { }
+#subnav {width: 90%; margin: 0 0 0 5px; padding:5px;}
+#subnav .col {display:inline;float:left; margin:0px; padding: 2px 5px 2px 5px}
+#subnav p {margin:10px 0px 0px 0px;color:#494949;font-weight:bold; font-size: 100%}
+#subnav ul {margin:0px .5em 0px 5px;padding:0px; list-style: none;}
+#subnav li {margin:.5em 0;padding:0;}
+.search{text-align: left;padding: 5px; margin-bottom:10px;}
+.search input {margin:0;vertical-align:middle;}
+td.leftcolumn {width: 170px; margin: 0px; padding: 0px 5px 0px 0px;  }
+/* link container for left side to give block of links space above and below */
+td.leftcolumn ul {padding: 0px 0px 10px 5px;margin: 0px 0px 0px 5px;  }
+td.leftcolumn ul li {list-style-type: none; padding: 0px; font-size:90%;}
+td.leftcolumn ul li a {margin: 0px; padding: 0px;}
+td.leftcolumn p {color: #494949;font-weight: bold;font-size: 100%;padding:0px 0px 2px 5px; margin: 0px;}
+td.leftcolumn h4 { color: #494949;font-weight: bold;font-size: 100%;padding:0px 0px 2px 5px; margin: 0px;}
+td.content { text-align: left;	width:460px; margin: 0px; padding: 0px 5px 10px 10px; border-left: 1px solid #e6e6e6; }
+td.content ul { padding: 0px 0px 10px 10px;margin: 5px 0px 0px 20px;   }
+td.content .col ul { margin:0px;padding:0px;list-style:none;   }
+td.content ul li ul li {padding: 0px; margin: 0px; font-size: 100%; }
+td.content h2.greenbox  {font-size: 100%;width:90%;padding: 5px;margin:5px 5px 5px 0px;background:#9bc268  url("../images/topnav/green_shade.gif") 0 0 repeat-x; border:1px solid #96c25d;color:#444;}
+/*for two column template, rightcaption style allows for three, three column template preferred*/
+#twocolumncontent 
+{ text-align: left;	width:630px; margin: 0px; padding: 0px 5px 10px 10px; border-left: 1px solid #e6e6e6;}
+#twocolumncontent .rightcaption
+{ text-align:left; float:right;  width:200px; font-size:85%; border-left: 1px solid #e6e6e6; margin: 0px 0px 0px 5px ;
+	padding: 0px 0px 0px 10px; font-size: 85% } 
+#twocolumncontent ul { padding: 0px 0px 10px 10px;margin: 5px 0px 0px 20px;  font-size: 95%   }
+
+/*   Start center styles for news items */
+.centerbox { font-size: 90%; text-align:left; border: 1px solid gray; position: relative;
+	margin: 0px 5px 10px 5px; padding: 5px; width: 90%; clear:both;
+}
+.centerbox h2 {font-size: 110%; font-weight: bold; color: #003366; margin: 0px; padding: 0px;}
+
+.date { font-size: 90%; margin: 0px 0px 7px 0px; }
+
+.centerbox .date
+{
+/* style.css
+    font-size: 85%; margin: 0px 0px 7px 0px;
+	
+
+    font-size: 85%;
+	margin: 0px 0px 7px 0px;*/
+
+}
+
+.centerbox img
+{
+    margin: 0px 0px 0px 5px; position: relative; float: right;
+}
+
+
+/* START right column text styles */
+td.rightcolumn 
+{
+    margin: 0px 0px 0px 10px; padding: 0px 0px 0px 10px; float:right;
+    width:170px; font-size:85%; border-left: 1px solid #e6e6e6;
+}
+/* Hot Links styles */
+td.rightcolumn ul
+{
+   padding: 0px 0px 10px 5px; margin: 0px 0px 0px 5px; font-size: 120%;
+}
+td.rightcolumn ul li
+{
+    list-style-type: none; padding: 0px; 
+}
+td.rightcolumn ul li ul li
+{
+    list-style-type: none; padding: 0px; font-size:85%;
+}
+td.rightcolumn h4
+{
+   	color: #494949;
+	font-weight: bold;
+	font-size: 120%;
+	padding:0px 0px 2px 5px ;
+	margin: 0px;
+}
+
+/*
+td.rightcolumn img  {
+ padding: 0px 0px 0px 5px;
+}
+*/
+
+td.rightcolumn img.lower15 {padding-bottom: 15px;  }
+td.rightcolumn p{
+padding: 0px 0px 0px 5px;
+margin: 0px;
+font-size: 100%;
+}
+.smalltext {font-size:85%;}
+/* END right column text styles */
+.clearing {clear:both; position:relative}
+#footer {margin:1em 0;clear:both;text-align:center;}
+.secretaryphoto {margin:3px 0;}
+td.rightcolumn .contentbox {float:left;padding:5px 0 15px 5px;}
+.secretarysheader {float:left;}
+.calendarglyph {float:left;padding:0 0 0 7px;}
