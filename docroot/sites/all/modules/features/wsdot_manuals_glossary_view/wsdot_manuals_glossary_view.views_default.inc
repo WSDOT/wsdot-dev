@@ -49,11 +49,10 @@ function wsdot_manuals_glossary_view_views_default_views() {
   $handler->display->display_options['fields']['description']['field'] = 'description';
   $handler->display->display_options['fields']['description']['label'] = '';
   $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
-  $handler->display->display_options['fields']['field_source']['label'] = 'Source';
   $handler->display->display_options['fields']['field_source']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
@@ -108,13 +107,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -122,6 +115,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -200,13 +199,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -214,6 +207,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -246,12 +245,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27002 => '27002',
+    27626 => '27626',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -279,13 +278,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -293,6 +286,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -325,12 +324,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27003 => '27003',
+    27631 => '27631',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -358,13 +357,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -372,6 +365,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -404,12 +403,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27004 => '27004',
+    27636 => '27636',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -437,13 +436,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -451,6 +444,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -483,12 +482,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27005 => '27005',
+    27641 => '27641',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -516,13 +515,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -530,6 +523,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -562,12 +561,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27006 => '27006',
+    27646 => '27646',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -595,13 +594,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -609,6 +602,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -641,12 +640,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27007 => '27007',
+    27651 => '27651',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -674,13 +673,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -688,6 +681,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -720,12 +719,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27008 => '27008',
+    27656 => '27656',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -753,13 +752,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -767,6 +760,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -799,12 +798,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27009 => '27009',
+    27661 => '27661',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -832,13 +831,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -846,6 +839,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -878,12 +877,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27010 => '27010',
+    27666 => '27666',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -911,13 +910,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -925,6 +918,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -957,12 +956,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27011 => '27011',
+    27671 => '27671',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -990,13 +989,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -1004,6 +997,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -1036,12 +1035,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27012 => '27012',
+    27676 => '27676',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
@@ -1069,13 +1068,7 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['name']['element_type'] = 'h3';
   $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Term description */
-  $handler->display->display_options['fields']['description']['id'] = 'description';
-  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['description']['field'] = 'description';
-  $handler->display->display_options['fields']['description']['label'] = '';
-  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
-  /* Field: Taxonomy term: Source document */
+  /* Field: Taxonomy term: Source */
   $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
   $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
   $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
@@ -1083,6 +1076,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['fields']['field_source']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_source']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_source']['delta_offset'] = '0';
+  /* Field: Taxonomy term: Term description */
+  $handler->display->display_options['fields']['description']['id'] = 'description';
+  $handler->display->display_options['fields']['description']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['description']['field'] = 'description';
+  $handler->display->display_options['fields']['description']['label'] = '';
+  $handler->display->display_options['fields']['description']['element_label_colon'] = FALSE;
   /* Field: Taxonomy term: Citation */
   $handler->display->display_options['fields']['field_citation']['id'] = 'field_citation';
   $handler->display->display_options['fields']['field_citation']['table'] = 'field_data_field_citation';
@@ -1115,12 +1114,12 @@ Terms are listed alphabetically and identified by the manual (and occasionally m
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'glossary' => 'glossary',
   );
-  /* Filter criterion: Taxonomy term: Source document (field_source) */
+  /* Filter criterion: Taxonomy term: Source (field_source) */
   $handler->display->display_options['filters']['field_source_tid']['id'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['table'] = 'field_data_field_source';
   $handler->display->display_options['filters']['field_source_tid']['field'] = 'field_source_tid';
   $handler->display->display_options['filters']['field_source_tid']['value'] = array(
-    27013 => '27013',
+    27681 => '27681',
   );
   $handler->display->display_options['filters']['field_source_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_source_tid']['vocabulary'] = 'source';
