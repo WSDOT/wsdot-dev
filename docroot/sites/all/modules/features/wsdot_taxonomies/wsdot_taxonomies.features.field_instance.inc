@@ -219,7 +219,7 @@ function wsdot_taxonomies_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_source',
-    'label' => 'Source document',
+    'label' => 'Source',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -350,7 +350,7 @@ function wsdot_taxonomies_field_default_field_instances() {
   t('Image');
   t('Regions');
   t('See also');
-  t('Source document');
+  t('Source');
 
   return $field_instances;
 }
