@@ -701,7 +701,7 @@ img.youtube-thumb {display:block;position:absolute;top:0;right:0;bottom:0;left:0
 .views-field-field-see-also {clear: left;}
 .views-label-field-see-also {float: left; margin: 0 5px 0 0; font-size: 1.2em; font-weight: bold; line-height: 1.5em;}
 .vocabulary-glossary .field-name-field-citation {padding-bottom: 1.5em;}
-.vocabulary-glossary .field-name-field-source {padding-bottom: 1.5em;}
+.vocabulary-glossary .field-name-field-source {padding-bottom: 0.5em;}
 .vocabulary-glossary .field-name-field-see-also {padding-bottom: 1.5em;}
 
 /* reCAPTCHA */
