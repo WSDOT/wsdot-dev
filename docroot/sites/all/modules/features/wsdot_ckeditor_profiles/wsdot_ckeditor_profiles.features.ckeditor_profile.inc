@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_ckeditor_profiles.features.ckeditor_profile.inc
@@ -100,7 +101,16 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
     'CKEditor Global Profile' => array(
       'name' => 'CKEditor Global Profile',
       'settings' => array(
-        'ckeditor_path' => '//cdn.ckeditor.com/4.4.3/full-all',
+        'skin' => 'moono',
+        'ckeditor_path' => '//cdn.ckeditor.com/4.5.4/full-all',
+        'ckeditor_local_path' => '',
+        'ckeditor_plugins_path' => '%m/plugins',
+        'ckeditor_plugins_local_path' => '',
+        'ckfinder_path' => '%m/ckfinder',
+        'ckfinder_local_path' => '',
+        'ckeditor_aggregate' => 'f',
+        'toolbar_wizard' => 't',
+        'loadPlugins' => array(),
       ),
       'input_formats' => array(),
     ),
@@ -134,7 +144,7 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
         'lang' => 'en',
         'auto_lang' => 't',
         'language_direction' => 'default',
-        'allowed_content' => 't',
+        'allowed_content' => 'f',
         'extraAllowedContent' => '',
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
@@ -169,7 +179,6 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
             'name' => 'drupal_path',
             'desc' => 'CKEditor Link - A plugin to easily create links to Drupal internal paths',
             'path' => '%base_path%sites/all/modules/contrib/ckeditor_link/plugins/link/',
-            'buttons' => FALSE,
           ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
@@ -186,7 +195,7 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
           'tableresize' => array(
             'name' => 'tableresize',
             'desc' => 'Table Resize plugin. See <a href="http://ckeditor.com/addon/tableresize">addon page</a> for more details.',
-            'path' => '//cdn.ckeditor.com/4.4.3/full-all/plugins/tableresize/',
+            'path' => '//cdn.ckeditor.com/4.5.4/full-all/plugins/tableresize/',
             'buttons' => FALSE,
             'default' => 't',
           ),
@@ -208,8 +217,8 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
     [\'Maximize\',\'ShowBlocks\'],
     \'/\',
     [\'Format\'],
-    [\'Bold\',\'Italic\',\'-\',\'RemoveFormat\'],
-    [\'NumberedList\',\'BulletedList\',\'-\',\'Blockquote\'],
+    [\'Bold\',\'-\',\'RemoveFormat\'],
+    [\'NumberedList\',\'BulletedList\'],
     [\'Link\',\'Unlink\',\'Anchor\'],
     [\'Media\',\'MediaEmbed\'],
     [\'Templates\']
@@ -260,20 +269,6 @@ config.allowedContent = true;',
             'desc' => 'CKEditor Link - A plugin to easily create links to Drupal internal paths',
             'path' => '%base_path%sites/all/modules/contrib/ckeditor_link/plugins/link/',
           ),
-          'dialog' => array(
-            'name' => 'dialog',
-            'desc' => 'Plugin file: dialog',
-            'path' => '%plugin_dir%dialog/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
-          'dialogui' => array(
-            'name' => 'dialogui',
-            'desc' => 'Plugin file: dialogui',
-            'path' => '%plugin_dir%dialogui/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
           'drupalbreaks' => array(
             'name' => 'drupalbreaks',
             'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
@@ -292,7 +287,7 @@ config.allowedContent = true;',
             'path' => '%base_path%sites/all/modules/contrib/media_ckeditor/js/plugins/media/',
             'buttons' => array(
               'Media' => array(
-                'icon' => 'images/icon.gif',
+                'icon' => 'icons/media.png',
                 'label' => 'Add media',
               ),
             ),
@@ -313,16 +308,9 @@ config.allowedContent = true;',
           'tableresize' => array(
             'name' => 'tableresize',
             'desc' => 'Table Resize plugin. See <a href="http://ckeditor.com/addon/tableresize">addon page</a> for more details.',
-            'path' => '//cdn.ckeditor.com/4.4.3/full-all/plugins/tableresize/',
+            'path' => '//cdn.ckeditor.com/4.5.4/full-all/plugins/tableresize/',
             'buttons' => FALSE,
             'default' => 't',
-          ),
-          'templates' => array(
-            'name' => 'templates',
-            'desc' => 'Plugin file: templates',
-            'path' => '%plugin_dir%templates/',
-            'buttons' => FALSE,
-            'default' => 'f',
           ),
         ),
       ),
