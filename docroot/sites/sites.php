@@ -53,3 +53,12 @@
  * @see conf_path()
  * @see http://drupal.org/documentation/install/multi-site
  */
+
+// Public external site
+$sites['wsdotdev.prod.acquia-sites.com'] = 'default';
+$sites['wsdotstg.prod.acquia-sites.com'] = 'default';
+$sites['wsdot.prod.acquia-sites.com'] = 'default';
+$sites['www.wsdot.wa.gov'] = 'default';
+
+// Private internal site
+$sites['intranetdev.wsdot.wa.gov'] = 'wsdot.intranet.dev';
