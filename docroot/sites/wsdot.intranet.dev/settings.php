@@ -566,12 +566,34 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['allow_authorize_operations'] = FALSE;
 
+// Block access to non-whitelisted users on all pages in all environments.
+$conf['ah_restricted_paths'] = array(
+  '*',
+);
+
+$conf['ah_whitelist'] = array(
+  '198.238.212.7',
+);
+
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
 // settings.php for development on your local workstation, set $db_url
 // (Drupal 5 or 6) or $databases (Drupal 7 or 8) as described in comments above.
 if (file_exists('/var/www/site-php')) {
   require '/var/www/site-php/wsdot/wsdot_intranet-settings.inc';
+
+  if(!defined('DRUPAL_ROOT')) {
+    define('DRUPAL_ROOT', getcwd());
+  }
+
+  if (file_exists(DRUPAL_ROOT . '/sites/acquia.inc')) {
+    if (isset($_ENV['AH_NON_PRODUCTION'])) {
+      if ($_ENV['AH_SITE_ENVIRONMENT'] == 'dev') {
+        require DRUPAL_ROOT . '/sites/acquia.inc';
+        ac_protect_this_site();
+      }
+    }
+  }
 }
 
 // <DDSETTINGS>
