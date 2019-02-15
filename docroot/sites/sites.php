@@ -61,4 +61,4 @@ $sites['wsdot.prod.acquia-sites.com'] = 'default';
 $sites['www.wsdot.wa.gov'] = 'default';
 
 // Private internal site
-$sites['intranetdev.wsdot.wa.gov'] = 'wsdot.intranet.dev';
+$sites['intranetdev.wsdot.wa.gov'] = 'wsdot.intranet';

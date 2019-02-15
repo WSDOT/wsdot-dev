@@ -92,7 +92,7 @@
     <tr>
       <td  valign="top" class="leftcolumn" width="165"><form method="get" action="https://searchi.wsdot.wa.gov/search" class="search">
           <input name="q" type="text" size="16" >
-          <input name="imageField" type="image" src="/sites/wsdot.intranet.dev/themes/custom/intranet_classic/images/topnav/go.gif" align="middle">
+          <input name="imageField" type="image" src="/sites/wsdot.intranet/themes/custom/intranet_classic/images/topnav/go.gif" align="middle">
           <input type="hidden" name="site" value="Intranet">
           <input type="hidden" name="client" value="default_frontend">
           <input type="hidden" name="proxystylesheet" value="default_frontend">
