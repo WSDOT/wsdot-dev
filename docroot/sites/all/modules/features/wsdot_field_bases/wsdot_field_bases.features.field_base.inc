@@ -401,6 +401,78 @@ function wsdot_field_bases_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_geolocation'.
+  $field_bases['field_geolocation'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_geolocation',
+    'indexes' => array(
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'lng' => array(
+        0 => 'lng',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geolocation',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'geolocation_latlng',
+  );
+
+  // Exported field_base: 'field_geolocation_lat_long'.
+  $field_bases['field_geolocation_lat_long'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_geolocation_lat_long',
+    'indexes' => array(
+      'lat' => array(
+        0 => 'lat',
+      ),
+      'lng' => array(
+        0 => 'lng',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'geolocation',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'geolocation_latlng',
+  );
+
+  // Exported field_base: 'field_highway_direction'.
+  $field_bases['field_highway_direction'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_highway_direction',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'Northbound' => 'Northbound',
+        'Southbound' => 'Southbound',
+        'Eastbound' => 'Eastbound',
+        'Westbound' => 'Westbound',
+        'Multidirectional' => 'Multidirectional',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_highways'.
   $field_bases['field_highways'] = array(
     'active' => 1,
@@ -548,6 +620,29 @@ function wsdot_field_bases_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_managers',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+      'required_summary' => 0,
+      'show_summary' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_milepost'.
+  $field_bases['field_milepost'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_milepost',
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1033,6 +1128,32 @@ function wsdot_field_bases_field_default_field_bases() {
     'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_rest_areas_amenities'.
+  $field_bases['field_rest_areas_amenities'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_rest_areas_amenities',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'amenities',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_see_also'.
