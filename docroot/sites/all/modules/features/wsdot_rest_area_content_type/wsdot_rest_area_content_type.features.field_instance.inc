@@ -72,7 +72,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -96,7 +96,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
         'apply_chosen' => '',
       ),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -113,7 +113,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
         'module' => 'geolocation',
         'settings' => array(),
         'type' => 'geolocation_latlng',
-        'weight' => 2,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -134,7 +134,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
       'module' => 'geolocation',
       'settings' => array(),
       'type' => 'geolocation_text',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -146,10 +146,11 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -184,10 +185,11 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -214,6 +216,48 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-rest_area-field_milepost'.
+  $field_instances['node-rest_area-field_milepost'] = array(
+    'bundle' => 'rest_area',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Include milepost and/or distance from closest landmark',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_milepost',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-rest_area-field_rest_areas_amenities'.
   $field_instances['node-rest_area-field_rest_areas_amenities'] = array(
     'bundle' => 'rest_area',
@@ -226,7 +270,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 1,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -247,7 +291,7 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -259,6 +303,8 @@ function wsdot_rest_area_content_type_field_default_field_instances() {
   t('Direction');
   t('Geolocation');
   t('Highway');
+  t('Include milepost and/or distance from closest landmark');
+  t('Location');
 
   return $field_instances;
 }
