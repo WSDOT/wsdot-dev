@@ -704,6 +704,13 @@ img.youtube-thumb {display:block;position:absolute;top:0;right:0;bottom:0;left:0
 .vocabulary-glossary .field-name-field-source {padding-bottom: 0.5em;}
 .vocabulary-glossary .field-name-field-see-also {padding-bottom: 1.5em;}
 
+/* Rest Area content type */
+.field-name-field-highways {line-height: 1.5em; font-size: 1.2em; padding-bottom: 1.5em;}
+.field-name-field-highway-direction {line-height: 1.5em; font-size: 1.2em; padding-bottom: 1.5em;}
+.field-name-field-milepost {line-height: 1.5em; font-size: 1.2em; padding-bottom: 1.5em;}
+.field-name-field-rest-areas-amenities {line-height: 1.5em; font-size: 1.2em; padding-bottom: 1.5em;}
+.field-name-field-geolocation-lat-long {line-height: 1.5em; font-size: 1.2em; padding-bottom: 1.5em;}
+
 /* reCAPTCHA */
 .captcha .fieldset-legend {line-height: 2.5em; font-size: 1.2em; font-weight: bold;}
 .captcha .fieldset-description {line-height: 1.5em; font-size: 1.2em; font-weight: normal;}
