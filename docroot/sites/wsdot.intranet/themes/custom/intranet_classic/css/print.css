@@ -1,0 +1,59 @@
+﻿html{font-size:80%}
+body 
+{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px
+}
+h1 {font-size:1.3em;} 
+h2 {font-size:1.2em;} 
+h3 {font-size:1.1em;} 
+h4 {font-size:1.0em;} 
+#wrapper { width: 100%;  }
+#logo {display:none;  }
+.tagline {font-size: 1.5em}
+.search { display: none; }
+.toplinks {display: none;  }
+#navbar { display: none; }
+.tagline {margin-bottom: 10px;}
+.leftcolumn {display:none;}
+.content {width:75%;padding-right:5px;}
+.rightcolumn{width: 25%;margin: 0px; padding-left: 5px}
+.twocolumncontent  {width: 500px;  }
+#footer { display: none;  }
+ul {margin: 0px 0px 0px 15px; padding:0px; }
+.date {margin-bottom:7px; }
+/* Aligns doug's courner photos to the left, when printed */
+.dougphoto{float:left;}
+.secreataryphoto{float:left;}
+/* Aligns feature box photos to the left, when printed */
+.featurephoto
+{
+    float:left;
+}
+
+/* Default class for sections that will only show on the screen, and not when printed */
+.screen
+{
+    display: none;    
+}
+/* expands the centerbox to fill the page */
+.centerbox 
+{
+	width: 500px;
+	margin: 0px 10px 12px 0px;
+	border: 1px solid gray;
+	padding: 5px;
+}
+.centerbox h2 {margin: 0px; padding: 0px;}
+.centerbox img {margin: 0px 0px 0px 5px;}
+/* Hides the Web Author Console, when printed. */
+.editdiv
+{
+    display: none;
+}
+td.rightcolumn .contentbox {float:none;}
+.secretarysheader {float:none;}
+.calendarglyph {display:none;}
