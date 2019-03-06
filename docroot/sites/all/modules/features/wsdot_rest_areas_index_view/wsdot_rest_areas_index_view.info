@@ -1,0 +1,13 @@
+name = WSDOT Rest Areas Index View
+description = View manages the listing of rest area locations using Solr
+core = 7.x
+package = WSDOT Views
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = search_api
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[search_api_index][] = rest_area_index
+features[views_view][] = rest_area_index

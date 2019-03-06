@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the WSDOT Rest Areas Index View feature.
+ */
+
+include_once 'wsdot_rest_areas_index_view.features.inc';
