@@ -262,7 +262,8 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 't',
         'js_conf' => 'config.format_tags = \'h2;h3;h4;h5;p;div;pre\';
-config.allowedContent = true;',
+config.allowedContent = true;
+config.height = 400 + \'px\';',
         'loadPlugins' => array(
           'ckeditor_link' => array(
             'name' => 'drupal_path',
