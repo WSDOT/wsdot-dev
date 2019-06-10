@@ -69,7 +69,7 @@ function _me_check_path(&$link) {
 
     // Go over each of the path parts and if one is equal to the me alias, make sure it is a wildcard,
     // and if so, switch it back out.
-    while (list($key, $val) = each($path_parts)) {
+    foreach ($path_parts as $key => $val) {
       if (_me_is_alias($val) && $wild_parts[$key] == '%') {
         $path_parts[$key] = $GLOBALS['user']->uid;
       }
@@ -181,7 +181,7 @@ function me_handler($parts, $callback) {
     // if so, replace it out with the user id so we can redirect correctly.
     // If no changes are required, then call the required function.
 
-    while (list($key, $val) = each($parts)) {
+    foreach ($parts as $key => $val) {
       if (0 === strpos($val, '%me') && _me_is_alias($menu_parts[$key])) {
         $redirect = TRUE;
         $menu_parts[$key] = $GLOBALS['user']->uid;
@@ -261,7 +261,7 @@ function me_menu_alter(&$callbacks) {
       // the me handler work correctly.
       $new_parts = array();
 
-      while (list($key, $val) = each($parts)) {
+      foreach ($parts as $key => $val) {
         if (array_key_exists($val, $handlers)) {
           $val = $handlers[$val];
         }
