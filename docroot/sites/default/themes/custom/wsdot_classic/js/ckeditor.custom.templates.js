@@ -1,5 +1,5 @@
 CKEDITOR.addTemplates('default', {
-  imagesPath: Drupal.settings.basePath + 'sites/all/themes/custom/wsdot_classic/images/ckeditor-templates/',
+  imagesPath: Drupal.settings.basePath + 'sites/default/themes/custom/wsdot_classic/images/ckeditor-templates/',
   templates: [ {
     title: 'Static Left Navigation',
     image: 'static-left-nav.gif',
