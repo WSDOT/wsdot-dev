@@ -62,7 +62,7 @@ function wsdot_permissions_user_default_roles() {
   // Exported role: Travel Editor.
   $roles['Travel Editor'] = array(
     'name' => 'Travel Editor',
-    'weight' => 36,
+    'weight' => 37,
   );
 
   return $roles;
