@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_home_panel.pages_default.inc
@@ -68,28 +69,20 @@ function wsdot_home_panel_default_page_manager_pages() {
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
-    'admin_title' => 'Traveler Information',
-    'title' => 'Traveler information',
+    'admin_title' => 'Travel',
+    'title' => 'Travel',
     'body' => '<div class="widgetdata greybg">
 <div style="float:left">
 <ul class="twocol">
-	<li><a href="http://www.wsdot.com/traffic/seattle/">Seattle traffic</a></li>
-	<li><a href="http://www.wsdot.com/traffic/cameras/">Cameras</a></li>
-	<li><a href="http://www.wsdot.com/traffic/passes/">Mountain passes</a></li>
-	<li><a href="http://www.wsdot.com/traffic/trafficalerts/">Travel alerts</a></li>
-	<li><a href="http://www.wsdot.com/traffic/passes/snoqualmie">Snoqualmie Pass</a></li>
-	<li><a href="http://www.wsdot.com/traffic/weather/">Weather</a></li>
-	<li><a href="http://www.wsdot.wa.gov/construction/">Local construction</a></li>
-	<li><a href="http://www.wsdot.com/winter">Winter driving</a></li>
-</ul>
-</div>
-
-<div style="float:left">
-<h4>Ways to Get Around</h4>
-
-<ul class="twocol">
-	<li><a href="http://www.amtrakcascades.com">Amtrak Cascades</a></li>
-	<li><a href="http://www.wsdot.wa.gov/choices/">Commute options</a></li>
+	<li><a href="https://www.wsdot.com/traffic/seattle/">Seattle traffic</a></li>
+	<li><a href="https://www.wsdot.com/traffic/cameras/">Cameras</a></li>
+	<li><a href="https://www.wsdot.com/traffic/passes/">Mountain passes</a></li>
+	<li><a href="https://www.wsdot.com/traffic/trafficalerts/">Travel alerts</a></li>
+	<li><a href="https://www.wsdot.com/traffic/passes/snoqualmie">Snoqualmie Pass</a></li>
+	<li><a href="https://www.wsdot.com/traffic/weather/">Weather</a></li>
+	<li><a href="https://www.wsdot.wa.gov/travel/construction-updates/local-construction">Local construction</a></li>
+	<li><a href="https://www.wsdot.com/winter">Winter driving</a></li>
+	<li><a href="https://www.amtrakcascades.com">Amtrak Cascades</a></li>
 </ul>
 </div>
 
@@ -126,7 +119,7 @@ function wsdot_home_panel_default_page_manager_pages() {
 	<li><a href="http://www.wsdot.wa.gov/ferries/">Ferries home</a></li>
 	<li><a href="http://www.wsdot.wa.gov/ferries/wave2go/">Buy a ticket</a></li>
 	<li><a href="http://www.wsdot.wa.gov/ferries/schedule/">Get the schedule</a></li>
-	<li><a href="https://business.wsdot.wa.gov/ferries/reservations/">Make reservations</a></li>
+	<li><a href="https://secureapps.wsdot.wa.gov/Ferries/Reservations/Vehicle/default.aspx">Make reservations</a></li>
 </ul>
 
 <div class="cl">&nbsp;</div>
@@ -134,6 +127,7 @@ function wsdot_home_panel_default_page_manager_pages() {
 ',
     'format' => 'wysiwyg',
     'substitute' => TRUE,
+    'title_heading' => 'h2',
   );
   $pane->cache = array();
   $pane->style = array(
@@ -192,14 +186,14 @@ function wsdot_home_panel_default_page_manager_pages() {
     'title' => 'Stay connected',
     'body' => '<div class="widgetdata">
 <ul class="threecol_icons" style="list-style:none">
-	<li><a class="blogger" href="http://wsdotblog.blogspot.com/">Blogger</a></li>
-	<li><a class="flickr" href="http://www.flickr.com/photos/wsdot/">Flickr</a></li>
-	<li><a class="rss" href="http://www.wsdot.wa.gov/news/rss.xml">RSS</a></li>
-	<li><a class="twitter" href="http://twitter.com/wsdot">Twitter</a></li>
-	<li><a class="youtube" href="http://www.youtube.com/wsdot">YouTube</a></li>
-	<li><a class="facebook" href="http://www.facebook.com/wsdot">Facebook</a></li>
-    <li><a class="instagram" href="https://www.instagram.com/wsdot/">Instagram</a></li>
-    <li><a class="linkedin" href="https://www.linkedin.com/company/washington-state-department-of-transportation">LinkedIn</a></li>
+	<li><a class="blogger" href="https://wsdotblog.blogspot.com/">Blogger</a></li>
+	<li><a class="flickr" href="https://www.flickr.com/photos/wsdot/">Flickr</a></li>
+	<li><a class="rss" href="https://www.wsdot.wa.gov/news/rss.xml">RSS</a></li>
+	<li><a class="twitter" href="https://twitter.com/wsdot">Twitter</a></li>
+	<li><a class="youtube" href="https://www.youtube.com/wsdot">YouTube</a></li>
+	<li><a class="facebook" href="https://www.facebook.com/wsdot">Facebook</a></li>
+	<li><a class="instagram" href="https://www.instagram.com/wsdot/">Instagram</a></li>
+	<li><a class="linkedin" href="https://www.linkedin.com/company/washington-state-department-of-transportation">LinkedIn</a></li>
 </ul>
 
 <div class="cl">&nbsp;</div>
@@ -255,11 +249,11 @@ function wsdot_home_panel_default_page_manager_pages() {
     'title' => '',
     'title_heading' => 'h2',
     'body' => '<div class="widgetdata">
-<h3>website visitor survey</h3>
+<h3>Work Zone Awareness Week</h3>
 
-<div>
-<ul class="content">
-	<li>Please help us design a better website by taking 3-5 minutes to complete our <a href="https://www.surveymonkey.com/r/WSDOTusws">website visitor survey</a>.</li>
+<div class="content">
+<ul>
+	<li>We\'ve gone orange to raise awareness for <a href="https://wsdot.wa.gov/safety/brake/">work zone safety</a>.</li>
 </ul>
 </div>
 </div>
@@ -307,25 +301,6 @@ function wsdot_home_panel_default_page_manager_pages() {
   $display->content['new-2d3450f1-4f4d-4a7c-8462-d25c9894586e'] = $pane;
   $display->panels['middle'][2] = 'new-2d3450f1-4f4d-4a7c-8462-d25c9894586e';
   $pane = new stdClass();
-  $pane->pid = 'new-9a284c11-52c3-4f0c-bf13-2bf263113892';
-  $pane->panel = 'middle';
-  $pane->type = 'views_panes';
-  $pane->subtype = 'nodequeue_6-panel_pane_1';
-  $pane->shown = TRUE;
-  $pane->access = array();
-  $pane->configuration = array();
-  $pane->cache = array();
-  $pane->style = array(
-    'settings' => NULL,
-  );
-  $pane->css = array();
-  $pane->extras = array();
-  $pane->position = 3;
-  $pane->locks = array();
-  $pane->uuid = '9a284c11-52c3-4f0c-bf13-2bf263113892';
-  $display->content['new-9a284c11-52c3-4f0c-bf13-2bf263113892'] = $pane;
-  $display->panels['middle'][3] = 'new-9a284c11-52c3-4f0c-bf13-2bf263113892';
-  $pane = new stdClass();
   $pane->pid = 'new-94916838-4925-4358-8191-f56716b7da81';
   $pane->panel = 'middle';
   $pane->type = 'custom';
@@ -338,11 +313,11 @@ function wsdot_home_panel_default_page_manager_pages() {
     'body' => '<div class="widgetdata">
 <ul class="content">
 	<li><a href="http://www.wsdot.wa.gov/projects/">Find a Project</a></li>
+	<li><a href="http://www.wsdot.wa.gov/Projects/FishPassage/default.htm">Fish Passage</a></li>
 	<li><a href="http://www.wsdot.wa.gov/Projects/I90/SnoqualmiePassEast/">I-90 Snoqualmie Pass East </a></li>
+	<li><a href="https://engage.wsdot.wa.gov/">Participate in an online open house</a></li>
 	<li><a href="http://www.wsdot.wa.gov/projects/viaduct">SR 99 - Alaskan Way Viaduct Replacement</a></li>
 	<li><a href="http://www.wsdot.wa.gov/Projects/SR520Bridge/">SR 520 - Bridge Replacement and HOV Program</a></li>
-	<li><a href="http://www.wsdot.wa.gov/projects/sr104/hoodcanalbridgespecialrepair/">SR 104 - Hood Canal Bridge</a></li>
-	<li><a href="http://www.wsdot.wa.gov/Projects/FishPassage/default.htm">Fish Passage</a></li>
 </ul>
 </div>
 ',
@@ -356,11 +331,11 @@ function wsdot_home_panel_default_page_manager_pages() {
   );
   $pane->css = array();
   $pane->extras = array();
-  $pane->position = 4;
+  $pane->position = 3;
   $pane->locks = array();
   $pane->uuid = '94916838-4925-4358-8191-f56716b7da81';
   $display->content['new-94916838-4925-4358-8191-f56716b7da81'] = $pane;
-  $display->panels['middle'][4] = 'new-94916838-4925-4358-8191-f56716b7da81';
+  $display->panels['middle'][3] = 'new-94916838-4925-4358-8191-f56716b7da81';
   $pane = new stdClass();
   $pane->pid = 'new-27a2d63f-2166-46b7-bc39-d6af2c85e778';
   $pane->panel = 'right';
@@ -392,9 +367,9 @@ function wsdot_home_panel_default_page_manager_pages() {
     'title' => 'Priorities',
     'body' => '<div class="widgetdata">
 <ul class="content">
-	<li><a href="http://www.wsdot.wa.gov/Secretary/ResultsWSDOT.htm">Results WSDOT</a></li>
-	<li><a href="http://www.wsdot.wa.gov/Projects/PracticalDesign/">Practical design and solutions</a></li>
-	<li><a href="http://www.wsdot.wa.gov/publications/fulltext/secretary/StateOfTransportation.pdf?v=4">State of Transportation (pdf 4.3 mb)</a></li>
+	<li><a href="http://www.wsdot.wa.gov//about/secretary/results-wsdot">Strategic plan</a></li>
+	<li><a href="http://www.wsdot.wa.gov/about/practical-solutions/moving-washington-forward">Practical design and solutions</a></li>
+	<li><a href="http://www.wsdot.wa.gov/publications/fulltext/state-of-transportation/">2019 State of Transportation</a></li>
 	<li><a href="http://www.wsdot.wa.gov/accountability/">Accountability</a></li>
 </ul>
 </div>
