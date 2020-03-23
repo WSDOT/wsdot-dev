@@ -261,9 +261,9 @@ function wsdot_ckeditor_profiles_ckeditor_profile_defaults() {
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 't',
-        'js_conf' => 'config.format_tags = \'h2;h3;h4;h5;p;div;pre\';
+        'js_conf' => 'config.format_tags = \'h2;h3;h4;h5;p;pre\';
 config.allowedContent = true;
-config.height = 400 + \'px\';',
+config.height = \'400px\';',
         'loadPlugins' => array(
           'ckeditor_link' => array(
             'name' => 'drupal_path',
