@@ -611,6 +611,10 @@ tr.drag-previous {
   background: #ffb;
 }
 
+.tabledrag-handle .handle {
+  box-sizing: initial;
+}
+
 table th {
   background: none repeat scroll 0 0 #E1E2DC;
   font-family: "Open Sans", "Segoe UI", "Helvetica", sans-serif;
@@ -3148,4 +3152,11 @@ table.diff .diff-links a.active {
 table.diff td.diff-section-title,
 div.diff-section-title {
   font-size: 1em;
+}
+
+body.html.adminimal-theme .cke_button,
+body.html.adminimal-theme .cke_combo_button,
+body.html.adminimal-theme.page-admin-config-content-ckeditor-edit .sortableItem,
+body.html.adminimal-theme.page-admin-config-content-ckeditor-edit .sortableItem img {
+  box-sizing: content-box;
 }
