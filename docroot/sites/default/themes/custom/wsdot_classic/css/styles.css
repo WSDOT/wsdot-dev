@@ -67,6 +67,16 @@ a.linkedin {background: url(../images/back/linkedin.png) top left no-repeat;padd
 .censusbg {margin-left:15px;width:125px;float:left;padding-top:8px;padding-bottom:7px;}
 .censusbg a {background:url(../images/back/Census2010.gif) no-repeat left top;display:block;height:71px;overflow:hidden;text-decoration:none;width:125px;}
 
+/* Emergency banner */
+#emergencyBanner {display:block;background:#a90f0f;height:5em;}
+#emergencyBanner > div {width:955px;margin:0em auto;padding-top:15px;}
+#emergencyBanner h4 {color:yellow;}
+#emergencyBanner p {font-size:1.2em;color:white;margin:0;}
+#emergencyBanner a {color:#ffffff;text-decoration:underline;}
+#emergencyBanner a:hover {text-decoration:none;color:#ffffff;}
+#emergencyBanner a:visited {color:#ffffff;}
+#emergencyBanner .emergencyBannerSymbol {float:left;width:32px;height:28px;padding-right:10px;}
+
 /*** Header and branding ***/
 #header {position:relative;background: #fff;}
 #header .topban {background: #017359;height:2.5em;}

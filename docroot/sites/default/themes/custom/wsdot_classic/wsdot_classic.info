@@ -6,6 +6,7 @@ engine = phptemplate
 
 ; Regions
 ; ---------------------
+regions[emergency_banner] = Emergency Banner
 regions[header] = Header
 regions[highlighted] = Highlighted
 regions[help] = Help
