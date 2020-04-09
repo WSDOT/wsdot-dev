@@ -1,5 +1,13 @@
 <a href="#skipnav" class="skip">Skip Top Navigation</a> <a name="top"></a>
 <div id="header">
+  <?php if ($page['emergency_banner']): ?>
+    <div id="emergencyBanner">
+      <div>
+        <img src="/sites/default/themes/custom/wsdot_classic/images/back/emergencyBannerSymbol.png" class="emergencyBannerSymbol">
+        <?php print render($page['emergency_banner']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
   <div class="topban">
     <ul class="topnav">
       <li><a href="/">WSDOT Home</a></li>
