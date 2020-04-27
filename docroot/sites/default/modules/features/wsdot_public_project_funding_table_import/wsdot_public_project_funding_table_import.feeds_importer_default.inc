@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_public_project_funding_table_import.feeds_importer_default.inc
@@ -18,43 +19,51 @@ function wsdot_public_project_funding_table_import_feeds_importer_default() {
     'name' => 'WSDOT Public Project Funding Table Import',
     'description' => 'Imports WSDOT Public Project Funding Tables',
     'fetcher' => array(
-      'plugin_key' => 'FeedsFileFetcher',
+      'plugin_key' => 'FeedsHTTPFetcher',
       'config' => array(
-        'allowed_extensions' => 'txt csv tsv xml opml json',
-        'direct' => 0,
-        'directory' => 'public://feeds',
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
+        'auto_detect_feeds' => FALSE,
+        'use_pubsubhubbub' => FALSE,
+        'designated_hub' => '',
+        'request_timeout' => NULL,
+        'auto_scheme' => 'http',
+        'accept_invalid_cert' => FALSE,
+        'cache_http_result' => TRUE,
       ),
     ),
     'parser' => array(
-      'plugin_key' => 'FeedsExJsonPath',
+      'plugin_key' => 'FeedsExXml',
       'config' => array(
+        'use_tidy' => 0,
         'sources' => array(
           'id' => array(
             'name' => 'Id',
             'value' => 'id',
+            'raw' => 0,
+            'inner' => 0,
             'debug' => 0,
             'weight' => '1',
           ),
           'title' => array(
             'name' => 'Title',
             'value' => 'title',
+            'raw' => 0,
+            'inner' => 0,
             'debug' => 0,
             'weight' => '2',
           ),
           'html' => array(
             'name' => 'Html',
             'value' => 'html',
+            'raw' => 0,
+            'inner' => 0,
             'debug' => 0,
             'weight' => '3',
           ),
         ),
         'context' => array(
-          'value' => '$.*',
+          'value' => '//table',
         ),
-        'display_errors' => 0,
+        'display_errors' => 1,
         'source_encoding' => array(
           0 => 'auto',
         ),
@@ -72,28 +81,33 @@ function wsdot_public_project_funding_table_import_feeds_importer_default() {
             'source' => 'id',
             'target' => 'guid',
             'unique' => 1,
+            'language' => 'und',
           ),
           1 => array(
             'source' => 'title',
             'target' => 'title',
             'unique' => FALSE,
+            'language' => 'und',
           ),
           2 => array(
             'source' => 'html',
             'target' => 'body',
             'unique' => FALSE,
+            'language' => 'und',
           ),
         ),
-        'update_existing' => '1',
+        'update_existing' => '2',
         'update_non_existent' => 'skip',
         'input_format' => 'wysiwyg',
         'skip_hash_check' => 0,
         'bundle' => 'funding_table',
+        'insert_new' => '1',
+        'language' => 'und',
       ),
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => '-1',
+    'import_period' => '86400',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 0,
