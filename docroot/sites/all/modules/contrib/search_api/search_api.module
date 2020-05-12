@@ -2440,6 +2440,9 @@ function search_api_index_update_datasource(SearchApiIndex $index, $table, $colu
  *   The $fields array with additional "value" and "original_type" keys set.
  */
 function search_api_extract_fields(EntityMetadataWrapper $wrapper, array $fields, array $value_options = array()) {
+  $value_options += array(
+    'identifier' => TRUE,
+  );
   // If $wrapper is a list of entities, we have to aggregate their field values.
   $wrapper_info = $wrapper->info();
   if (search_api_is_list_type($wrapper_info['type'])) {
@@ -2482,21 +2485,25 @@ function search_api_extract_fields(EntityMetadataWrapper $wrapper, array $fields
           $info['original_type'] = $property_info['type'];
 
           // Extract the basic value from the field wrapper.
-          $inner_type = search_api_extract_inner_type($property_info['type']);
-          $is_text_type = search_api_is_text_type($inner_type);
-          $is_entity = isset($entity_infos[$inner_type]);
+          $info['value'] = $wrapper->$field->value($value_options);
 
-          if ($is_entity) {
-            $info['value'] = _search_api_extract_entity_value($wrapper->$field, $is_text_type);
+          // For entities, we need to take care to differentiate between
+          // entities with ID 0 and empty fields. In the latter case, the
+          // wrapper's value() method returns, when called with "identifier =
+          // TRUE", FALSE instead of the (more logical) NULL.
+          $is_entity = isset($entity_infos[search_api_extract_inner_type($property_info['type'])]);
+          if ($is_entity && $info['value'] === FALSE) {
+            $info['value'] = NULL;
           }
-          else {
-            $info['value'] = $wrapper->$field->value($value_options);
 
-            // If we index the field as fulltext, we also include the option
-            // list label, if there is one.
-            $options_list = $wrapper->$field->optionsList('view');
-            if ($is_text_type && isset($info['value']) && $options_list) {
-              _search_api_add_option_values($info['value'], $options_list);
+          // If we index the field as fulltext, we also include the entity label
+          // or option list label, if applicable.
+          if (search_api_is_text_type($info['type']) && isset($info['value'])) {
+            if ($wrapper->$field->optionsList('view')) {
+              _search_api_add_option_values($info['value'], $wrapper->$field->optionsList('view'));
+            }
+            elseif ($is_entity) {
+              $info['value'] = _search_api_extract_entity_value($wrapper->$field, TRUE);
             }
           }
         }
