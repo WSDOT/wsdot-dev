@@ -1,0 +1,4 @@
+name = Ferries
+description = Custom functions used on the Washington State Ferries site
+core = 7.x
+version = "7.x-1.x-dev"
