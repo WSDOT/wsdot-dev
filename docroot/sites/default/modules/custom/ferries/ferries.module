@@ -29,27 +29,39 @@ function ferries_block_view($delta = '') {
     return $block;
 }
 
-function schedule_by_route_form($form_state) {
+function schedule_by_route_form($form, &$form_state) {
     $routes = array(
-        '1874' => t('Anacortes / San Juan Islands'),
-        '1875' => t('Port Townsend / Coupeville'),
-        '1879' => t('Mukilteo / Clinton'),
-        '1883' => t('Edmonds / Kingston'),
-        '1876' => t('Pt Defiance / Tahlequah'),
-        '1891' => t('Seattle / Bainbridge Island Reduced Service'),
-        '1892' => t('Seattle / Bremerton Reduced Service'),
-        '1896' => t('2-Boat Fauntleroy / Vashon'),
-        '1897' => t('2-Boat Fauntleroy / Southworth'),
-        '1898' => t('2-Boat Southworth / Vashon'),
+        'ana-sj' => t('Anacortes / San Juan Islands'),
+        'pt-key' => t('Port Townsend / Coupeville'),
+        'muk-cl' => t('Mukilteo / Clinton'),
+        'ed-king' => t('Edmonds / Kingston'),
+        'pd-tal' => t('Pt Defiance / Tahlequah'),
+        'sea-bi' => t('Seattle / Bainbridge Island Reduced Service'),
+        'sea-br' => t('Seattle / Bremerton Reduced Service'),
+        'f-v-s' => t('2-Boat Fauntleroy / Vashon'),
+        'f-s' => t('2-Boat Fauntleroy / Southworth'),
+        's-v' => t('2-Boat Southworth / Vashon'),
     );
+    $form['#method'] = 'get';
     $form['#attributes']['name'] = 'ScheduleByRoute';
     $form['#id'] = 'schedule_by_route';
-    $form['#action'] = 'buy-tickets';
-    $form['select_route'] = array(
+    $form['#action'] = 'https://www.wsdot.com/ferries/schedule/scheduledetailbyroute.aspx';
+    $form['route'] = array(
         '#type' => 'select',
         '#options' => $routes,
-        '#required' => FALSE
+        '#required' => TRUE,
+        '#empty_option' => t('Select Route'),
+        '#attributes' => array('onchange' => 'this.form.submit();'),
     );
     
     return $form;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Need to don't see the parameters 'form_build_id' and 'form_id' in the url.
+ */
+function ferries_form_schedule_by_route_form_alter(&$form, &$form_state, $form_id) {
+    unset($form['form_build_id'], $form['form_token'], $form['form_id']);
 }
