@@ -3,3 +3,53 @@
  * @file
  * Module file for Ferries
  */
+
+/**
+ * Implements hook_block_info().
+ */
+function ferries_block_info() {
+    $blocks = array();
+    $blocks['schedule_by_route'] = array(
+        'info' => t('Sailing schedule by route'),
+    );
+    return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ferries_block_view($delta = '') {
+    $block = array();
+    switch($delta) {
+        case 'schedule_by_route':
+            $block['subject'] = t('Find your sailing schedule by route');
+            $block['content'] = drupal_get_form('schedule_by_route_form');
+            break;
+    }
+    return $block;
+}
+
+function schedule_by_route_form($form_state) {
+    $routes = array(
+        '1874' => t('Anacortes / San Juan Islands'),
+        '1875' => t('Port Townsend / Coupeville'),
+        '1879' => t('Mukilteo / Clinton'),
+        '1883' => t('Edmonds / Kingston'),
+        '1876' => t('Pt Defiance / Tahlequah'),
+        '1891' => t('Seattle / Bainbridge Island Reduced Service'),
+        '1892' => t('Seattle / Bremerton Reduced Service'),
+        '1896' => t('2-Boat Fauntleroy / Vashon'),
+        '1897' => t('2-Boat Fauntleroy / Southworth'),
+        '1898' => t('2-Boat Southworth / Vashon'),
+    );
+    $form['#attributes']['name'] = 'ScheduleByRoute';
+    $form['#id'] = 'schedule_by_route';
+    $form['#action'] = 'buy-tickets';
+    $form['select_route'] = array(
+        '#type' => 'select',
+        '#options' => $routes,
+        '#required' => FALSE
+    );
+    
+    return $form;
+}
