@@ -1,0 +1,52 @@
+name = Ferries
+description = Ferries UI/UX changes based on Anthro-tech prototype. Sub-theme of WSDOT Classic theme.
+screenshot = screenshot.png
+core = 7.x
+engine = phptemplate
+base theme = wsdot_classic
+
+; Regions
+; ---------------------
+regions[emergency_banner] = Emergency Banner
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+
+regions[agencylinks_first] = Agency links first
+regions[agencylinks_second] = Agency links second
+regions[agencylinks_third] = Agency links third
+regions[agencylinks_fourth] = Agency links fourth
+regions[agencylinks_fifth] = Agency links fifth
+
+regions[footer] = Footer
+
+; Required core regions
+; ---------------------
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+; Features
+; ---------------------
+;features[] = logo
+;features[] = name
+;features[] = slogan
+;features[] = node_user_picture
+;features[] = comment_user_picture
+;features[] = favicon
+;features[] = main_menu
+;features[] = secondary_menu
+
+; Stylesheets
+; ---------------------
+stylesheets[all][] = css/styles.css
+;stylesheets[all][] = css/styles_orange.css
+;stylesheets[print][] = css/print.css
+
+; JavaScript
+; ---------------------
+;scripts[] = js/jquery.tablesorter.min.js
+;scripts[] = js/tablesorter.js
+;scripts[] = js/main.js
