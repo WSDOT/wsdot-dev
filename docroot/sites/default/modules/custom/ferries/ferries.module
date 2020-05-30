@@ -22,7 +22,7 @@ function ferries_block_view($delta = '') {
     $block = array();
     switch($delta) {
         case 'schedule_by_route':
-            $block['subject'] = t('Find your sailing schedule by route');
+            $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('schedule_by_route_form');
             break;
     }
@@ -42,8 +42,13 @@ function schedule_by_route_form($form, &$form_state) {
         'f-s' => t('2-Boat Fauntleroy / Southworth'),
         's-v' => t('2-Boat Southworth / Vashon'),
     );
+    $form['header'] = array(
+        '#title' => t('Find your sailing schedule by route'),
+        '#markup' => '<h2>Find your sailing schedule by route</h2>'
+    );
     $form['#method'] = 'get';
     $form['#attributes']['name'] = 'ScheduleByRoute';
+    $form['#attributes']['class'] = 'schedule_by_route';
     $form['#id'] = 'schedule_by_route';
     $form['#action'] = 'https://www.wsdot.com/ferries/schedule/scheduledetailbyroute.aspx';
     $form['route'] = array(
