@@ -42,14 +42,16 @@ function schedule_by_route_form($form, &$form_state) {
         'f-s' => t('2-Boat Fauntleroy / Southworth'),
         's-v' => t('2-Boat Southworth / Vashon'),
     );
+    $form['#prefix'] = '<div class="action-box-shadow">';
+    $form['#suffix'] = '</div>';
     $form['header'] = array(
         '#title' => t('Find your sailing schedule by route'),
         '#markup' => '<h2>Find your sailing schedule by route</h2>'
     );
     $form['#method'] = 'get';
-    $form['#attributes']['name'] = 'ScheduleByRoute';
-    $form['#attributes']['class'] = 'schedule_by_route';
-    $form['#id'] = 'schedule_by_route';
+    $form['#attributes']['name'] = 'schedule-by-route-form';
+    $form['#attributes']['class'] = 'schedule-by-route';
+    $form['#id'] = 'schedule-by-route';
     $form['#action'] = 'https://www.wsdot.com/ferries/schedule/scheduledetailbyroute.aspx';
     $form['route'] = array(
         '#type' => 'select',

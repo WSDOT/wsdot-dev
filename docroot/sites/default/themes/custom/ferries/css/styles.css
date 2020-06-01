@@ -217,7 +217,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 #main pre {margin: 1em 0;line-height:1.5em;font-size: 1.2em;}
 #main .contentbox .content p {margin: 0.5em 0;line-height:1.5em;}
 #main td p {margin:0;}
-#main h2 {font-size: 1.4375rem; font-weight: normal;}
+#main h2 {font-size: 1.375rem; font-weight: normal; padding-bottom: 0.8125rem;}
 #main h3 {margin:1em 0;line-height:1.5;}
 #main h4 {font-weight:bold;color:#000;}
 #main h5 {font-weight:bold;color:#000;}
@@ -456,11 +456,19 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 }
 
 /* form elements */
-form.schedule_by_route {
-    padding: 35px;
+.action-box-shadow {
+    width: inherit;
+    height: inherit;
+    padding: 6px 13px 11px 13px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 50px 0 rgba(0,0,0,0.5);
 }
 
-form.schedule_by_route select {
+form.schedule-by-route {
+    padding: 29px 22px 0 22px;
+}
+
+form.schedule-by-route select {
     display: inline-block;
     -webkit-appearance: none;
     -moz-appearance: none;
