@@ -355,8 +355,20 @@ h2.pane-title {
     color: #007B5F;
 }
 
-.pane-ferries-schedule-by-route {
+.pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets {
     width: 300px;
+}
+
+.pane-ferries-make-reservations .form-submit, .pane-ferries-buy-tickets .form-submit {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 45px;
+    width: 230px;
+    background-color: #007b5f;
+    font-size: 1.4375rem;
+    font-weight: normal;
+    color: #fff;
+    border: 1px solid #007b5f;
 }
 
 /* feature box spacing, provided id */
@@ -460,11 +472,11 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
     width: inherit;
     height: inherit;
     padding: 6px 13px 11px 13px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     box-shadow: 0 2px 50px 0 rgba(0,0,0,0.5);
 }
 
-form.schedule-by-route {
+form.schedule-by-route, form.make-reservations, form.buy-tickets {
     padding: 29px 22px 0 22px;
 }
 

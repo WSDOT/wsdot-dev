@@ -12,6 +12,12 @@ function ferries_block_info() {
     $blocks['schedule_by_route'] = array(
         'info' => t('Sailing schedule by route'),
     );
+    $blocks['make_reservations'] = array(
+        'info' => t('Make reservations'),
+    );
+    $blocks['buy_tickets'] = array(
+        'info' => t('Buy tickets'),
+    );
     return $blocks;
 }
 
@@ -24,6 +30,14 @@ function ferries_block_view($delta = '') {
         case 'schedule_by_route':
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('schedule_by_route_form');
+            break;
+        case 'make_reservations':
+            $block['subject'] = t('<none>');
+            $block['content'] = drupal_get_form('make_reservations_form');
+            break;
+        case 'buy_tickets':
+            $block['subject'] = t('<none>');
+            $block['content'] = drupal_get_form('buy_tickets_form');
             break;
     }
     return $block;
@@ -64,11 +78,69 @@ function schedule_by_route_form($form, &$form_state) {
     return $form;
 }
 
+function make_reservations_form($form, &$form_state) {
+    $form['#prefix'] = '<div class="action-box-shadow">';
+    $form['#suffix'] = '</div>';
+    $form['header'] = array(
+        '#title' => t('Save a spot for your vehicle on some routes'),
+        '#markup' => '<h2>Save a spot for your vehicle on some routes</h2>'
+    );
+    $form['#method'] = 'get';
+    $form['#attributes']['name'] = 'make-reservations-form';
+    $form['#attributes']['class'] = 'make-reservations';
+    $form['#id'] = 'make-reservations';
+    $form['#action'] = 'https://secureapps.wsdot.wa.gov/ferries/reservations/vehicle/default.aspx';
+    $form['submit_button'] = array(
+        '#type' => 'submit',
+        '#value' => t('Make reservations'),
+    );
+
+    return $form;
+}
+
+function buy_tickets_form($form, &$form_state) {
+    $form['#prefix'] = '<div class="action-box-shadow">';
+    $form['#suffix'] = '</div>';
+    $form['header'] = array(
+        '#title' => t('Buy your tickets or passes online'),
+        '#markup' => '<h2>Buy your tickets or passes online</h2>'
+    );
+    $form['#method'] = 'get';
+    $form['#attributes']['name'] = 'buy-tickets-form';
+    $form['#attributes']['class'] = 'buy-tickets';
+    $form['#id'] = 'buy-tickets';
+    $form['#action'] = 'https://www.wsdot.wa.gov/ferries/wave2go/';
+    $form['submit_button'] = array(
+        '#type' => 'submit',
+        '#value' => t('Buy tickets'),
+    );
+
+    return $form;
+}
+
 /**
  * Implements hook_form_FORM_ID_alter().
  *
  * Need to don't see the parameters 'form_build_id' and 'form_id' in the url.
  */
 function ferries_form_schedule_by_route_form_alter(&$form, &$form_state, $form_id) {
+    unset($form['form_build_id'], $form['form_token'], $form['form_id']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Need to don't see the parameters 'form_build_id' and 'form_id' in the url.
+ */
+function ferries_form_make_reservations_form_alter(&$form, &$form_state, $form_id) {
+    unset($form['form_build_id'], $form['form_token'], $form['form_id']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Need to don't see the parameters 'form_build_id' and 'form_id' in the url.
+ */
+function ferries_form_buy_tickets_form_alter(&$form, &$form_state, $form_id) {
     unset($form['form_build_id'], $form['form_token'], $form['form_id']);
 }
