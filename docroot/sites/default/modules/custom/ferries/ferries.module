@@ -10,13 +10,13 @@
 function ferries_block_info() {
     $blocks = array();
     $blocks['schedule_by_route'] = array(
-        'info' => t('Sailing schedule by route'),
+        'info' => t('Ferries: Sailing schedule by route'),
     );
     $blocks['make_reservations'] = array(
-        'info' => t('Make reservations'),
+        'info' => t('Ferries: Make reservations'),
     );
     $blocks['buy_tickets'] = array(
-        'info' => t('Buy tickets'),
+        'info' => t('Ferries: Buy tickets'),
     );
     return $blocks;
 }
