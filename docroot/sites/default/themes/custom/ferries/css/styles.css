@@ -371,6 +371,15 @@ h2.pane-title {
     border: 1px solid #007b5f;
 }
 
+.hero {
+    background-image: url("../images/back/ferry-in-sunbeam.jpg");
+    background-repeat: no-repeat;
+}
+
+.hero-inside {
+    padding-top: 130px;
+}
+
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
 
