@@ -377,6 +377,13 @@ h2.pane-title {
     padding-top: 130px;
 }
 
+#navigation-links {list-style:none; text-align: center; color: #007b5f; margin: 3px 0 0 0; padding: 0;}
+#navigation-links a {text-decoration: underline; color: #007b5f;}
+#navigation-links a:hover {text-decoration: none; color: #007b5f;}
+#navigation-links a:visited {color: #007b5f;}
+#navigation-links li {display: inline; font-size: 1.375rem; padding: 0em 1rem 0em 1rem;}
+
+
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
 

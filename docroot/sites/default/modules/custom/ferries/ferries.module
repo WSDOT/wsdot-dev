@@ -18,6 +18,9 @@ function ferries_block_info() {
     $blocks['buy_tickets'] = array(
         'info' => t('Ferries: Buy tickets'),
     );
+    $blocks['navigation_links'] = array(
+        'info' => t('Ferries: Navigation links'),
+    );
     return $blocks;
 }
 
@@ -39,6 +42,9 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('buy_tickets_form');
             break;
+        case 'navigation_links':
+            $block['subject'] =  t('<none>');
+            $block['content'] = build_navigation_links();
     }
     return $block;
 }
@@ -116,6 +122,18 @@ function buy_tickets_form($form, &$form_state) {
     );
 
     return $form;
+}
+
+function build_navigation_links() {
+    $output = "<ul id='navigation-links'>\n";
+    $output .= "<li><a href='#'>Tickets</a></li>";
+    $output .= "<li><a href='#'>Schedules</a></li>";
+    $output .= "<li><a href='#'>Ferries and Terminals</a></li>";
+    $output .= "<li><a href='#'>Rider Information</a></li>";
+    $output .= "<li><a href='#'>About Us</a></li>";
+    $output .= "</ul>\n";
+
+    return $output;
 }
 
 /**
