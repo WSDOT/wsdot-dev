@@ -5,6 +5,8 @@ core = 7.x
 engine = phptemplate
 base theme = wsdot_classic
 
+plugins[panels][layouts] = layouts
+
 ; Regions
 ; ---------------------
 regions[emergency_banner] = Emergency Banner
