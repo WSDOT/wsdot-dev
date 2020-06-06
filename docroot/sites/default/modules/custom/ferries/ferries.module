@@ -18,6 +18,9 @@ function ferries_block_info() {
     $blocks['buy_tickets'] = array(
         'info' => t('Ferries: Buy tickets'),
     );
+    $blocks['live_ferry_status'] = array(
+        'info' => t('Ferries: Live ferry status'),
+    );
     $blocks['navigation_links'] = array(
         'info' => t('Ferries: Navigation links'),
     );
@@ -42,9 +45,14 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('buy_tickets_form');
             break;
+        case 'live_ferry_status':
+            $block['subject'] =  t('<none>');
+            $block['content'] = build_live_ferry_status();
+            break;
         case 'navigation_links':
             $block['subject'] =  t('<none>');
             $block['content'] = build_navigation_links();
+            break;
     }
     return $block;
 }
@@ -125,13 +133,25 @@ function buy_tickets_form($form, &$form_state) {
 }
 
 function build_navigation_links() {
-    $output = "<ul id='navigation-links'>\n";
+    $output = "<ul class='navigation-links'>";
     $output .= "<li><a href='#'>Tickets</a></li>";
     $output .= "<li><a href='#'>Schedules</a></li>";
     $output .= "<li><a href='#'>Ferries and Terminals</a></li>";
     $output .= "<li><a href='#'>Rider Information</a></li>";
     $output .= "<li><a href='#'>About Us</a></li>";
-    $output .= "</ul>\n";
+    $output .= "</ul>";
+
+    return $output;
+}
+
+function build_live_ferry_status() {
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
+    $output .= "<h2 class='pane-title'>Live ferry status</h2>";
+    $output .= "<ul class='info-box'>";
+    $output .= "<li><a href='#'>Realtime ferry tracker</a></li>";
+    $output .= "<li><a href='#'>Boarding status by terminal</a></li>";
+    $output .= "</ul>";
+    $output .="</div>";
 
     return $output;
 }

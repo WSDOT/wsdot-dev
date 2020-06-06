@@ -209,7 +209,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /*** Main content ***/
 #main {display: table-cell; min-width: inherit; padding: 0px 10px 10px 10px;}
 /* #main ul ul, ol ol, ul ol, ol ul, ol p, ul p {font-size: 1em;} */
-#main li {font-size: 0.75rem; line-height: 1.5;}
+/* #main li {font-size: 0.75rem; line-height: 1.5;} */
 /* #main ul li ul li {font-size:1em;} */
 /* #main ul li ol li {font-size:1em;} */
 /* #main ol li ul li {font-size:1em;} */
@@ -346,16 +346,16 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 #regions-northcentral a:hover {background: url(../images/map/regions_map.png) -65px -600px no-repeat;}
 
 /* Styles specific for Drupal */
-h2.pane-title {
+#main h2.pane-title {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 0 1.625rem 0;
     font-size: 1.4375rem;
     font-weight: bold;
     line-height: 1.75;
     color: #007B5F;
 }
 
-.pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets {
+.pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
     width: 300px;
 }
 
@@ -377,12 +377,23 @@ h2.pane-title {
     padding-top: 130px;
 }
 
-#navigation-links {list-style:none; text-align: center; color: #007b5f; margin: 3px 0 0 0; padding: 0;}
-#navigation-links a {text-decoration: underline; color: #007b5f;}
-#navigation-links a:hover {text-decoration: none; color: #007b5f;}
-#navigation-links a:visited {color: #007b5f;}
-#navigation-links li {display: inline; font-size: 1.375rem; padding: 0em 1rem 0em 1rem;}
+.navigation-links {list-style:none; text-align: center; color: #007b5f; margin: 5px 0 0 0; padding: 0;}
+.navigation-links a {text-decoration: underline; color: #007b5f;}
+.navigation-links a:hover {text-decoration: none; color: #007b5f;}
+.navigation-links a:visited {color: #007b5f;}
+.navigation-links li {display: inline; font-size: 1.375rem; padding: 0em 1rem 0em 1rem;}
 
+.info-box {list-style: none; color: #007b5f; margin: 0; padding: 0;}
+.info-box a {text-decoration: underline; color: #007b5f;}
+.info-box a:hover {text-decoration: none; color: #007b5f;}
+.info-box a:visited {color: #007b5f;}
+.info-box li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 0em 1rem 0em 2rem;
+    margin-bottom: 2rem;
+    background: url(../images/bullet.png) left center no-repeat;
+}
 
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
