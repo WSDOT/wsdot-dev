@@ -18,6 +18,9 @@ function ferries_block_info() {
     $blocks['buy_tickets'] = array(
         'info' => t('Ferries: Buy tickets'),
     );
+    $blocks['ferry_alerts'] = array(
+        'info' => t('Ferries: Ferry alerts'),
+    );
     $blocks['live_ferry_status'] = array(
         'info' => t('Ferries: Live ferry status'),
     );
@@ -44,6 +47,10 @@ function ferries_block_view($delta = '') {
         case 'buy_tickets':
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('buy_tickets_form');
+            break;
+        case 'ferry_alerts':
+            $block['subject'] =  t('<none>');
+            $block['content'] = build_ferry_alerts();
             break;
         case 'live_ferry_status':
             $block['subject'] =  t('<none>');
@@ -150,6 +157,24 @@ function build_live_ferry_status() {
     $output .= "<ul class='info-box'>";
     $output .= "<li><a href='#'>Realtime ferry tracker</a></li>";
     $output .= "<li><a href='#'>Boarding status by terminal</a></li>";
+    $output .= "</ul>";
+    $output .="</div>";
+
+    return $output;
+}
+
+function build_ferry_alerts() {
+    $json = file_get_contents("http://localhost:8000/WSFRouteAlert.js");
+    $alert = json_decode($json, true);
+    $publishDate = $alert[0]["PublishDate"];
+    $alertFullTitle = $alert[0]['AlertFullTitle'];
+
+    $output = "<div style='padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
+    $output .= "<h2 class='pane-title'>Ferry alerts</h2>";
+    $output .= "<div>" . $publishDate . "</div>";
+    $output .= "<div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1rem 0;'>" . $alertFullTitle . "</div>";
+    $output .= "<ul class='info-box'>";
+    $output .= "<li><a href='#'>All alerts</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 

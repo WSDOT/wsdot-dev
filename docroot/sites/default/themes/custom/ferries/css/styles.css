@@ -213,7 +213,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /* #main ul li ul li {font-size:1em;} */
 /* #main ul li ol li {font-size:1em;} */
 /* #main ol li ul li {font-size:1em;} */
-#main p {margin: 1em 0;line-height:1.5em;font-size: 1.2em;}
+/* #main p {margin: 1em 0;line-height:1.5em;font-size: 1.2em;}*/
+#main p {font-size: 1rem;}
 #main pre {margin: 1em 0;line-height:1.5em;font-size: 1.2em;}
 #main .contentbox .content p {margin: 0.5em 0;line-height:1.5em;}
 #main td p {margin:0;}
@@ -348,10 +349,9 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /* Styles specific for Drupal */
 #main h2.pane-title {
     box-sizing: border-box;
-    padding: 0 0 1.625rem 0;
+    padding: 0 0 .8125rem 0;
     font-size: 1.4375rem;
     font-weight: bold;
-    line-height: 1.75;
     color: #007B5F;
 }
 
