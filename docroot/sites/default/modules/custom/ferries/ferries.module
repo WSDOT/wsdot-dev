@@ -27,6 +27,10 @@ function ferries_block_info() {
     $blocks['navigation_links'] = array(
         'info' => t('Ferries: Navigation links'),
     );
+    $blocks['get_to_know_your_ferries'] = array(
+        'info' => t('Ferries: Get to know your ferries'),
+    );
+
     return $blocks;
 }
 
@@ -56,11 +60,16 @@ function ferries_block_view($delta = '') {
             $block['subject'] =  t('<none>');
             $block['content'] = build_live_ferry_status();
             break;
+        case 'get_to_know_your_ferries':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_get_to_know_your_ferries();
+            break;
         case 'navigation_links':
             $block['subject'] =  t('<none>');
             $block['content'] = build_navigation_links();
             break;
     }
+
     return $block;
 }
 
@@ -175,6 +184,23 @@ function build_ferry_alerts() {
     $output .= "<div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1rem 0;'>" . $alertFullTitle . "</div>";
     $output .= "<ul class='info-box'>";
     $output .= "<li><a href='#'>All alerts</a></li>";
+    $output .= "</ul>";
+    $output .="</div>";
+
+    return $output;
+}
+
+function build_get_to_know_your_ferries() {
+    $output = "<div style='padding: 35px 13px 8px 13px;'>";
+    $output .= "<h2 class='pane-title'>Get to know your ferries</h2>";
+    $output .= "<div style='font-size: 1.25rem; font-weight: bold;'>All are welcome on Washington State Ferries</div>";
+    $output .= "<p style='margin: 8px 0 24px 0;'>Here are some helpful tips on how to navigate the ferries.</p>";
+    $output .= "<ul class='info-box'>";
+    $output .= "<li><a href='#'>First time rider's guide</a></li>";
+    $output .= "<li><a href='#'>Disabilities and medical assistance</a></li>";
+    $output .= "<li><a href='#'>Route map</a></li>";
+    $output .= "<li><a href='#'>Travel to Canada</a></li>";
+    $output .= "<li><a href='#'>Contact Ferries</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 
