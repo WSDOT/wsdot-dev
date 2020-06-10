@@ -82,7 +82,7 @@ function ferries_block_view($delta = '') {
 
 function schedule_by_route_form($form, &$form_state) {
     $routes = array();
-    $json = file_get_contents("http://localhost:8000/WSFScheduledRoutes.js");
+    $json = file_get_contents("https://data.wsdot.wa.gov/ferries/WSFScheduledRoutes.js");
     $scheduledRoutes = json_decode($json, true);
 
     foreach ($scheduledRoutes as $route) {
@@ -152,7 +152,7 @@ function buy_tickets_form($form, &$form_state) {
 }
 
 function build_ferry_alerts() {
-    $json = file_get_contents("http://localhost:8000/WSFRouteAlert.js");
+    $json = file_get_contents("https://data.wsdot.wa.gov/ferries/WSFRouteAlert.js");
     $alert = json_decode($json, true);
     $publishDate = $alert[0]["PublishDate"];
     $alertFullTitle = $alert[0]['AlertFullTitle'];
