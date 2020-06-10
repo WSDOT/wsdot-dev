@@ -74,18 +74,14 @@ function ferries_block_view($delta = '') {
 }
 
 function schedule_by_route_form($form, &$form_state) {
-    $routes = array(
-        'ana-sj' => t('Anacortes / San Juan Islands'),
-        'pt-key' => t('Port Townsend / Coupeville'),
-        'muk-cl' => t('Mukilteo / Clinton'),
-        'ed-king' => t('Edmonds / Kingston'),
-        'pd-tal' => t('Pt Defiance / Tahlequah'),
-        'sea-bi' => t('Seattle / Bainbridge Island Reduced Service'),
-        'sea-br' => t('Seattle / Bremerton Reduced Service'),
-        'f-v-s' => t('2-Boat Fauntleroy / Vashon'),
-        'f-s' => t('2-Boat Fauntleroy / Southworth'),
-        's-v' => t('2-Boat Southworth / Vashon'),
-    );
+    $routes = array();
+    $json = file_get_contents("http://localhost:8000/WSFScheduledRoutes.js");
+    $scheduledRoutes = json_decode($json, true);
+
+    foreach ($scheduledRoutes as $route) {
+        $routes[$route['RouteAbbrev']] = $route['Description'];
+    }
+
     $form['#prefix'] = '<div class="action-box-shadow">';
     $form['#suffix'] = '</div>';
     $form['header'] = array(
