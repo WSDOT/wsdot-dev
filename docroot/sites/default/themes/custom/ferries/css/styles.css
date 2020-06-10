@@ -349,7 +349,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /* Styles specific for Drupal */
 #main h2.pane-title {
     box-sizing: border-box;
-    padding: 0 0 .8125rem 0;
+    padding: 0 0 1rem 0;
     font-size: 1.4375rem;
     font-weight: bold;
     color: #007B5F;
@@ -394,6 +394,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     margin-bottom: 2rem;
     background: url(../images/bullet.png) left center no-repeat;
 }
+.info-box li:last-child { margin-bottom: .75rem; }
 
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
