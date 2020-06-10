@@ -21,6 +21,9 @@ function ferries_block_info() {
     $blocks['ferry_alerts'] = array(
         'info' => t('Ferries: Ferry alerts'),
     );
+    $blocks['rider_updates'] = array(
+        'info' => t('Ferries: Rider updates'),
+    );
     $blocks['live_ferry_status'] = array(
         'info' => t('Ferries: Live ferry status'),
     );
@@ -55,6 +58,10 @@ function ferries_block_view($delta = '') {
         case 'ferry_alerts':
             $block['subject'] =  t('<none>');
             $block['content'] = build_ferry_alerts();
+            break;
+        case 'rider_updates':
+            $block['subject'] =  t('<none>');
+            $block['content'] = build_rider_updates();
             break;
         case 'live_ferry_status':
             $block['subject'] =  t('<none>');
@@ -144,14 +151,32 @@ function buy_tickets_form($form, &$form_state) {
     return $form;
 }
 
-function build_navigation_links() {
-    $output = "<ul class='navigation-links'>";
-    $output .= "<li><a href='#'>Tickets</a></li>";
-    $output .= "<li><a href='#'>Schedules</a></li>";
-    $output .= "<li><a href='#'>Ferries and Terminals</a></li>";
-    $output .= "<li><a href='#'>Rider Information</a></li>";
-    $output .= "<li><a href='#'>About Us</a></li>";
+function build_ferry_alerts() {
+    $json = file_get_contents("http://localhost:8000/WSFRouteAlert.js");
+    $alert = json_decode($json, true);
+    $publishDate = $alert[0]["PublishDate"];
+    $alertFullTitle = $alert[0]['AlertFullTitle'];
+
+    $output = "<div style='padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
+    $output .= "<h2 class='pane-title'>Ferry alerts</h2>";
+    $output .= "<div>" . $publishDate . "</div>";
+    $output .= "<div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1.5rem 0;'>" . $alertFullTitle . "</div>";
+    $output .= "<ul class='info-box'>";
+    $output .= "<li><a href='#'>All alerts</a></li>";
     $output .= "</ul>";
+    $output .="</div>";
+
+    return $output;
+}
+
+function build_rider_updates() {
+    $output = "<div style='padding: 8px 13px 8px 13px;'>";
+    $output .= "<h2 class='pane-title'>Rider updates</h2>";
+    $output .= "<div style='padding-bottom: 1.5rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#'>Praesent aliquet pulvinar quam ac bibendum.</a></div>";
+    $output .= "<ul class='info-box'>";
+    $output .= "<li><a href='#'>All rider updates</a></li>";
+    $output .= "</ul>";
+    $output .="</div>";
 
     return $output;
 }
@@ -168,20 +193,14 @@ function build_live_ferry_status() {
     return $output;
 }
 
-function build_ferry_alerts() {
-    $json = file_get_contents("http://localhost:8000/WSFRouteAlert.js");
-    $alert = json_decode($json, true);
-    $publishDate = $alert[0]["PublishDate"];
-    $alertFullTitle = $alert[0]['AlertFullTitle'];
-
-    $output = "<div style='padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
-    $output .= "<h2 class='pane-title'>Ferry alerts</h2>";
-    $output .= "<div>" . $publishDate . "</div>";
-    $output .= "<div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1rem 0;'>" . $alertFullTitle . "</div>";
-    $output .= "<ul class='info-box'>";
-    $output .= "<li><a href='#'>All alerts</a></li>";
+function build_navigation_links() {
+    $output = "<ul class='navigation-links'>";
+    $output .= "<li><a href='#'>Tickets</a></li>";
+    $output .= "<li><a href='#'>Schedules</a></li>";
+    $output .= "<li><a href='#'>Ferries and Terminals</a></li>";
+    $output .= "<li><a href='#'>Rider Information</a></li>";
+    $output .= "<li><a href='#'>About Us</a></li>";
     $output .= "</ul>";
-    $output .="</div>";
 
     return $output;
 }
