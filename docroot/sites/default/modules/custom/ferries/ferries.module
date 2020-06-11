@@ -20,6 +20,7 @@ function ferries_block_info() {
     );
     $blocks['ferry_alerts'] = array(
         'info' => t('Ferries: Ferry alerts'),
+        'cache' => DRUPAL_NO_CACHE,
     );
     $blocks['rider_updates'] = array(
         'info' => t('Ferries: Rider updates'),
