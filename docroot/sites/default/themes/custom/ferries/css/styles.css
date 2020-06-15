@@ -440,6 +440,19 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
     line-height: 1.35;
 }
 
+#spotlight {
+    margin-top: 35px;
+    border: none;
+}
+
+#spotlight h2 {
+    margin-top: 1rem;
+}
+
+#spotlight p {
+    margin: 0;
+}
+
 .flex-control-nav {
     bottom: -3em;
 }
