@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_image_presets.features.inc
@@ -33,11 +34,30 @@ function wsdot_image_presets_image_default_styles() {
   $styles['slideshow_image'] = array(
     'label' => 'Slideshow Image',
     'effects' => array(
-      13 => array(
+      16 => array(
         'name' => 'focal_point_scale_and_crop',
         'data' => array(
           'width' => 303,
           'height' => 187,
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: spotlight_image.
+  $styles['spotlight_image'] = array(
+    'label' => 'Spotlight image (460x245)',
+    'effects' => array(
+      17 => array(
+        'name' => 'focal_point_scale_and_crop',
+        'data' => array(
+          'width' => 460,
+          'height' => 245,
           'focal_point_advanced' => array(
             'shift_x' => '',
             'shift_y' => '',

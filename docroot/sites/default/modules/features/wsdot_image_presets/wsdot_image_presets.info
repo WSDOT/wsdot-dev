@@ -1,9 +1,11 @@
 name = WSDOT Image Presets
 core = 7.x
 package = WSDOT Styles
-version = 7.x-1.1
+version = 7.x-1.2
 project = wsdot_image_presets
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = project_map_thumbnail
 features[image][] = slideshow_image
+features[image][] = spotlight_image
+project path = sites/default/modules/features
