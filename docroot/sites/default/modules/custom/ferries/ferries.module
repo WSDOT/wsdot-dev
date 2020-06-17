@@ -144,7 +144,7 @@ function buy_tickets_form($form, &$form_state) {
     $form['#attributes']['name'] = 'buy-tickets-form';
     $form['#attributes']['class'] = 'buy-tickets';
     $form['#id'] = 'buy-tickets';
-    $form['#action'] = 'https://www.wsdot.wa.gov/ferries/wave2go/';
+    $form['#action'] = 'https://www.wsdot.wa.gov/ferries/tickets/ticket-information';
     $form['submit_button'] = array(
         '#type' => 'submit',
         '#value' => t('Buy tickets'),
@@ -164,7 +164,7 @@ function build_ferry_alerts() {
     $output .= "<div>" . $publishDate . "</div>";
     $output .= "<div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1.5rem 0;'>" . $alertFullTitle . "</div>";
     $output .= "<ul class='info-box'>";
-    $output .= "<li><a href='#'>All alerts</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/schedule/bulletin.aspx'>All alerts</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 
@@ -176,7 +176,7 @@ function build_rider_updates() {
     $output .= "<h2 class='pane-title'>Rider updates</h2>";
     $output .= "<div style='padding-bottom: 1.5rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#'>Praesent aliquet pulvinar quam ac bibendum.</a></div>";
     $output .= "<ul class='info-box'>";
-    $output .= "<li><a href='#'>All rider updates</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/rider-information/updates'>All rider updates</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 
@@ -187,8 +187,8 @@ function build_live_ferry_status() {
     $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
     $output .= "<h2 class='pane-title'>Live ferry status</h2>";
     $output .= "<ul class='info-box'>";
-    $output .= "<li><a href='#'>Realtime ferry tracker</a></li>";
-    $output .= "<li><a href='#'>Boarding status by terminal</a></li>";
+    $output .= "<li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Realtime ferry tracker</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/vesselwatch/terminals.aspx'>Boarding status by terminal</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 
@@ -197,11 +197,11 @@ function build_live_ferry_status() {
 
 function build_navigation_links() {
     $output = "<ul class='navigation-links'>";
-    $output .= "<li><a href='#'>Tickets</a></li>";
-    $output .= "<li><a href='#'>Schedules</a></li>";
-    $output .= "<li><a href='#'>Ferries and Terminals</a></li>";
-    $output .= "<li><a href='#'>Rider Information</a></li>";
-    $output .= "<li><a href='#'>About Us</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/tickets'>Tickets</a></li>";
+    $output .= "<li><a href='https://www.wsdot.com/ferries/schedule'>Schedules</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/terminals'>Ferries and Terminals</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/rider-information'>Rider Information</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/about-us'>About Us</a></li>";
     $output .= "</ul>";
 
     return $output;
@@ -213,11 +213,11 @@ function build_get_to_know_your_ferries() {
     $output .= "<div style='font-size: 1.25rem; font-weight: bold;'>All are welcome on Washington State Ferries</div>";
     $output .= "<p style='margin: 8px 0 24px 0;'>Here are some helpful tips on how to navigate the ferries.</p>";
     $output .= "<ul class='info-box'>";
-    $output .= "<li><a href='#'>First time rider's guide</a></li>";
-    $output .= "<li><a href='#'>Disabilities and medical assistance</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/rider-information/first-time'>First time rider's guide</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/rider-information/ada'>Disabilities and medical assistance</a></li>";
     $output .= "<li><a href='#'>Route map</a></li>";
-    $output .= "<li><a href='#'>Travel to Canada</a></li>";
-    $output .= "<li><a href='#'>Contact Ferries</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/rider-information/canada'>Travel to Canada</a></li>";
+    $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/about-us/contact'>Contact Ferries</a></li>";
     $output .= "</ul>";
     $output .="</div>";
 
