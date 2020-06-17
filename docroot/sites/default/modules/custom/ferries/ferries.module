@@ -11,6 +11,7 @@ function ferries_block_info() {
     $blocks = array();
     $blocks['schedule_by_route'] = array(
         'info' => t('Ferries: Sailing schedule by route'),
+        'cache' => DRUPAL_NO_CACHE,
     );
     $blocks['make_reservations'] = array(
         'info' => t('Ferries: Make reservations'),
