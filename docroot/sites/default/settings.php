@@ -582,10 +582,15 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_wsdot_dev_default.inc';
 }
 // </DDSETTINGS>
+
 if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
   $files_private_conf_path = conf_path();
   $conf['file_private_path'] = '/mnt/files/' . $_ENV['AH_SITE_GROUP'] . '.' . $_ENV['AH_SITE_ENVIRONMENT'] . '/' . $files_private_conf_path . '/files-private';
   $conf['file_temporary_path'] = "/mnt/gfs/{$_ENV['AH_SITE_GROUP']}.{$_ENV['AH_SITE_ENVIRONMENT']}/tmp";
+
+  // Configure Acquia Purge for Drupal 7
+  $conf['acquia_purge_http'] = FALSE;
+  $conf['acquia_purge_https'] = TRUE;
 
   if ($_ENV['AH_SITE_ENVIRONMENT'] != 'prod') {
     // For sites that are hosted in Acquia Cloud and are not the production instance
