@@ -7,7 +7,7 @@
 
 // Plugin definition.
 $plugin = array(
-  'title' => t('Homepage'),
+  'title' => t('Ferries: Homepage'),
   'category' => t('WSF'),
   'icon' => 'homepage.png',
   'theme' => 'homepage',
