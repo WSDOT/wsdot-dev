@@ -267,9 +267,14 @@ function build_get_to_know_your_ferries() {
 }
 
 function build_online_tickets() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
-    $output .= "<h2 class='l3-pane-title'>Online tickets</h2>";
-    $output .= "<p>Buy your tickets online on our Wave2Go website.</p>";
+    $output = "<div style='width: 400px; margin-left: 60px; background-color: #007b5f;'>";
+    $output .= "<div style='float:left;width:133px;height:120px;background-image: url(/sites/default/themes/custom/ferries/images/online-tickets.jpg);background-repeat: no-repeat; background-size: cover;'></div>";
+    $output .= "<div style='float:left;width:200px;padding: 10px 0 0 10px;'>";
+    $output .= "  <h2 class='l3-pane-title'>Online tickets</h2>";
+    $output .= "  <p>Buy your tickets online on our Wave2Go website.</p>";
+    $output .= "</div>";
+    $output .= "<div style='float:right;line-height:120px;width:33px;'><img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png' style='vertical-align:middle;'></div>";
+    $output .= "<div style='clear:both;'></div>";
     $output .= "</div>";
 
     return $output;
