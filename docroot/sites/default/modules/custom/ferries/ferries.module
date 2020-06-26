@@ -267,17 +267,17 @@ function build_get_to_know_your_ferries() {
 }
 
 function build_online_tickets() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Online tickets</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Online tickets</h2>";
     $output .= "<p>Buy your tickets online on our Wave2Go website.</p>";
-    $output .="</div>";
+    $output .= "</div>";
 
     return $output;
 }
 
 function build_ticket_information() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Ticket information</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Ticket information</h2>";
     $output .= "<p>Learn more about the types of tickets you can buy.</p>";
     $output .="</div>";
 
@@ -285,8 +285,8 @@ function build_ticket_information() {
 }
 
 function build_calculate_fares() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Calculate fares</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Calculate fares</h2>";
     $output .= "<p>Look up the cost of your ticket.</p>";
     $output .="</div>";
 
@@ -294,8 +294,8 @@ function build_calculate_fares() {
 }
 
 function build_vehicle_reservations() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Vehicle reservations</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Vehicle reservations</h2>";
     $output .= "<p>Save a spot for your vehicle on select routes.</p>";
     $output .="</div>";
 
@@ -303,8 +303,8 @@ function build_vehicle_reservations() {
 }
 
 function build_passes() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Passes</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Passes</h2>";
     $output .= "<p>Frequent travelers, seniors, or people with disabilities can get discounted passes.</p>";
     $output .="</div>";
 
@@ -312,8 +312,8 @@ function build_passes() {
 }
 
 function build_refunds() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: rgba(151,215,0,0.05);'>";
-    $output .= "<h2 class='pane-title'>Refunds</h2>";
+    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
+    $output .= "<h2 class='l3-pane-title'>Refunds</h2>";
     $output .= "<p>Need to cancel your trip? View our refund policy.</p>";
     $output .="</div>";
 

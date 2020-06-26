@@ -355,6 +355,18 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #007B5F;
 }
 
+#main h2.l3-pane-title {
+    box-sizing: border-box;
+    padding: 0 0 1rem 0;
+    font-size: 1.4375rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#main h2.l3-pane-title + p {
+    color: #fff;
+}
+
 .pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
     width: 300px;
 }
