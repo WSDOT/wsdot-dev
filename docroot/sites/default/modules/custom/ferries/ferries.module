@@ -124,6 +124,7 @@ function ferries_block_view($delta = '') {
     return $block;
 }
 
+/* Beginning of home page tiles */
 function schedule_by_route_form($form, &$form_state) {
     $routes = array();
     $json = file_get_contents("https://data.wsdot.wa.gov/ferries/WSFScheduledRoutes.js");
@@ -208,7 +209,7 @@ function build_ferry_alerts() {
     $output .= "<ul class='info-box'>";
     $output .= "<li><a href='https://www.wsdot.wa.gov/ferries/schedule/bulletin.aspx'>All alerts</a></li>";
     $output .= "</ul>";
-    $output .="</div>";
+    $output .= "</div>";
 
     return $output;
 }
@@ -220,7 +221,7 @@ function build_rider_updates() {
     $output .= "<ul class='info-box'>";
     $output .= "<li><a href='/ferries/rider-information/updates'>All rider updates</a></li>";
     $output .= "</ul>";
-    $output .="</div>";
+    $output .= "</div>";
 
     return $output;
 }
@@ -261,71 +262,104 @@ function build_get_to_know_your_ferries() {
     $output .= "<li><a href='/ferries/rider-information/canada'>Travel to Canada</a></li>";
     $output .= "<li><a href='/ferries/about-us/contact'>Contact Ferries</a></li>";
     $output .= "</ul>";
-    $output .="</div>";
+    $output .= "</div>";
 
     return $output;
 }
 
+/* Beginning of L3 landing page tiles */
 function build_online_tickets() {
-    $output = "<div style='background-color: #007b5f;'>";
-    $output .= "<div style='float:left;width:133px;height:7.5rem;background-image: url(/sites/default/themes/custom/ferries/images/online-tickets.jpg);background-repeat: no-repeat; background-size: cover;'></div>";
-    $output .= "<div style='float:left;width:270px;padding: 10px 0 0 10px;'>";
-    $output .= "  <h2 class='l3-pane-title'>Online tickets</h2>";
-    $output .= "  <p>Buy your tickets online on our Wave2Go website.</p>";
-    $output .= "</div>";
-    $output .= "<div style='float:right;line-height:7.5rem;width:33px;'><img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png' style='vertical-align:middle;'></div>";
-    $output .= "<div style='clear:both;'></div>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/online-tickets.jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Online tickets</h2>";
+    $output .= "    <p>Buy your tickets online on our Wave2Go website.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
     $output .= "</div>";
 
     return $output;
 }
 
 function build_ticket_information() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
-    $output .= "<h2 class='l3-pane-title'>Ticket information</h2>";
-    $output .= "<p>Learn more about the types of tickets you can buy.</p>";
-    $output .="</div>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style=''></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Ticket information</h2>";
+    $output .= "    <p>Learn more about the types of tickets you can buy.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
+    $output .= "</div>";
 
     return $output;
 }
 
 function build_calculate_fares() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
-    $output .= "<h2 class='l3-pane-title'>Calculate fares</h2>";
-    $output .= "<p>Look up the cost of your ticket.</p>";
-    $output .="</div>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style=''></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Calculate fares</h2>";
+    $output .= "    <p>Look up the cost of your ticket.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
+    $output .= "</div>";
 
     return $output;
 }
 
 function build_vehicle_reservations() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
-    $output .= "<h2 class='l3-pane-title'>Vehicle reservations</h2>";
-    $output .= "<p>Save a spot for your vehicle on select routes.</p>";
-    $output .="</div>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style=''></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Vehicle reservations</h2>";
+    $output .= "    <p>Save a spot for your vehicle on select routes.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
+    $output .= "</div>";
 
     return $output;
 }
 
 function build_passes() {
-    $output = "<div style='background-color: #007b5f;'>";
-    $output .= "<div style='float:left;width:133px;height:7.5rem;background-image: url(/sites/default/themes/custom/ferries/images/passes.jpg);background-repeat: no-repeat; background-size: cover;'></div>";
-    $output .= "<div style='float:left;width:270px;padding: 10px 0 0 10px;'>";
-    $output .= "  <h2 class='l3-pane-title'>Passes</h2>";
-    $output .= "  <p>Frequent travelers, seniors, or people with disabilities can get discounted passes.</p>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/passes.jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Passes</h2>";
+    $output .= "    <p>Frequent travelers, seniors, or people with disabilities can get discounted passes.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
     $output .= "</div>";
-    $output .= "<div style='float:right;line-height:7.5rem;width:33px;'><img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png' style='vertical-align:middle;'></div>";
-    $output .= "<div style='clear:both;'></div>";
-    $output .="</div>";
 
     return $output;
 }
 
 function build_refunds() {
-    $output = "<div style='padding: 8px 13px 8px 13px;background-color: #007b5f;'>";
-    $output .= "<h2 class='l3-pane-title'>Refunds</h2>";
-    $output .= "<p>Need to cancel your trip? View our refund policy.</p>";
-    $output .="</div>";
+    $output = "<div class='l3-pane'>";
+    $output .= "  <div class='l3-pane-image' style=''></div>";
+    $output .= "  <div class='l3-pane-content'>";
+    $output .= "    <h2 class='l3-pane-title'>Refunds</h2>";
+    $output .= "    <p>Need to cancel your trip? View our refund policy.</p>";
+    $output .= "  </div>";
+    $output .= "  <div class='l3-pane-icon'>";
+    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "  </div>";
+    $output .= "  <div class='cb'></div>";
+    $output .= "</div>";
 
     return $output;
 }

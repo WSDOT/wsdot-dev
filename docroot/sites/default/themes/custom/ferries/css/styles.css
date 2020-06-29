@@ -368,6 +368,33 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #fff;
 }
 
+.l3-pane {
+    background-color: #007b5f;
+}
+
+.l3-pane-image {
+    float: left;
+    width: 133px;
+    height: 7.5rem;
+    background-color: grey;
+}
+
+.l3-pane-content {
+    float: left;
+    width: 270px;
+    padding: 10px 0 0 10px;
+}
+
+.l3-pane-icon {
+    float: right;
+    line-height: 7.5rem;
+    width:33px;
+}
+
+.l3-pane-icon > img {
+    vertical-align: middle;
+}
+
 .pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
     width: 300px;
 }
@@ -408,6 +435,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     background: url(../images/bullet.png) left center no-repeat;
 }
 .info-box li:last-child { margin-bottom: .75rem; }
+
+
 
 /* feature box spacing, provided id */
 div#home-page-slideshow {margin-bottom:4.5em;}
