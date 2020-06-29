@@ -377,6 +377,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     width: 133px;
     height: 7.5rem;
     background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .l3-pane-content {
