@@ -363,10 +363,26 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #fff;
 }
 
+#main h2.l3-footer-pane-title {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+}
+
+
 #main h2.l3-pane-title + p {
     margin: 8px 0 0 0;
     color: #fff;
 }
+
+#main h2.l3-footer-pane-title + p {
+    font-size: .875rem;
+    margin: 8px 0 0 0;
+    color: #000;
+}
+
 
 .l3-pane {
     background-color: #007b5f;
