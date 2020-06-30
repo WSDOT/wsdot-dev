@@ -355,12 +355,22 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #007B5F;
 }
 
+.l3-pane {
+    background-color: #007b5f;
+    color: #fff;
+}
+
 #main h2.l3-pane-title {
     box-sizing: border-box;
     padding: 0;
     font-size: 1.4375rem;
     font-weight: bold;
-    color: #fff;
+    color: inherit;
+}
+
+#main h2.l3-pane-title + p {
+    margin: 8px 0 0 0;
+    color: inherit;
 }
 
 #main h2.l3-footer-pane-title {
@@ -371,21 +381,28 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #000;
 }
 
-
-#main h2.l3-pane-title + p {
-    margin: 8px 0 0 0;
-    color: #fff;
-}
-
 #main h2.l3-footer-pane-title + p {
     font-size: .875rem;
     margin: 8px 0 0 0;
     color: #000;
 }
 
+/* Make the whole pane clickable
+ * https://inclusive-components.design/cards
+ */
+.l3-pane a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
 
-.l3-pane {
-    background-color: #007b5f;
+.l3-pane:hover {
+    box-shadow: 0 0 0 1px #007b5f;
+    background-color: #fff;
+    color: #007b5f;
 }
 
 .l3-pane-image {

@@ -313,7 +313,7 @@ function build_ticket_information() {
     $output .= "    <p>Learn more about the types of tickets you can buy.</p>";
     $output .= "  </div>";
     $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
+    $output .= "    <a href='/ferries/tickets/ticket-information'><img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'></a>";
     $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
