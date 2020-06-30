@@ -296,9 +296,6 @@ function build_online_tickets() {
     $output .= "    <h2 class='l3-pane-title'>Online tickets</h2>";
     $output .= "    <p>Buy your tickets online on our Wave2Go website.</p>";
     $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
-    $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
 
@@ -311,9 +308,6 @@ function build_ticket_information() {
     $output .= "  <div class='l3-pane-content'>";
     $output .= "    <h2 class='l3-pane-title'>Ticket information</h2>";
     $output .= "    <p>Learn more about the types of tickets you can buy.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <a href='/ferries/tickets/ticket-information'><img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'></a>";
     $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
@@ -328,9 +322,6 @@ function build_calculate_fares() {
     $output .= "    <h2 class='l3-pane-title'>Calculate fares</h2>";
     $output .= "    <p>Look up the cost of your ticket.</p>";
     $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
-    $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
 
@@ -343,9 +334,6 @@ function build_vehicle_reservations() {
     $output .= "  <div class='l3-pane-content'>";
     $output .= "    <h2 class='l3-pane-title'>Vehicle reservations</h2>";
     $output .= "    <p>Save a spot for your vehicle on select routes.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
     $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
@@ -360,9 +348,6 @@ function build_passes() {
     $output .= "    <h2 class='l3-pane-title'>Passes</h2>";
     $output .= "    <p>Frequent travelers, seniors, or people with disabilities can get discounted passes.</p>";
     $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
-    $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";
 
@@ -375,9 +360,6 @@ function build_refunds() {
     $output .= "  <div class='l3-pane-content'>";
     $output .= "    <h2 class='l3-pane-title'>Refunds</h2>";
     $output .= "    <p>Need to cancel your trip? View our refund policy.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='l3-pane-icon'>";
-    $output .= "    <img src='/sites/default/themes/custom/ferries/images/bullet-inverse.png'>";
     $output .= "  </div>";
     $output .= "  <div class='cb'></div>";
     $output .= "</div>";

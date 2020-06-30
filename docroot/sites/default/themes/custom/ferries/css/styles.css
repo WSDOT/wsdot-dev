@@ -356,6 +356,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 }
 
 .l3-pane {
+    background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
+    background-position: 97.5% center;
     background-color: #007b5f;
     color: #fff;
 }
@@ -403,6 +405,8 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     box-shadow: 0 0 0 1px #007b5f;
     background-color: #fff;
     color: #007b5f;
+    background: url(/sites/default/themes/custom/ferries/images/bullet-inverse-hover.png) no-repeat;
+    background-position: 97.5% center;
 }
 
 .l3-pane-image {
@@ -421,13 +425,11 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 }
 
 .l3-pane-icon {
+    background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
+    background-position: left center;
     float: right;
-    line-height: 7.5rem;
+    height: 7.5rem;
     width:33px;
-}
-
-.l3-pane-icon > img {
-    vertical-align: middle;
 }
 
 .pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
