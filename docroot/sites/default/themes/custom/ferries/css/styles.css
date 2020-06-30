@@ -362,33 +362,6 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #fff;
 }
 
-#main h2.l3-pane-title {
-    box-sizing: border-box;
-    padding: 0;
-    font-size: 1.4375rem;
-    font-weight: bold;
-    color: inherit;
-}
-
-#main h2.l3-pane-title + p {
-    margin: 8px 0 0 0;
-    color: inherit;
-}
-
-#main h2.l3-footer-pane-title {
-    box-sizing: border-box;
-    padding: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #000;
-}
-
-#main h2.l3-footer-pane-title + p {
-    font-size: .875rem;
-    margin: 8px 0 0 0;
-    color: #000;
-}
-
 /* Make the whole pane clickable
  * https://inclusive-components.design/cards
  */
@@ -424,12 +397,31 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     padding: 10px 0 0 10px;
 }
 
-.l3-pane-icon {
-    background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
-    background-position: left center;
-    float: right;
-    height: 7.5rem;
-    width:33px;
+#main h2.l3-pane-title {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.4375rem;
+    font-weight: bold;
+    color: inherit;
+}
+
+#main h2.l3-pane-title + p {
+    margin: 8px 0 0 0;
+    color: inherit;
+}
+
+#main h2.l3-footer-pane-title {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#main h2.l3-footer-pane-title + p {
+    font-size: .875rem;
+    margin: 8px 0 0 0;
+    color: #000;
 }
 
 .pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
