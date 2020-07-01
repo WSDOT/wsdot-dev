@@ -397,7 +397,7 @@ function build_twitter() {
     $output .= "  <img src='/sites/default/themes/custom/ferries/images/twitter.jpg' style='width: 225px; padding-bottom: 8px;'>";
     $output .= "  <div class='l3-footer-pane-content'>";
     $output .= "    <h2 class='l3-footer-pane-title'>Twitter</h2>";
-    $output .= "    <p>Follow us <a href='https://twitter.com/wsferries'>@wsferries</a> for the best social media content you’ll find on the internet.</p>";
+    $output .= "    <p>Follow us @wsferries for the best social media content you’ll find on the internet.</p>";
     $output .= "  </div>";
     $output .= "</div>";
 
