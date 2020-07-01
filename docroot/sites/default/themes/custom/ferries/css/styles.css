@@ -480,6 +480,10 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     padding-top: 130px;
 }
 
+#edit-submit-button:hover, #edit-submit-button--2:hover {
+    text-decoration: underline;
+}
+
 .navigation-links {list-style:none; text-align: center; color: #007b5f; margin: 5px 0 0 0; padding: 0;}
 .navigation-links a {text-decoration: underline; color: #007b5f;}
 .navigation-links a:hover {text-decoration: none; color: #007b5f;}
