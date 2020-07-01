@@ -410,18 +410,52 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: inherit;
 }
 
+.l3-footer-pane {
+    width: 225px;
+    color: #000;
+    background: url(/sites/default/themes/custom/ferries/images/bullet.png) no-repeat;
+    background-position: 97.5% 97.5%;
+}
+
+/* Make the whole pane clickable
+ * https://inclusive-components.design/cards
+ */
+.l3-footer-pane a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.l3-footer-pane:hover {
+    background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
+    background-position: 97.5% 97.5%;
+    background-color: #007b5f;
+    color: #fff;
+}
+
+.l3-footer-pane-content {
+    padding: 0 5px 3rem 5px;
+}
+
 #main h2.l3-footer-pane-title {
     box-sizing: border-box;
     padding: 0;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #000;
+    color: inherit;
 }
 
 #main h2.l3-footer-pane-title + p {
     font-size: .875rem;
     margin: 8px 0 0 0;
-    color: #000;
+    color: inherit;
+}
+
+#main .l3-footer-pane-content a {
+    color: inherit;
 }
 
 .pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
