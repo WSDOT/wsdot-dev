@@ -484,11 +484,12 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     text-decoration: underline;
 }
 
-.navigation-links {list-style:none; text-align: center; color: #007b5f; margin: 5px 0 0 0; padding: 0;}
-.navigation-links a {text-decoration: underline; color: #007b5f;}
-.navigation-links a:hover {text-decoration: none; color: #007b5f;}
-.navigation-links a:visited {color: #007b5f;}
-.navigation-links li {display: inline; font-size: 1.375rem; padding: 0em 1rem 0em 1rem;}
+.navigation-links {list-style: none; text-align: center; color: #007b5f; margin: 8px 0 4px 0; padding: 0;}
+.navigation-links a {text-decoration: underline; color: inherit;}
+/*.navigation-links a:hover {text-decoration: none; color: inherit;}*/
+/*.navigation-links a:visited {color: #007b5f;}*/
+.navigation-links li {display: inline; font-size: 1.375rem; padding: .5rem 1rem;}
+.navigation-links li:hover {background-color: #007b5f; color: #fff;}
 
 .info-box {list-style: none; color: #007b5f; margin: 0; padding: 0;}
 .info-box a {text-decoration: underline; color: #007b5f;}
