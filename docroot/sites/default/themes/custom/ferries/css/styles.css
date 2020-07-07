@@ -363,6 +363,10 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     position: relative;
 }
 
+.l3-footer-pane a {
+    text-decoration: none;
+}
+
 /* Make the whole pane clickable
  * https://inclusive-components.design/cards
  */
@@ -403,6 +407,11 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     padding: 0;
     font-size: 1.4375rem;
     font-weight: bold;
+    color: inherit;
+}
+
+#main h2.l3-pane-title a {
+    text-decoration: none;
     color: inherit;
 }
 
