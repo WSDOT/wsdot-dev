@@ -372,7 +372,7 @@ function build_wsf_blog() {
     $output = "<div class='l3-footer-pane'>";
     $output .= "  <img src='/sites/default/themes/custom/ferries/images/wsf-blog.jpg' style='width: 225px; padding-bottom: 8px;'>";
     $output .= "  <div class='l3-footer-pane-content'>";
-    $output .= "    <h2 class='l3-footer-pane-title'>WSF Blog</h2>";
+    $output .= "    <h2 class='l3-footer-pane-title'><a href='https://wsdotblog.blogspot.com/search/label/Washington%20State%20Ferries'>WSF Blog</a></h2>";
     $output .= "    <p>Check out our blog for all the latest updates on what’s going on with Washington State Ferries.</p>";
     $output .= "  </div>";
     $output .= "</div>";
