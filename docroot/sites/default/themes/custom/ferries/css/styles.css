@@ -415,12 +415,16 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: #000;
     background: url(/sites/default/themes/custom/ferries/images/bullet.png) no-repeat;
     background-position: 97.5% 97.5%;
+    position: relative;
+}
+
+.l3-footer-pane a {
+    text-decoration: none;
 }
 
 /* Make the whole pane clickable
  * https://inclusive-components.design/cards
  */
-/*
 .l3-footer-pane a::after {
     content: '';
     position: absolute;
@@ -428,7 +432,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     top: 0;
     right: 0;
     bottom: 0;
-}*/
+}
 
 .l3-footer-pane:hover {
     background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
