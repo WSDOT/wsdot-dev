@@ -1,16 +1,16 @@
 <?php
-/**
- * @file
- * Module file for Ferries
- */
+// L3 landing page functions exist in inc files
+module_load_include('inc', 'ferries', 'ferries_l3_tickets');
+module_load_include('inc', 'ferries', 'ferries_l3_schedules');
+module_load_include('inc', 'ferries', 'ferries_l3_footer');
 
 /**
  * Implements hook_block_info().
  */
 function ferries_block_info() {
     $blocks = array();
-    $blocks['schedule_by_route'] = array(
-        'info' => t('Ferries: Sailing schedule by route'),
+    $blocks['select_route'] = array(
+        'info' => t('Ferries: Select route'),
         'cache' => DRUPAL_NO_CACHE,
     );
     $blocks['make_reservations'] = array(
@@ -53,6 +53,15 @@ function ferries_block_info() {
     $blocks['refunds'] = array(
         'info' => t('Ferries: Tickets: Refunds'),
     );
+    $blocks['schedule_by_route'] = array(
+        'info' => t('Ferries: Schedules: Schedule by route'),
+    );
+    $blocks['schedule_by_date'] = array(
+        'info' => t('Ferries: Schedules: Schedule by date'),
+    );
+    $blocks['low_tide_warning'] = array(
+        'info' => t('Ferries: Schedules: Low tide warning'),
+    );
     $blocks['wsf_blog'] = array(
         'info' => t('Ferries: L3 Footer: WSF Blog'),
     );
@@ -66,15 +75,15 @@ function ferries_block_info() {
     return $blocks;
 }
 
-/**
+ /**
  * Implements hook_block_view().
  */
 function ferries_block_view($delta = '') {
     $block = array();
     switch($delta) {
-        case 'schedule_by_route':
+        case 'select_route':
             $block['subject'] = t('<none>');
-            $block['content'] = drupal_get_form('schedule_by_route_form');
+            $block['content'] = drupal_get_form('select_route_form');
             break;
         case 'make_reservations':
             $block['subject'] = t('<none>');
@@ -128,6 +137,18 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_refunds();
             break;
+        case 'schedule_by_route':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_schedule_by_route();
+            break;
+        case 'schedule_by_date':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_schedule_by_date();
+            break;
+        case 'low_tide_warning':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_low_tide_warning();
+            break;
         case 'wsf_blog':
             $block['subject'] = t('<none>');
             $block['content'] = build_wsf_blog();
@@ -146,7 +167,7 @@ function ferries_block_view($delta = '') {
 }
 
 /* Beginning of home page tiles */
-function schedule_by_route_form($form, &$form_state) {
+function select_route_form($form, &$form_state) {
     $routes = array();
     $json = file_get_contents("https://data.wsdot.wa.gov/ferries/WSFScheduledRoutes.js");
     $scheduledRoutes = json_decode($json, true);
@@ -262,7 +283,7 @@ function build_live_ferry_status() {
 function build_navigation_links() {
     $output = "<ul class='navigation-links'>";
     $output .= "<li><a href='/ferries/tickets'>Tickets</a></li>";
-    $output .= "<li><a href='/ferries/schedule'>Schedules</a></li>";
+    $output .= "<li><a href='/ferries/schedules'>Schedules</a></li>";
     $output .= "<li><a href='/ferries/terminals'>Ferries and Terminals</a></li>";
     $output .= "<li><a href='/ferries/rider-information'>Rider Information</a></li>";
     $output .= "<li><a href='/ferries/about-us'>About Us</a></li>";
@@ -283,122 +304,6 @@ function build_get_to_know_your_ferries() {
     $output .= "<li><a href='/ferries/rider-information/canada'>Travel to Canada</a></li>";
     $output .= "<li><a href='/ferries/about-us/contact'>Contact Ferries</a></li>";
     $output .= "</ul>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-/* Beginning of L3 landing page tiles */
-function build_online_tickets() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/online-tickets.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='https://wave2go.wsdot.com/webstore/landingPage?cg=21&c=76'>Online tickets</a></h2>";
-    $output .= "    <p>Buy your tickets online on our Wave2Go website.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_ticket_information() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/ticket-information.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='/ferries/tickets/ticket-information'>Ticket information</a></h2>";
-    $output .= "    <p>Learn more about the types of tickets you can buy.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_calculate_fares() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/calculate-fares.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='https://www.wsdot.wa.gov/ferries/fares/'>Calculate fares</a></h2>";
-    $output .= "    <p>Look up the cost of your ticket.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_vehicle_reservations() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/vehicle-reservations.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='https://www.wsdot.wa.gov/ferries/reservations'>Vehicle reservations</a></h2>";
-    $output .= "    <p>Save a spot for your vehicle on select routes.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_passes() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/passes.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='/ferries/tickets/passes'>Passes</a></h2>";
-    $output .= "    <p>Frequent travelers, seniors, or people with disabilities can get discounted passes.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_refunds() {
-    $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/refunds.jpg);'></div>";
-    $output .= "  <div class='l3-pane-content'>";
-    $output .= "    <h2 class='l3-pane-title'><a href='/ferries/tickets/refunds'>Refunds</a></h2>";
-    $output .= "    <p>Need to cancel your trip? View our refund policy.</p>";
-    $output .= "  </div>";
-    $output .= "  <div class='cb'></div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-/* Beginning of L3 landing page footer tiles */
-function build_wsf_blog() {
-    $output = "<div class='l3-footer-pane'>";
-    $output .= "  <img src='/sites/default/themes/custom/ferries/images/wsf-blog.jpg' style='width: 225px; padding-bottom: 8px;'>";
-    $output .= "  <div class='l3-footer-pane-content'>";
-    $output .= "    <h2 class='l3-footer-pane-title'><a href='https://wsdotblog.blogspot.com/search/label/Washington%20State%20Ferries'>WSF Blog</a></h2>";
-    $output .= "    <p>Check out our blog for all the latest updates on what’s going on with Washington State Ferries.</p>";
-    $output .= "  </div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_news_stories() {
-    $output = "<div class='l3-footer-pane'>";
-    $output .= "  <img src='/sites/default/themes/custom/ferries/images/news-stories.jpg' style='width: 225px; padding-bottom: 8px;'>";
-    $output .= "  <div class='l3-footer-pane-content'>";
-    $output .= "    <h2 class='l3-footer-pane-title'><a href='#'>News stories</a></h2>";
-    $output .= "    <p>Check out our WSF Weekly Update and other news stories.</p>";
-    $output .= "  </div>";
-    $output .= "</div>";
-
-    return $output;
-}
-
-function build_twitter() {
-    $output = "<div class='l3-footer-pane'>";
-    $output .= "  <img src='/sites/default/themes/custom/ferries/images/twitter.jpg' style='width: 225px; padding-bottom: 8px;'>";
-    $output .= "  <div class='l3-footer-pane-content'>";
-    $output .= "    <h2 class='l3-footer-pane-title'><a href='https://twitter.com/wsferries'>Twitter</a></h2>";
-    $output .= "    <p>Follow us @wsferries for the best social media content you’ll find on the internet.</p>";
-    $output .= "  </div>";
     $output .= "</div>";
 
     return $output;

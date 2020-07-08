@@ -473,7 +473,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: inherit;
 }
 
-.pane-ferries-schedule-by-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
+.pane-ferries-select-route, .pane-ferries-make-reservations, .pane-ferries-buy-tickets, .pane-ferries-live-ferry-status {
     width: 300px;
 }
 
