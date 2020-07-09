@@ -420,7 +420,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     color: inherit;
 }
 
-.l3-footer-pane {
+#l3-spotlight,.l3-footer-pane {
     width: 225px;
     color: #000;
     background: url(/sites/default/themes/custom/ferries/images/bullet.png) no-repeat;
@@ -435,7 +435,7 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
 /* Make the whole pane clickable
  * https://inclusive-components.design/cards
  */
-.l3-footer-pane a::after {
+#l3-spotlight a::after,.l3-footer-pane a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -444,14 +444,14 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     bottom: 0;
 }
 
-.l3-footer-pane:hover {
+#l3-spotlight:hover,.l3-footer-pane:hover {
     background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
     background-position: 97.5% 97.5%;
     background-color: #007b5f;
     color: #fff;
 }
 
-.l3-footer-pane-content {
+#l3-spotlight .views-field-field-description,.l3-footer-pane-content {
     padding: 0 5px 3rem 5px;
 }
 
@@ -467,6 +467,16 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     font-size: .875rem;
     margin: 8px 0 0 0;
     color: inherit;
+}
+
+#main h2.l3-footer-pane-title + div > p {
+    font-size: .875rem;
+    margin: 8px 0 0 0;
+    color: inherit;
+}
+
+.l3-spotlight-footer-image img {
+    padding-bottom: 8px;
 }
 
 #main .l3-footer-pane-content a {
@@ -567,6 +577,11 @@ div.pane-node-field-legacy-map p:first-of-type { margin: 0em !important; }
 
 #spotlight {
     margin-top: 35px;
+    border: none;
+}
+
+#l3-spotlight {
+    margin: 0;
     border: none;
 }
 
