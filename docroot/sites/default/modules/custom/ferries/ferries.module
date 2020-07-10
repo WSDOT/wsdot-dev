@@ -2,6 +2,7 @@
 // L3 landing page functions exist in inc files
 module_load_include('inc', 'ferries', 'ferries_l3_tickets');
 module_load_include('inc', 'ferries', 'ferries_l3_schedules');
+module_load_include('inc', 'ferries', 'ferries_l3_terminals');
 module_load_include('inc', 'ferries', 'ferries_l3_footer');
 
 /**
@@ -61,6 +62,21 @@ function ferries_block_info() {
     );
     $blocks['low_tide_warning'] = array(
         'info' => t('Ferries: Schedules: Low tide warning'),
+    );
+    $blocks['travel_alerts'] = array(
+        'info' => t('Ferries: Terminals: Travel alerts'),
+    );
+    $blocks['realtime_map'] = array(
+        'info' => t('Ferries: Terminals: Realtime map'),
+    );
+    $blocks['terminal_cameras'] = array(
+        'info' => t('Ferries: Terminals: Loading cameras by terminal'),
+    );
+    $blocks['other_ferry_systems'] = array(
+        'info' => t('Ferries: Terminals: Other ferry systems'),
+    );
+    $blocks['about_our_fleet'] = array(
+        'info' => t('Ferries: Terminals: About our fleet'),
     );
     $blocks['wsf_blog'] = array(
         'info' => t('Ferries: L3 Footer: WSF Blog'),
@@ -148,6 +164,26 @@ function ferries_block_view($delta = '') {
         case 'low_tide_warning':
             $block['subject'] = t('<none>');
             $block['content'] = build_low_tide_warning();
+            break;
+        case 'travel_alerts':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_travel_alerts();
+            break;
+        case 'realtime_map':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_realtime_map();
+            break;
+        case 'terminal_cameras':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_terminal_cameras();
+            break;
+        case 'other_ferry_systems':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_other_ferry_systems();
+            break;
+        case 'about_our_fleet':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_about_our_fleet();
             break;
         case 'wsf_blog':
             $block['subject'] = t('<none>');
