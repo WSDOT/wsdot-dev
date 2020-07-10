@@ -11,6 +11,25 @@
 function wsdot_image_presets_image_default_styles() {
   $styles = array();
 
+  // Exported image style: l3_spotlight_footer_image.
+  $styles['l3_spotlight_footer_image'] = array(
+    'label' => 'L3 spotlight footer image (225x161)',
+    'effects' => array(
+      18 => array(
+        'name' => 'focal_point_scale_and_crop',
+        'data' => array(
+          'width' => 225,
+          'height' => 161,
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: project_map_thumbnail.
   $styles['project_map_thumbnail'] = array(
     'label' => 'Project map thumbnail',
