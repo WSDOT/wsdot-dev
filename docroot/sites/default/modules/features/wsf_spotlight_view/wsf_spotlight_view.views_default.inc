@@ -113,6 +113,63 @@ function wsf_spotlight_view_views_default_views() {
   $handler->display->display_options['fields']['field_description']['element_label_type'] = 'h2';
   $handler->display->display_options['fields']['field_description']['element_label_class'] = 'pane-title';
   $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+
+  /* Display: L3 footer pane */
+  $handler = $view->new_display('panel_pane', 'L3 footer pane', 'panel_pane_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'flexslider';
+  $handler->display->display_options['style_options']['id'] = 'l3-spotlight';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_spotlight_link']['id'] = 'field_spotlight_link';
+  $handler->display->display_options['fields']['field_spotlight_link']['table'] = 'field_data_field_spotlight_link';
+  $handler->display->display_options['fields']['field_spotlight_link']['field'] = 'field_spotlight_link';
+  $handler->display->display_options['fields']['field_spotlight_link']['label'] = '';
+  $handler->display->display_options['fields']['field_spotlight_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_spotlight_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_spotlight_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_spotlight_link']['settings'] = array(
+    'custom_title' => '',
+  );
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['path'] = '[field_spotlight_link]';
+  $handler->display->display_options['fields']['field_image']['element_class'] = 'l3-spotlight-footer-image';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'l3_spotlight_footer_image',
+    'image_link' => '',
+  );
+  /* Field: Content: Teaser */
+  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
+  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
+  $handler->display->display_options['fields']['field_description']['label'] = 'Spotlight';
+  $handler->display->display_options['fields']['field_description']['element_label_type'] = 'h2';
+  $handler->display->display_options['fields']['field_description']['element_label_class'] = 'l3-footer-pane-title';
+  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 0;
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
   $export['spotlight_queue'] = $view;
 
   return $export;
