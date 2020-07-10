@@ -363,10 +363,6 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     position: relative;
 }
 
-.l3-footer-pane a {
-    text-decoration: none;
-}
-
 /* Make the whole pane clickable
  * https://inclusive-components.design/cards
  */
@@ -428,8 +424,9 @@ div.nav a {background:transparent url(../images/back/navigator.png) no-repeat sc
     position: relative;
 }
 
-.l3-footer-pane a {
+#l3-spotlight a,.l3-footer-pane a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* Make the whole pane clickable
