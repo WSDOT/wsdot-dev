@@ -4,6 +4,7 @@ module_load_include('inc', 'ferries', 'ferries_l3_tickets');
 module_load_include('inc', 'ferries', 'ferries_l3_schedules');
 module_load_include('inc', 'ferries', 'ferries_l3_terminals');
 module_load_include('inc', 'ferries', 'ferries_l3_rider_information');
+module_load_include('inc', 'ferries', 'ferries_l3_about_us');
 module_load_include('inc', 'ferries', 'ferries_l3_footer');
 
 /**
@@ -107,6 +108,34 @@ function ferries_block_info() {
     );
     $blocks['bring_onboard'] = array(
         'info' => t('Ferries: Rider Information: What you can bring onboard'),
+    );
+    // About Us
+    $blocks['contact_ferries'] = array(
+        'info' => t('Ferries: About Us: Contact ferries'),
+    );
+    $blocks['employment'] = array(
+        'info' => t('Ferries: About Us: Employment'),
+    );
+    $blocks['business'] = array(
+        'info' => t('Ferries: About Us: Business with ferries'),
+    );
+    $blocks['planning'] = array(
+        'info' => t('Ferries: About Us: Planning'),
+    );
+    $blocks['accountability'] = array(
+        'info' => t('Ferries: About Us: Accountability'),
+    );
+    $blocks['environment'] = array(
+        'info' => t('Ferries: About Us: Environment'),
+    );
+    $blocks['construction_maintenance'] = array(
+        'info' => t('Ferries: About Us: Construction and maintenance'),
+    );
+    $blocks['public_participation'] = array(
+        'info' => t('Ferries: About Us: Public participation'),
+    );
+    $blocks['ferries_api'] = array(
+        'info' => t('Ferries: About Us: API for ferries'),
     );
     // L3 footer
     $blocks['wsf_blog'] = array(
@@ -252,6 +281,43 @@ function ferries_block_view($delta = '') {
         case 'bring_onboard':
             $block['subject'] = t('<none>');
             $block['content'] = build_bring_onboard();
+            break;
+        // About Us
+        case 'contact_ferries':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_contact_ferries();
+            break;
+        case 'employment':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_employment();
+            break;
+        case 'business':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_business();
+            break;
+        case 'planning':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_planning();
+            break;
+        case 'accountability':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_accountability();
+            break;
+        case 'environment':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_environment();
+            break;
+        case 'construction_maintenance':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_construction_maintenance();
+            break;
+        case 'public_participation':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_public_participation();
+            break;
+        case 'ferries_api':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_ferries_api();
             break;
         // L3 footer
         case 'wsf_blog':
