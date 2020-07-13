@@ -3,6 +3,7 @@
 module_load_include('inc', 'ferries', 'ferries_l3_tickets');
 module_load_include('inc', 'ferries', 'ferries_l3_schedules');
 module_load_include('inc', 'ferries', 'ferries_l3_terminals');
+module_load_include('inc', 'ferries', 'ferries_l3_rider_information');
 module_load_include('inc', 'ferries', 'ferries_l3_footer');
 
 /**
@@ -10,6 +11,7 @@ module_load_include('inc', 'ferries', 'ferries_l3_footer');
  */
 function ferries_block_info() {
     $blocks = array();
+    // Homepage
     $blocks['select_route'] = array(
         'info' => t('Ferries: Select route'),
         'cache' => DRUPAL_NO_CACHE,
@@ -24,7 +26,7 @@ function ferries_block_info() {
         'info' => t('Ferries: Ferry alerts'),
         'cache' => DRUPAL_NO_CACHE,
     );
-    $blocks['rider_updates'] = array(
+    $blocks['rider_updates_highlight'] = array(
         'info' => t('Ferries: Rider updates'),
     );
     $blocks['live_ferry_status'] = array(
@@ -36,6 +38,7 @@ function ferries_block_info() {
     $blocks['get_to_know_your_ferries'] = array(
         'info' => t('Ferries: Get to know your ferries'),
     );
+    // Tickets
     $blocks['online_tickets'] = array(
         'info' => t('Ferries: Tickets: Online tickets'),
     );
@@ -54,6 +57,7 @@ function ferries_block_info() {
     $blocks['refunds'] = array(
         'info' => t('Ferries: Tickets: Refunds'),
     );
+    // Schedules
     $blocks['schedule_by_route'] = array(
         'info' => t('Ferries: Schedules: Schedule by route'),
     );
@@ -63,6 +67,7 @@ function ferries_block_info() {
     $blocks['low_tide_warning'] = array(
         'info' => t('Ferries: Schedules: Low tide warning'),
     );
+    // Ferries and Terminals
     $blocks['travel_alerts'] = array(
         'info' => t('Ferries: Terminals: Travel alerts'),
     );
@@ -78,6 +83,32 @@ function ferries_block_info() {
     $blocks['about_our_fleet'] = array(
         'info' => t('Ferries: Terminals: About our fleet'),
     );
+    // Rider Information
+    $blocks['first_time_riders'] = array(
+        'info' => t('Ferries: Rider Information: First time riders'),
+    );
+    $blocks['rider_updates'] = array(
+        'info' => t('Ferries: Rider Information: Rider updates'),
+    );
+    $blocks['commercial_vehicles'] = array(
+        'info' => t('Ferries: Rider Information: Commercial and oversized vehicles'),
+    );
+    $blocks['disabilities_medical'] = array(
+        'info' => t('Ferries: Rider Information: Disabilities and medical assistance'),
+    );
+    $blocks['safety_security'] = array(
+        'info' => t('Ferries: Rider Information: Safety and security'),
+    );
+    $blocks['travel_canada'] = array(
+        'info' => t('Ferries: Rider Information: Travel to Canada'),
+    );
+    $blocks['groups_events'] = array(
+        'info' => t('Ferries: Rider Information: Groups and events'),
+    );
+    $blocks['bring_onboard'] = array(
+        'info' => t('Ferries: Rider Information: What you can bring onboard'),
+    );
+    // L3 footer
     $blocks['wsf_blog'] = array(
         'info' => t('Ferries: L3 Footer: WSF Blog'),
     );
@@ -97,6 +128,7 @@ function ferries_block_info() {
 function ferries_block_view($delta = '') {
     $block = array();
     switch($delta) {
+        // Homepage
         case 'select_route':
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('select_route_form');
@@ -113,9 +145,9 @@ function ferries_block_view($delta = '') {
             $block['subject'] =  t('<none>');
             $block['content'] = build_ferry_alerts();
             break;
-        case 'rider_updates':
+        case 'rider_updates_highlight':
             $block['subject'] =  t('<none>');
-            $block['content'] = build_rider_updates();
+            $block['content'] = build_rider_updates_highlight();
             break;
         case 'live_ferry_status':
             $block['subject'] =  t('<none>');
@@ -129,6 +161,7 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_get_to_know_your_ferries();
             break;
+        // Tickets
         case 'online_tickets':
             $block['subject'] = t('<none>');
             $block['content'] = build_online_tickets();
@@ -153,6 +186,7 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_refunds();
             break;
+        // Schedules
         case 'schedule_by_route':
             $block['subject'] = t('<none>');
             $block['content'] = build_schedule_by_route();
@@ -165,6 +199,7 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_low_tide_warning();
             break;
+        // Ferries and Terminals
         case 'travel_alerts':
             $block['subject'] = t('<none>');
             $block['content'] = build_travel_alerts();
@@ -185,6 +220,40 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_about_our_fleet();
             break;
+        // Rider Information
+        case 'first_time_riders':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_first_time_riders();
+            break;
+        case 'rider_updates':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_rider_updates();
+            break;
+        case 'commercial_vehicles':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_commercial_vehicles();
+            break;
+        case 'disabilities_medical':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_disabilities_medical();
+            break;
+        case 'safety_security':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_safety_security();
+            break;
+        case 'travel_canada':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_travel_canada();
+            break;
+        case 'groups_events':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_groups_events();
+            break;
+        case 'bring_onboard':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_bring_onboard();
+            break;
+        // L3 footer
         case 'wsf_blog':
             $block['subject'] = t('<none>');
             $block['content'] = build_wsf_blog();
@@ -292,7 +361,7 @@ function build_ferry_alerts() {
     return $output;
 }
 
-function build_rider_updates() {
+function build_rider_updates_highlight() {
     $output = "<div style='padding: 8px 13px 8px 13px;'>";
     $output .= "<h2 class='pane-title'>Rider updates</h2>";
     $output .= "<div style='padding-bottom: 1.5rem;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#'>Praesent aliquet pulvinar quam ac bibendum.</a></div>";
