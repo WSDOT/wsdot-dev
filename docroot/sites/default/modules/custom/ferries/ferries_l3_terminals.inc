@@ -40,7 +40,7 @@ function build_terminal_cameras() {
 
 function build_other_ferry_systems() {
     $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url();'></div>";
+    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/sanpoil-ferry.jpg);'></div>";
     $output .= "  <div class='l3-pane-content'>";
     $output .= "    <h2 class='l3-pane-title'><a href='/ferries/terminals/other-ferries'>Other ferry systems</a></h2>";
     $output .= "    <p>Not finding the ferry you were looking for? Learn about other ferries in Washington State.</p>";
@@ -53,7 +53,7 @@ function build_other_ferry_systems() {
 
 function build_about_our_fleet() {
     $output = "<div class='l3-pane'>";
-    $output .= "  <div class='l3-pane-image' style='background-image: url();'></div>";
+    $output .= "  <div class='l3-pane-image' style='background-image: url(/sites/default/themes/custom/ferries/images/about-fleet.jpg);'></div>";
     $output .= "  <div class='l3-pane-content'>";
     $output .= "    <h2 class='l3-pane-title'><a href='/ferries/terminals/our-fleet'>About our fleet</a></h2>";
     $output .= "    <p>Learn about the boats that make up our fleet.</p>";
