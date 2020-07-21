@@ -66,7 +66,7 @@ function buy_tickets_form($form, &$form_state) {
         '#title' => t('Buy your tickets or passes online'),
         '#markup' => '<h2>Buy your tickets or passes online</h2>'
     );
-    $form['#method'] = 'get';
+    $form['#method'] = 'post';
     $form['#attributes']['name'] = 'buy-tickets-form';
     $form['#attributes']['class'] = 'buy-tickets';
     $form['#id'] = 'buy-tickets';
