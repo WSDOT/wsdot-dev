@@ -8,6 +8,7 @@
 .panel-3col-bricks .panel-col-first {
   float: left;
   width: 33%;
+  padding-bottom: 1rem;
 }
 
 .panel-3col-bricks .panel-col-first .inside {
@@ -17,6 +18,7 @@
 .panel-3col-bricks .panel-col {
   float: left;
   width: 34%;
+  padding-bottom: 1rem;
 }
 
 .panel-3col-bricks .panel-col .inside {
@@ -26,6 +28,7 @@
 .panel-3col-bricks .panel-col-last {
   float: left;
   width: 33%;
+  padding-bottom: 1rem;
 }
 
 .panel-3col-bricks .panel-col-last .inside {
