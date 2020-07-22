@@ -121,7 +121,7 @@ function build_rider_updates_highlight() {
 * Builds HTML for 'Live ferry status' tile
 */
 function build_live_ferry_status() {
-    $output = "<div style='box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(151,215,0,0.05);'>";
+    $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(151,215,0,0.05);'>";
     $output .= "  <h2 class='pane-title'>Live ferry status</h2>";
     $output .= "  <ul class='info-box'>";
     $output .= "    <li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Realtime ferry tracker</a></li>";
