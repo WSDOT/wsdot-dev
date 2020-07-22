@@ -88,7 +88,7 @@ function build_ferry_alerts() {
     $publishDate = $alert[0]["PublishDate"];
     $alertFullTitle = $alert[0]['AlertFullTitle'];
 
-    $output = "<div style='box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
+    $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
     $output .= "  <h2 class='pane-title'>Ferry alerts</h2>";
     $output .= "  <div>" . $publishDate . "</div>";
     $output .= "  <div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1.5rem 0;'>" . $alertFullTitle . "</div>";
@@ -104,7 +104,7 @@ function build_ferry_alerts() {
 * Builds HTML for 'Rider updates' tile
 */
 function build_rider_updates_highlight() {
-    $output = "<div style='box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px;'>";
+    $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px;'>";
     $output .= "  <h2 class='pane-title'>Rider updates</h2>";
     $output .= "  <div style='padding-bottom: 1.5rem;'>";
     $output .= "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#'>Praesent aliquet pulvinar quam ac bibendum.</a>";
