@@ -721,13 +721,19 @@ input.searchButton {
     right: 0;
     bottom: 0;
 }
-
+.l3-pane a:focus {
+    outline: none;
+}
 .l3-pane:hover {
     box-shadow: 0 0 0 1px #007b5f;
     background-color: #fff;
     color: #007b5f;
     background: url(/sites/default/themes/custom/ferries/images/bullet-inverse-hover.png) no-repeat;
     background-position: 97.5% center;
+}
+
+.l3-pane:focus-within {
+    box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
 }
 
 .l3-pane-image {
@@ -776,6 +782,10 @@ input.searchButton {
     color: inherit;
 }
 
+#l3-spotlight a:focus,.l3-footer-pane a:focus {
+    outline: none;
+}
+
 /* Make the whole pane clickable - https://inclusive-components.design/cards */
 #l3-spotlight a::after,.l3-footer-pane a::after {
     content: '';
@@ -792,7 +802,9 @@ input.searchButton {
     background-color: #007b5f;
     color: #fff;
 }
-
+#l3-spotlight:focus-within,.l3-footer-pane:focus-within {
+    box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
+}
 #l3-spotlight .views-field-field-description,.l3-footer-pane-content {
     padding: 0 5px 3rem 5px;
 }
@@ -847,8 +859,18 @@ input.searchButton {
     padding-top: 130px;
 }
 
+#edit-route:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
+}
+
 #edit-submit-button:hover, #edit-submit-button--2:hover {
     text-decoration: underline;
+}
+
+#edit-submit-button:focus, #edit-submit-button--2:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
 }
 
 /* Local navigation strip found on homepage and L3 landing pages */
@@ -873,6 +895,13 @@ input.searchButton {
     color: #fff;
 }
 
+.navigation-links a:focus {
+    outline: none;
+    box-shadow: 0 0 0 .5rem #007b5f;
+    background-color: #007b5f;
+    color: #fff;
+}
+
 /* Custom bulleted list used on homepage */
 .info-box {
     list-style: none;
@@ -890,6 +919,10 @@ input.searchButton {
 }
 .info-box a:visited {
     color: #007b5f;
+}
+.info-box a:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
 }
 .info-box li {
     font-size: 1.125rem;
