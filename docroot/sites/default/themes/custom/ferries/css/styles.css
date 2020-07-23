@@ -701,9 +701,15 @@ input.searchButton {
     padding: 0 0 1rem 0;
     font-size: 1.4375rem;
     font-weight: bold;
-    color: #007B5F;
+    color: #007b5f;
 }
-
+#spotlight h2.pane-title {
+    box-sizing: border-box;
+    padding: 0 5px 1rem 5px;
+    font-size: 1.4375rem;
+    font-weight: bold;
+    color: #007b5f;
+}
 .l3-pane {
     background: url(/sites/default/themes/custom/ferries/images/bullet-inverse.png) no-repeat;
     background-position: 97.5% center;
@@ -951,27 +957,24 @@ input.searchButton {
 
 /* Flex Slider */
 #spotlight {
-    margin-top: 35px;
+    position: relative;
     border: none;
 }
-
 #l3-spotlight {
     margin: 0;
     border: none;
 }
-
 #spotlight h2 {
     margin-top: 1rem;
 }
-
 #spotlight p {
     margin: 0;
+    padding: 0 5px 5px 5px;
 }
 
 .flex-control-nav {
     bottom: -3em;
 }
-
 .flex-control-paging li a {
     width: 8px;
     height: 8px;

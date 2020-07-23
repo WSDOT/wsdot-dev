@@ -136,7 +136,7 @@ function build_live_ferry_status() {
 * Builds HTML for 'Get to know your ferries' tile
 */
 function build_get_to_know_your_ferries() {
-    $output = "<div style='padding: 35px 13px 8px 13px;'>";
+    $output = "<div style='padding: 0 13px 8px 13px;'>";
     $output .= "  <h2 class='pane-title'>Get to know your ferries</h2>";
     $output .= "  <div style='font-size: 1.25rem; font-weight: bold;'>All are welcome on Washington State Ferries</div>";
     $output .= "  <p style='margin: 8px 0 24px 0;'>Here are some helpful tips on how to navigate the ferries.</p>";
