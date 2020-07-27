@@ -30,6 +30,25 @@ function wsdot_image_presets_image_default_styles() {
     ),
   );
 
+  // Exported image style: open_graph_image.
+  $styles['open_graph_image'] = array(
+    'label' => 'Open Graph Image (1200x630)',
+    'effects' => array(
+      19 => array(
+        'name' => 'focal_point_scale_and_crop',
+        'data' => array(
+          'width' => 1200,
+          'height' => 630,
+          'focal_point_advanced' => array(
+            'shift_x' => '',
+            'shift_y' => '',
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: project_map_thumbnail.
   $styles['project_map_thumbnail'] = array(
     'label' => 'Project map thumbnail',
