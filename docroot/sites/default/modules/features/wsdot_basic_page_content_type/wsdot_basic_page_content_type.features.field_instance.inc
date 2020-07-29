@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_basic_page_content_type.features.field_instance.inc
@@ -50,7 +51,7 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -114,7 +115,7 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'file_generic',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -181,8 +182,95 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 5,
+      'weight' => 6,
     ),
+  );
+
+  // Exported field_instance: 'node-page-field_open_graph_image'.
+  $field_instances['node-page-field_open_graph_image'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => 'This should be an image that you’d like to represent your content. It should be a high resolution image that social networks will use in their feeds.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 110,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_open_graph_image',
+    'label' => 'Open Graph Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'slashes' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'slashes' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[node:created:custom:Y]/[node:created:custom:m]/[node:created:custom:d]',
+        ),
+        'redirect' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+      'wysiwyg_insert' => 0,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 7,
+    ),
+    'workbench_access_field' => 0,
   );
 
   // Exported field_instance: 'node-page-field_site_structure'.
@@ -220,7 +308,7 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
         'apply_chosen' => 1,
       ),
       'type' => 'taxonomy_hs',
-      'weight' => 6,
+      'weight' => 8,
     ),
   );
 
@@ -260,7 +348,7 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -271,8 +359,10 @@ function wsdot_basic_page_content_type_field_default_field_instances() {
   t('Images');
   t('Location of this page in the website.');
   t('Manual links to pages and files on the website.');
+  t('Open Graph Image');
   t('Site Structure');
   t('Static Left Navigation');
+  t('This should be an image that you’d like to represent your content. It should be a high resolution image that social networks will use in their feeds.');
 
   return $field_instances;
 }
