@@ -596,15 +596,49 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
     // For sites that are hosted in Acquia Cloud and are not the production instance
     $conf['apachesolr_read_only'] = "1";
   }
+
+  switch ($_ENV['AH_SITE_ENVIRONMENT']) {
+      case 'prod':
+          // Production environment
+          $conf['acquia_purge_domains'] = array(
+              'wsdot.prod.acquia-sites.com',
+              'www.wsdot.wa.gov',
+              'wsdot.wa.gov',
+          );
+          break;
+      case 'test':
+          // Staging environment
+          $conf['acquia_purge_domains'] = array(
+              'wsdotstg.prod.acquia-sites.com',
+          );
+          break;
+      case 'dev':
+          // Development environment
+          $conf['acquia_purge_domains'] = array(
+              'wsdotdev.prod.acquia-sites.com',
+          );
+          break;
+      default:
+          // Default purge domains if no specific environment detected
+          $conf['acquia_purge_domains'] = array(
+              'wsdot.prod.acquia-sites.com',
+              'www.wsdot.wa.gov',
+              'wsdot.wa.gov',
+          );
+  }
 } else {
   // For sites that aren't hosted in Acquia Cloud (like a local installation)
   $conf['apachesolr_read_only'] = "1";
+  // Do not purge in other environments (such as local development)
+  $conf['acquia_purge_passivemode'] = TRUE;
 }
+
 if (isset($conf['memcache_servers'])) {
   $conf['cache_backends'][] = './sites/all/modules/contrib/memcache/memcache.inc';
   $conf['cache_default_class'] = 'MemCacheDrupal';
   $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
 }
+
 if (isset($_GET['q']) && strpos($_GET['q'], 'admin') === 0) { 
     ini_set('memory_limit', '256M'); 
 }
