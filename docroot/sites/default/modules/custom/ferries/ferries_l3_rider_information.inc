@@ -17,7 +17,7 @@ function build_first_time_riders() {
 function build_rider_updates() {
     $output = build_l3_landing_tile("rider-updates.jpg",
                                     "/ferries/rider-information/updates",
-                                    "Rider udpates",
+                                    "Rider updates",
                                     "Check current and long term updates and projects that may effect your route.");
 
     return $output;
