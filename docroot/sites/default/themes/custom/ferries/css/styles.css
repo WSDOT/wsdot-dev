@@ -941,6 +941,17 @@ input.searchButton {
     margin-bottom: .75rem;
 }
 
+.pane-rider-updates-panel-pane-1 {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 12.5rem;
+    padding: 8px 13px 8px 13px;
+}
+
+.pane-rider-updates-content {
+    padding-bottom: 1.5rem;
+}
+
 /* Views with one more grouping fields (e.g. News) */
 .view-grouping-header {
     font-size: 1.4em;
