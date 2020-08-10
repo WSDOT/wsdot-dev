@@ -949,7 +949,9 @@ input.searchButton {
 }
 
 .pane-rider-updates-content {
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    height: 5rem;
+    overflow: hidden;
 }
 
 /* Views with one more grouping fields (e.g. News) */
