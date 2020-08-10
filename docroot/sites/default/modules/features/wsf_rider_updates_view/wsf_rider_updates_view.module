@@ -2,5 +2,7 @@
 
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the WSF Rider Updates View feature.
  */
+
+include_once 'wsf_rider_updates_view.features.inc';
