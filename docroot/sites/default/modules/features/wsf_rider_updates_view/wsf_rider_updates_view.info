@@ -1,0 +1,12 @@
+name = WSF Rider Updates View
+description = View which displays Rider Updates on Ferries home and summary pages
+core = 7.x
+package = WSDOT Views
+version = 7.x-1.3
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = rider_updates
+features_exclude[dependencies][ctools] = ctools
+project path = sites/default/modules/features

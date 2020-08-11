@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_pathologic.strongarm.inc
@@ -15,6 +16,7 @@ function wsdot_pathologic_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'pathologic_local_paths';
   $strongarm->value = 'http://wsdot.dev.dd:8083/
+https://wsdot.dev.dd:8443/
 http://wsdotdev.prod.acquia-sites.com/
 https://wsdotdev.prod.acquia-sites.com/
 http://wsdotstg.prod.acquia-sites.com/

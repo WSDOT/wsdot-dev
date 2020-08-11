@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_basic_page_content_type.strongarm.inc
@@ -62,6 +63,27 @@ function wsdot_basic_page_content_type_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_page';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_page';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_page';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__page';
   $strongarm->value = array(
     'view_modes' => array(
@@ -96,13 +118,19 @@ function wsdot_basic_page_content_type_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'path' => array(
-          'weight' => '1',
+          'weight' => '2',
         ),
         'workbench_access' => array(
           'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '10',
+        ),
+        'redirect' => array(
+          'weight' => '9',
         ),
       ),
       'display' => array(),

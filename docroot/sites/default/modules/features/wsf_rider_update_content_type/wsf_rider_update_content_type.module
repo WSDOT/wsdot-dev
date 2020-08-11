@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the WSF Rider Update Content Type feature.
+ */
+
+include_once 'wsf_rider_update_content_type.features.inc';

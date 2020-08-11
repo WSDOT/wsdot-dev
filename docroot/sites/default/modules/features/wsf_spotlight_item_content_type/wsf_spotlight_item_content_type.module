@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Code for the WSF Spotlight Item Content Type feature.
+ */
+
+include_once 'wsf_spotlight_item_content_type.features.inc';

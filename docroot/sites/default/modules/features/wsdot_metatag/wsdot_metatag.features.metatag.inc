@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_metatag.features.metatag.inc
@@ -106,6 +107,18 @@ function wsdot_metatag_metatag_export_default() {
       ),
       'dcterms.modified' => array(
         'value' => '[node:changed:custom:Y-m-d\\TH:i:s.000\\Z]',
+      ),
+      'og:url' => array(
+        'value' => '[node:url]',
+      ),
+      'og:title' => array(
+        'value' => '[node:title]',
+      ),
+      'og:description' => array(
+        'value' => '[node:summary]',
+      ),
+      'og:image' => array(
+        'value' => '[node:field_open_graph_image:open_graph_image]',
       ),
     ),
   );

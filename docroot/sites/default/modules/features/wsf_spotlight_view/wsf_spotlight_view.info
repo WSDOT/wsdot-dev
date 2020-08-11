@@ -1,0 +1,13 @@
+name = WSF Spotlight View
+description = View which displays Spotlight items on Ferries home page
+core = 7.x
+package = WSDOT Views
+version = 7.x-1.1
+dependencies[] = flexslider_views
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = spotlight_queue
+features_exclude[dependencies][ctools] = ctools
+project path = sites/default/modules/features
