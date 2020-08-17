@@ -4,7 +4,7 @@
 */
 function build_schedule_by_route() {
     $output = build_l3_landing_tile("route-map.jpg",
-                                    "https://www.wsdot.com/ferries/schedule/scheduledetailbyroute.aspx",
+                                    "/ferries/schedules/schedule-route",
                                     "Schedule by route",
                                     "Find your route and see the sailing times.");
 
