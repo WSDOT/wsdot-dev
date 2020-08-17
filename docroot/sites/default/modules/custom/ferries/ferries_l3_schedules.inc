@@ -28,7 +28,7 @@ function build_schedule_by_date() {
 */
 function build_low_tide_warning() {
     $output = build_l3_landing_tile("green-white-foamy-water.jpg",
-                                    "/ferries/low-tide",
+                                    "/ferries/schedules/low-tide",
                                     "Low tide warning",
                                     "Learn about tides that effect large vehicles on the Vashon and Mukilteo routes.");
 
