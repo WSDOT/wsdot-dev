@@ -78,7 +78,7 @@ function build_construction_maintenance() {
     $output = build_l3_landing_tile("construction-maintenance.jpg",
                                     "/ferries/about-us/construction",
                                     "Construction and maintenance",
-                                    "See how construction and maintenance will effect your trip.");
+                                    "See how construction and maintenance will affect your trip.");
 
     return $output;
 }
