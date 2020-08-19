@@ -54,7 +54,7 @@ function build_safety_security() {
     $output = build_l3_landing_tile("safety-security.jpg",
                                     "/ferries/rider-information/safety",
                                     "Safety and security",
-                                    "Learn about our security plan including what you can bring onboard.");
+                                    "Learn about our security plan including what you can bring aboard.");
 
     return $output;
 }
@@ -88,8 +88,8 @@ function build_groups_events() {
 */
 function build_bring_onboard() {
     $output = build_l3_landing_tile("bring-onboard.jpg",
-                                    "/ferries/rider-information/bring-onboard",
-                                    "What you can bring onboard",
+                                    "/ferries/rider-information/bring-aboard",
+                                    "What you can bring aboard",
                                     "Looking to bring your bicycle or pet? Get more information.");
 
     return $output;
