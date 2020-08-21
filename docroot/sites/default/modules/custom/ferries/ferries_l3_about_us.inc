@@ -4,7 +4,7 @@
 */
 function build_contact_ferries() {
     $output = build_l3_landing_tile("contact-ferries.jpg",
-                                    "/ferries/about-us/contact",
+                                    "https://wsdot.wa.gov/ferries/infodesk/customerfeedback",
                                     "Contact ferries",
                                     "Get in touch with questions or comments.");
 
