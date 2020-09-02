@@ -532,6 +532,7 @@ input.searchButton {
 }
 #main p {
     font-size: 1rem;
+    line-height: 1.5;
 }
 #main td p {
     margin: 0;
