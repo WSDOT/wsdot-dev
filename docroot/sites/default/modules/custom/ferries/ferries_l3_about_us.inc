@@ -88,9 +88,9 @@ function build_construction_maintenance() {
 */
 function build_public_participation() {
     $output = build_l3_landing_tile("public-participation.jpg",
-                                    "/ferries/about-us/public-participation",
-                                    "Public participation",
-                                    "Understand how you can get involved with community and advisory meetings.");
+                                    "/ferries/about-us/community-participation",
+                                    "Community participation",
+                                    "Find out how you can get involved with community and advisory meetings.");
 
     return $output;
 }
