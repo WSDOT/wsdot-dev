@@ -90,7 +90,7 @@ function build_ferry_alerts() {
 
     $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(255,106,19,0.05);'>";
     $output .= "  <h2 class='pane-title'>Ferry alerts</h2>";
-    $output .= "  <div>" . $publishDate . "</div>";
+    $output .= "  <div style='font-size: 0.875rem;'>" . $publishDate . "</div>";
     $output .= "  <div style='font-size: 1.125rem; font-weight: bold; padding: .75rem 0 1.5rem 0;'>" . $alertFullTitle . "</div>";
     $output .= "  <ul class='info-box' style='position: absolute; bottom: 0; left: 13px;'>";
     $output .= "    <li><a href='https://www.wsdot.wa.gov/ferries/schedule/bulletin.aspx'>All alerts</a></li>";
