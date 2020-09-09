@@ -142,6 +142,9 @@ function ferries_block_info() {
     $blocks['wsf_blog'] = array(
         'info' => t('Ferries: L3 Footer: WSF Blog'),
     );
+    $blocks['weekly_update'] = array(
+        'info' => t('Ferries: L3 Footer: Weekly update'),
+    );
     $blocks['news_stories'] = array(
         'info' => t('Ferries: L3 Footer: News stories'),
     );
@@ -324,6 +327,10 @@ function ferries_block_view($delta = '') {
         case 'wsf_blog':
             $block['subject'] = t('<none>');
             $block['content'] = build_wsf_blog();
+            break;
+        case 'weekly_update':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_weekly_update();
             break;
         case 'news_stories':
             $block['subject'] = t('<none>');

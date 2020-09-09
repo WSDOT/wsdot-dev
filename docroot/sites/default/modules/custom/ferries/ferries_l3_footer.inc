@@ -12,13 +12,25 @@ function build_wsf_blog() {
 }
 
 /**
+* Returns generated HTML for 'Weekly update' footer tile
+*/
+function build_weekly_update() {
+    $output = build_l3_landing_footer_tile("weekly-update.jpg",
+                                           "/ferries/about-us/weekly-update",
+                                           "Weekly update",
+                                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a enim dolor.");
+
+    return $output;
+}
+
+/**
 * Returns generated HTML for 'News stories' footer tile
 */
 function build_news_stories() {
     $output = build_l3_landing_footer_tile("news-stories.jpg",
-                                           "#",
+                                           "/news/washington%20state%20ferries",
                                            "News stories",
-                                           "Check out our WSF Weekly Update and other news stories.");
+                                           "Fusce cursus odio at lectus consectetur consectetur. Lorem ipsum dolor sit amet, consectetur.");
 
     return $output;
 }
