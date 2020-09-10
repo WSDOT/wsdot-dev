@@ -96,6 +96,18 @@ function build_public_participation() {
 }
 
 /**
+* Returns generated HTML for 'Weekly update' tile
+*/
+function build_weekly_update() {
+    $output = build_l3_landing_tile("weekly-update.jpg",
+                                    "/ferries/about-us/weekly-update",
+                                    "Weekly update",
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a enim dolor.");
+
+    return $output;
+}
+
+/**
 * Returns generated HTML for 'API for ferries' tile
 */
 function build_ferries_api() {

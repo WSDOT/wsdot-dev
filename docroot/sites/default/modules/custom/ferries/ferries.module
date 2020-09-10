@@ -138,17 +138,20 @@ function ferries_block_info() {
     $blocks['ferries_api'] = array(
         'info' => t('Ferries: About Us: API for ferries'),
     );
+    $blocks['weekly_update'] = array(
+        'info' => t('Ferries: About Us: Weekly update'),
+    );
     // L3 footer
-    $blocks['wsf_blog'] = array(
+    $blocks['wsf_blog_footer'] = array(
         'info' => t('Ferries: L3 Footer: WSF Blog'),
     );
-    $blocks['weekly_update'] = array(
+    $blocks['weekly_update_footer'] = array(
         'info' => t('Ferries: L3 Footer: Weekly update'),
     );
-    $blocks['news_stories'] = array(
+    $blocks['news_stories_footer'] = array(
         'info' => t('Ferries: L3 Footer: News stories'),
     );
-    $blocks['twitter'] = array(
+    $blocks['twitter_footer'] = array(
         'info' => t('Ferries: L3 Footer: Twitter'),
     );
 
@@ -323,22 +326,26 @@ function ferries_block_view($delta = '') {
             $block['subject'] = t('<none>');
             $block['content'] = build_ferries_api();
             break;
-        // L3 footer
-        case 'wsf_blog':
-            $block['subject'] = t('<none>');
-            $block['content'] = build_wsf_blog();
-            break;
         case 'weekly_update':
             $block['subject'] = t('<none>');
             $block['content'] = build_weekly_update();
             break;
-        case 'news_stories':
+        // L3 footer
+        case 'wsf_blog_footer':
             $block['subject'] = t('<none>');
-            $block['content'] = build_news_stories();
+            $block['content'] = build_wsf_blog_footer();
             break;
-        case 'twitter':
+        case 'weekly_update_footer':
             $block['subject'] = t('<none>');
-            $block['content'] = build_twitter();
+            $block['content'] = build_weekly_update_footer();
+            break;
+        case 'news_stories_footer':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_news_stories_footer();
+            break;
+        case 'twitter_footer':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_twitter_footer();
             break;
     }
 
