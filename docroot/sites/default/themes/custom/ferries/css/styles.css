@@ -773,6 +773,7 @@ input.searchButton {
 #main h2.l3-pane-title + p {
     margin: 8px 0 0 0;
     color: inherit;
+    line-height: normal;
 }
 
 #l3-spotlight,.l3-footer-pane {
