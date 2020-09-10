@@ -2,7 +2,7 @@
 /**
 * Returns generated HTML for 'WSF Blog' footer tile
 */
-function build_wsf_blog() {
+function build_wsf_blog_footer() {
     $output = build_l3_landing_footer_tile("wsf-blog.jpg",
                                            "https://wsdotblog.blogspot.com/search/label/Washington%20State%20Ferries",
                                            "WSF Blog",
@@ -14,8 +14,8 @@ function build_wsf_blog() {
 /**
 * Returns generated HTML for 'Weekly update' footer tile
 */
-function build_weekly_update() {
-    $output = build_l3_landing_footer_tile("weekly-update.jpg",
+function build_weekly_update_footer() {
+    $output = build_l3_landing_footer_tile("weekly-update-footer.jpg",
                                            "/ferries/about-us/weekly-update",
                                            "Weekly update",
                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a enim dolor.");
@@ -26,7 +26,7 @@ function build_weekly_update() {
 /**
 * Returns generated HTML for 'News stories' footer tile
 */
-function build_news_stories() {
+function build_news_stories_footer() {
     $output = build_l3_landing_footer_tile("news-stories.jpg",
                                            "/news/washington%20state%20ferries",
                                            "News stories",
@@ -38,7 +38,7 @@ function build_news_stories() {
 /**
 * Returns generated HTML for 'Twitter' footer tile
 */
-function build_twitter() {
+function build_twitter_footer() {
     $output = build_l3_landing_footer_tile("twitter.jpg",
                                            "https://twitter.com/wsferries",
                                            "Twitter",
