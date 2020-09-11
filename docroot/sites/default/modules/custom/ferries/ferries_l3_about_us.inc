@@ -78,7 +78,7 @@ function build_construction_maintenance() {
     $output = build_l3_landing_tile("construction-maintenance.jpg",
                                     "/ferries/about-us/construction",
                                     "Construction and maintenance",
-                                    "See how construction and maintenance will affect your trip.");
+                                    "Learn about current and future terminal and vessel projects.");
 
     return $output;
 }
@@ -90,7 +90,7 @@ function build_public_participation() {
     $output = build_l3_landing_tile("public-participation.jpg",
                                     "/ferries/about-us/community-participation",
                                     "Community participation",
-                                    "Find out how you can get involved with community and advisory meetings.");
+                                    "Learn about our community meetings and our Ferry Advisory Committees.");
 
     return $output;
 }
@@ -102,7 +102,7 @@ function build_weekly_update() {
     $output = build_l3_landing_tile("weekly-update.jpg",
                                     "/ferries/about-us/weekly-update",
                                     "Weekly update",
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a enim dolor.");
+                                    "Read this week's happenings at Washington State Ferries or sign up to receive weekly email updates.");
 
     return $output;
 }
