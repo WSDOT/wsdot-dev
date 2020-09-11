@@ -17,7 +17,7 @@ function build_travel_alerts() {
 function build_realtime_map() {
     $output = build_l3_landing_tile("realtime-map.jpg",
                                     "https://www.wsdot.com/ferries/vesselwatch/",
-                                    "Realtime map",
+                                    "Real-time map",
                                     "See where your ferry is on a live map.");
 
     return $output;
@@ -42,7 +42,7 @@ function build_other_ferry_systems() {
     $output = build_l3_landing_tile("sanpoil-ferry.jpg",
                                     "/ferries/terminals/other-ferries",
                                     "Other ferry systems",
-                                    "Not finding the ferry you were looking for? Learn about other ferries in Washington State.");
+                                    "Not finding the ferry you were looking for? Learn about other ferries in Washington state.");
 
     return $output;
 }

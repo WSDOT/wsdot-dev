@@ -30,7 +30,7 @@ function build_low_tide_warning() {
     $output = build_l3_landing_tile("green-white-foamy-water.jpg",
                                     "/ferries/schedules/low-tide",
                                     "Low tide warning",
-                                    "Learn about tides that effect large vehicles on the Vashon and Mukilteo routes.");
+                                    "Learn about tides that affect large vehicles on the Vashon Island and Mukilteo/Clinton routes.");
 
     return $output;
 }

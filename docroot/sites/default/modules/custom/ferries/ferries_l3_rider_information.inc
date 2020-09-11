@@ -5,7 +5,7 @@
 function build_first_time_riders() {
     $output = build_l3_landing_tile("first-time-riders.jpg",
                                     "/ferries/rider-information/first-time",
-                                    "First time riders",
+                                    "First-time riders",
                                     "Learn how to travel the ferries by reading our rider guide.");
 
     return $output;
@@ -18,7 +18,7 @@ function build_rider_updates() {
     $output = build_l3_landing_tile("rider-updates.jpg",
                                     "/ferries/rider-information/updates",
                                     "Rider updates",
-                                    "Check current and long term updates and projects that may affect your route.");
+                                    "Check current and long-term updates and projects that may affect your route.");
 
     return $output;
 }
@@ -78,7 +78,7 @@ function build_groups_events() {
     $output = build_l3_landing_tile("groups-events.jpg",
                                     "/ferries/rider-information/groups",
                                     "Groups and events",
-                                    "Learn about special occasions, school groups, carpools, or vanpool on the ferry.");
+                                    "Learn about special occasions, school groups, carpools, or vanpools on the ferry.");
 
     return $output;
 }
