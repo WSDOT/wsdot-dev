@@ -124,7 +124,7 @@ function build_live_ferry_status() {
     $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(151,215,0,0.05);'>";
     $output .= "  <h2 class='pane-title'>Live ferry status</h2>";
     $output .= "  <ul class='info-box'>";
-    $output .= "    <li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Realtime ferry tracker</a></li>";
+    $output .= "    <li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Real-time ferry tracker</a></li>";
     $output .= "    <li><a href='https://www.wsdot.wa.gov/ferries/vesselwatch/terminals.aspx'>Boarding status by terminal</a></li>";
     $output .= "  </ul>";
     $output .="</div>";
@@ -141,11 +141,11 @@ function build_get_to_know_your_ferries() {
     $output .= "  <div style='font-size: 1.25rem; font-weight: bold;'>All are welcome on Washington State Ferries</div>";
     $output .= "  <p style='margin: 8px 0 24px 0;'>Here are some helpful tips on how to navigate the ferries.</p>";
     $output .= "  <ul class='info-box'>";
-    $output .= "    <li><a href='/ferries/rider-information/first-time'>First time rider's guide</a></li>";
+    $output .= "    <li><a href='/ferries/rider-information/first-time'>First-time rider's guide</a></li>";
     $output .= "    <li><a href='/ferries/rider-information/ada'>Disabilities and medical assistance</a></li>";
     $output .= "    <li><a href='/ferries/rider-information/route-map'>Route map</a></li>";
     $output .= "    <li><a href='/ferries/rider-information/canada'>Travel to Canada</a></li>";
-    $output .= "    <li><a href='/ferries/about-us/contact'>Contact Ferries</a></li>";
+    $output .= "    <li><a href='https://wsdot.wa.gov/ferries/infodesk/customerfeedback'>Contact Ferries</a></li>";
     $output .= "  </ul>";
     $output .= "</div>";
 
