@@ -5,7 +5,7 @@
 function build_wsf_blog_footer() {
     $output = build_l3_landing_footer_tile("wsf-blog.jpg",
                                            "https://wsdotblog.blogspot.com/search/label/Washington%20State%20Ferries",
-                                           "WSF Blog",
+                                           "Blog",
                                            "Check out our blog for all the latest updates on what’s going on with Washington State Ferries.");
 
     return $output;
@@ -18,7 +18,7 @@ function build_weekly_update_footer() {
     $output = build_l3_landing_footer_tile("weekly-update-footer.jpg",
                                            "/ferries/about-us/weekly-update",
                                            "Weekly update",
-                                           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a enim dolor.");
+                                           "Read this week's happenings at Washington State Ferries or sign up to receive weekly email updates.");
 
     return $output;
 }
@@ -30,7 +30,7 @@ function build_news_stories_footer() {
     $output = build_l3_landing_footer_tile("news-stories.jpg",
                                            "/news/washington%20state%20ferries",
                                            "News stories",
-                                           "Fusce cursus odio at lectus consectetur consectetur. Lorem ipsum dolor sit amet, consectetur.");
+                                           "View recent Washington State Ferries news releases.");
 
     return $output;
 }
@@ -42,7 +42,7 @@ function build_twitter_footer() {
     $output = build_l3_landing_footer_tile("twitter.jpg",
                                            "https://twitter.com/wsferries",
                                            "Twitter",
-                                           "Follow us @wsferries for the best social media content you’ll find on the internet.");
+                                           "Follow us @wsferries for the latest incidents or events that affect riders and the communities we serve.");
 
     return $output;
 }
