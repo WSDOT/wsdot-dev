@@ -143,7 +143,7 @@ function build_get_to_know_your_ferries() {
     $output .= "  <ul class='info-box'>";
     $output .= "    <li><a href='/ferries/rider-information/first-time'>First-time rider's guide</a></li>";
     $output .= "    <li><a href='/ferries/rider-information/ada'>Disabilities and medical assistance</a></li>";
-    $output .= "    <li><a href='/ferries/rider-information/route-map'>Route map</a></li>";
+    $output .= "    <li><a href='https://wsdot.wa.gov/ferries/pdf/WashingtonStateFerries-RouteMap.pdf'>Route map (pdf 501 kb)</a></li>";
     $output .= "    <li><a href='/ferries/rider-information/canada'>Travel to Canada</a></li>";
     $output .= "    <li><a href='https://wsdot.wa.gov/ferries/infodesk/customerfeedback'>Contact Ferries</a></li>";
     $output .= "  </ul>";
