@@ -534,12 +534,14 @@ input.searchButton {
     font-size: 1rem;
     line-height: 1.5;
 }
+#main ul, ol {
+	line-height: 1.5;
+}
 #main td p {
     margin: 0;
 }
 #main h2 {
     font-size: 1.375rem;
-    font-weight: normal;
     padding-bottom: 0.8125rem;
 }
 #main h3 {
