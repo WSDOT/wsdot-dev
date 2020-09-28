@@ -906,12 +906,17 @@ input.searchButton {
     background-color: #007b5f;
     color: #fff;
 }
-
 .navigation-links a:focus {
     outline: none;
     box-shadow: 0 0 0 .5rem #007b5f;
     background-color: #007b5f;
     color: #fff;
+}
+.navigation-links li.active {
+	color: black;
+}
+.navigation-links li.active:hover {
+	background-color: unset;
 }
 
 /* Custom bulleted list used on homepage */
