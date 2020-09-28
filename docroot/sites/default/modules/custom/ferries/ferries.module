@@ -356,7 +356,7 @@ function ferries_block_view($delta = '') {
 * Builds HTML for local navigation used across home and landing pages 
 */
 function build_navigation_links() {
-    $output = "<ul class='navigation-links'>";
+    $output = "<ul class='navigation-links' style='line-height: normal;'>";
     $output .= "  <li><a href='/ferries/tickets'>Tickets</a></li>";
     $output .= "  <li><a href='/ferries/schedules'>Schedules</a></li>";
     $output .= "  <li><a href='/ferries/terminals'>Ferries and Terminals</a></li>";
