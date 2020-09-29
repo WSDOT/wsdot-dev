@@ -534,12 +534,14 @@ input.searchButton {
     font-size: 1rem;
     line-height: 1.5;
 }
+#main ul, ol {
+	line-height: 1.5;
+}
 #main td p {
     margin: 0;
 }
 #main h2 {
     font-size: 1.375rem;
-    font-weight: normal;
     padding-bottom: 0.8125rem;
 }
 #main h3 {
@@ -904,12 +906,17 @@ input.searchButton {
     background-color: #007b5f;
     color: #fff;
 }
-
 .navigation-links a:focus {
     outline: none;
     box-shadow: 0 0 0 .5rem #007b5f;
     background-color: #007b5f;
     color: #fff;
+}
+.navigation-links li.active {
+	color: black;
+}
+.navigation-links li.active:hover {
+	background-color: unset;
 }
 
 /* Custom bulleted list used on homepage */

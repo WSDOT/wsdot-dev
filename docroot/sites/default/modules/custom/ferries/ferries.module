@@ -356,7 +356,13 @@ function ferries_block_view($delta = '') {
 * Builds HTML for local navigation used across home and landing pages 
 */
 function build_navigation_links() {
-    $output = "<ul class='navigation-links'>";
+    $output = "<script>";
+	$output .= "jQuery(function(){";
+	$output .= "  var pathArr = location.pathname.split('/');";
+	$output .= "  jQuery('.navigation-links a[href^=\"/ferries/'+pathArr[2]+'\"]').contents().unwrap().parent().addClass('active');";
+	$output .= "});";
+	$output .= "</script>";
+	$output .= "<ul class='navigation-links' style='line-height: normal;'>";
     $output .= "  <li><a href='/ferries/tickets'>Tickets</a></li>";
     $output .= "  <li><a href='/ferries/schedules'>Schedules</a></li>";
     $output .= "  <li><a href='/ferries/terminals'>Ferries and Terminals</a></li>";
