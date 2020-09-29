@@ -76,7 +76,7 @@ function build_travel_canada() {
 */
 function build_groups_events() {
     $output = build_l3_landing_tile("groups-events.jpg",
-                                    "/ferries/rider-information/groups",
+                                    "/ferries/rider-information/groups-events",
                                     "Groups and events",
                                     "Learn about special occasions, school groups, carpools, or vanpools on the ferry.");
 
