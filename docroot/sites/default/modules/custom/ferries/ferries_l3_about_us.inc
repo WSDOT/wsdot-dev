@@ -66,7 +66,7 @@ function build_environment() {
     $output = build_l3_landing_tile("environment.jpg",
                                     "/ferries/about-us/environment",
                                     "Environment",
-                                    "Learn how we protect employees, customers, and the natural environment of the Puget Sound Region.");
+                                    "Learn how we protect employees, customers and the environment of the Puget Sound Region.");
 
     return $output;
 }
