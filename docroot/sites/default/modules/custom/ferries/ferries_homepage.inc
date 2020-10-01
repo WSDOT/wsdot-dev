@@ -101,17 +101,19 @@ function build_ferry_alerts() {
 }
 
 /**
-* Builds HTML for 'Rider updates' tile
+* Builds HTML for 'Social media icons' block
 */
-function build_rider_updates_highlight() {
-    $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px;'>";
-    $output .= "  <h2 class='pane-title'>Rider updates</h2>";
-    $output .= "  <div style='padding-bottom: 1.5rem;'>";
-    $output .= "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#'>Praesent aliquet pulvinar quam ac bibendum.</a>";
-    $output .= "  </div>";
-    $output .= "  <ul class='info-box' style='position: absolute; bottom: 0; left: 13px;'>";
-    $output .= "    <li><a href='/ferries/rider-information/updates'>All rider updates</a></li>";
-    $output .= "  </ul>";
+function build_social_media_icons() {
+    $output = "<div id='social-media-container'>";
+    $output .= "  <a href='https://www.flickr.com/photos/wsdot/collections/72157604556431407/'>";
+	$output .= "    <img src='/sites/default/themes/custom/ferries/images/flickr-icon.png' alt='Flickr icon'>";
+	$output .= "  </a>";
+    $output .= "  <a href='https://twitter.com/wsferries/'>";
+	$output .= "    <img src='/sites/default/themes/custom/ferries/images/twitter-icon.png' alt='Twitter icon'>";
+	$output .= "  </a>";
+    $output .= "  <a href='https://www.facebook.com/wsferries/'>";
+	$output .= "    <img src='/sites/default/themes/custom/ferries/images/facebook-icon.png' alt='Facebook icon'>";
+	$output .= "  </a>";
     $output .= "</div>";
 
     return $output;
