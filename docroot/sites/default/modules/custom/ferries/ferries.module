@@ -14,6 +14,9 @@ module_load_include('inc', 'ferries', 'ferries_l3_footer');
 function ferries_block_info() {
     $blocks = array();
     // Homepage
+    $blocks['social_media_icons'] = array(
+        'info' => t('Ferries: Social media icons'),
+    );
     $blocks['select_route'] = array(
         'info' => t('Ferries: Select route'),
         'cache' => DRUPAL_NO_CACHE,
@@ -27,9 +30,6 @@ function ferries_block_info() {
     $blocks['ferry_alerts'] = array(
         'info' => t('Ferries: Ferry alerts'),
         'cache' => DRUPAL_NO_CACHE,
-    );
-    $blocks['rider_updates_highlight'] = array(
-        'info' => t('Ferries: Rider updates'),
     );
     $blocks['live_ferry_status'] = array(
         'info' => t('Ferries: Live ferry status'),
@@ -165,6 +165,10 @@ function ferries_block_view($delta = '') {
     $block = array();
     switch($delta) {
         // Homepage
+	    case 'social_media_icons':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_social_media_icons();
+            break;
         case 'select_route':
             $block['subject'] = t('<none>');
             $block['content'] = drupal_get_form('select_route_form');
@@ -180,10 +184,6 @@ function ferries_block_view($delta = '') {
         case 'ferry_alerts':
             $block['subject'] =  t('<none>');
             $block['content'] = build_ferry_alerts();
-            break;
-        case 'rider_updates_highlight':
-            $block['subject'] =  t('<none>');
-            $block['content'] = build_rider_updates_highlight();
             break;
         case 'live_ferry_status':
             $block['subject'] =  t('<none>');

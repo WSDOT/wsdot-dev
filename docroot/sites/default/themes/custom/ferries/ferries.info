@@ -10,10 +10,10 @@ plugins[panels][layouts] = layouts
 ; Regions
 ; ---------------------
 regions[emergency_banner] = Emergency Banner
-regions[social_container] = Social container
 regions[header] = Header
 regions[highlighted] = Highlighted
 regions[help] = Help
+regions[social_media_container] = Social media container
 regions[content] = Content
 regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar

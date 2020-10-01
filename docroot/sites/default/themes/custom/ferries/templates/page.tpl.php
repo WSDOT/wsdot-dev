@@ -75,10 +75,8 @@
 
   <div id="main">
     <a name="main-content"></a>
-	<?php if ($page['social_container']): ?>
-	  <div id="social-container">
-	    <?php print render($page['social_container']); ?>
-	  </div>
+	<?php if ($page['social_media_container']): ?>
+	  <?php print render($page['social_media_container']); ?>
 	<?php endif; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>

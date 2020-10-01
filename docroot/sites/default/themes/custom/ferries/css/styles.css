@@ -164,17 +164,17 @@ fieldset {
 }
 
 /* Social media icons container */
-#social-container {
+#social-media-container {
   width: 70px;
   height: 20px;
   margin: 13px 2px 0 0;
   float: right;
 }
-#social-container img {
+#social-media-container img {
   width: 20px;
   float: left;
 }
-#social-container a:not(:first-child) img {
+#social-media-container a:not(:first-child) img {
   padding-left: 5px;
 }
 
