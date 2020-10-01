@@ -56,7 +56,7 @@
       <a name="skipnav"></a>
       <!-- Begin: Left navigation box -->
       <div class="leftnavbox">
-        <?php print render($page['sidebar_first']); ?>    
+        <?php print render($page['sidebar_first']); ?>
       </div>
       <!-- End: Left navigation box -->
     </div>
@@ -75,6 +75,11 @@
 
   <div id="main">
     <a name="main-content"></a>
+	<?php if ($page['social_container']): ?>
+	  <div id="social-container">
+	    <?php print render($page['social_container']); ?>
+	  </div>
+	<?php endif; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
     <?php print render($title_suffix); ?>
