@@ -485,6 +485,10 @@ form.webform-client-form input[type=text],form.webform-client-form input[type=em
     background-color: transparent;
 }
 
+form.webform-client-form .label-inline input[type=text], form.webform-client-form .label-inline input[type=email], form.webform-client-form .label-inline input[type=password], form.webform-client-form .label-inline input[type=tel] {
+    margin: 0.5em 0 1em;
+}
+
 form.webform-client-form select {
     display: inline-block;
     -webkit-appearance: none;
@@ -528,8 +532,8 @@ input.webform-calendar {
 }
 
 input.form-checkbox,input.form-radio {
+    margin: 1.075em 0.66em 0 0;
     vertical-align: middle;
-    margin-top: 1.075em;
 }
 
 .label-top label{
@@ -551,7 +555,7 @@ input.form-checkbox,input.form-radio {
     max-width: calc(100% - 2px);
 }
 
-.webform-container-inline div,.webform-container-inline div.form-item {
+.webform-container-inline div.form-type-checkbox,.webform-container-inline div.form-type-radio {
     display: inline-block;
     width: 100%;
 }
