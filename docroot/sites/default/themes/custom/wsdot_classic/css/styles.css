@@ -489,6 +489,10 @@ form.webform-client-form .label-inline input[type=text], form.webform-client-for
     margin: 0.5em 0 1em;
 }
 
+.form-checkboxes .form-item, .form-radios .form-item {
+    margin: 0;
+}
+
 form.webform-client-form select {
     display: inline-block;
     -webkit-appearance: none;
