@@ -493,7 +493,7 @@ form.webform-client-form select {
     max-width: 100%;
     min-width: 214px;
     padding: 0.4em;
-    margin: 0 0 1em 0;
+    margin: 0.5em 0;
     border: 1px solid #bbb;
     border-radius: 0;
     outline: none;
@@ -520,21 +520,47 @@ form.webform-client-form textarea {
     color: #222;
 }
 
+input.webform-calendar {
+    display: none;
+    margin-top: 1em;
+    padding: 3px;
+    vertical-align: top;
+}
+
+input.form-checkbox,input.form-radio {
+    vertical-align: middle;
+    margin-top: 1.075em;
+}
+
 .label-top label{
     display: block;
     font-size: 1.2em;
     margin-bottom: 0.9em;
 }
 
-.label-inline label{
+.label-inline label {
     display: inline-block;
+    max-width: 90%;
+    margin: 1em 1em 1em 0;
     font-size: 13px;
-    margin: 0 1em 1em 0; 
+    vertical-align: top;
 }
 
 .resizable-textarea .grippie {
     width: 498px;
     max-width: calc(100% - 2px);
+}
+
+.webform-container-inline div,.webform-container-inline div.form-item {
+    display: inline-block;
+    width: 100%;
+}
+
+.webform-progressbar {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 /* news */
