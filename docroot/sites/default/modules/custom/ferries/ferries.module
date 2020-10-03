@@ -428,7 +428,7 @@ function build_l3_landing_footer_tile($image, $alt, $url, $title, $content) {
 *
 * Need to don't see the parameters 'form_build_id' and 'form_id' in the url.
 */
-function ferries_form_schedule_by_route_form_alter(&$form, &$form_state, $form_id) {
+function ferries_form_select_route_form_alter(&$form, &$form_state, $form_id) {
     unset($form['form_build_id'], $form['form_token'], $form['form_id']);
 }
 
