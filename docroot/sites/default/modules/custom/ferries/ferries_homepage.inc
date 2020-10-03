@@ -126,7 +126,7 @@ function build_live_ferry_status() {
     $output = "<div style='position: relative; box-sizing: border-box; min-height: 12.5rem; padding: 8px 13px 8px 13px; background-color: rgba(151,215,0,0.05);'>";
     $output .= "  <h2 class='pane-title'>Live ferry status</h2>";
     $output .= "  <ul class='info-box'>";
-    $output .= "    <li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Real-time ferry tracker</a></li>";
+    $output .= "    <li><a href='https://www.wsdot.com/ferries/vesselwatch/'>Real-time map</a></li>";
     $output .= "    <li><a href='https://www.wsdot.wa.gov/ferries/vesselwatch/terminals.aspx'>Boarding status by terminal</a></li>";
     $output .= "  </ul>";
     $output .="</div>";

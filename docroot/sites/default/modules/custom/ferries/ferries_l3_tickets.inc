@@ -70,3 +70,15 @@ function build_refunds() {
 
     return $output;
 }
+
+/**
+* Returns generated HTML for 'Business accounts' tile
+*/
+function build_business_accounts() {
+    $output = build_l3_landing_tile("business-accounts.jpg",
+                                    "/ferries/tickets/business",
+                                    "Business accounts",
+                                    "Provide your employees with a convenient way to pay for commercial travel.");
+
+    return $output;
+}

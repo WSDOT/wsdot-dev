@@ -59,6 +59,9 @@ function ferries_block_info() {
     $blocks['refunds'] = array(
         'info' => t('Ferries: Tickets: Refunds'),
     );
+    $blocks['business_accounts'] = array(
+        'info' => t('Ferries: Tickets: Business accounts'),
+    );
     // Schedules
     $blocks['schedule_by_route'] = array(
         'info' => t('Ferries: Schedules: Schedule by route'),
@@ -221,6 +224,10 @@ function ferries_block_view($delta = '') {
         case 'refunds':
             $block['subject'] = t('<none>');
             $block['content'] = build_refunds();
+            break;
+        case 'business_accounts':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_business_accounts();
             break;
         // Schedules
         case 'schedule_by_route':
