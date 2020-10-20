@@ -371,7 +371,7 @@ function build_navigation_links() {
 	$output .= "</script>";
 	$output .= "<ul class='navigation-links' style='line-height: normal;'>";
     $output .= "  <li><a href='/ferries/tickets'>Tickets</a></li>";
-    $output .= "  <li><a href='/ferries/schedules'>Schedules</a></li>";
+    $output .= "  <li><a href='/ferries/sailing-schedules'>Schedules</a></li>";
     $output .= "  <li><a href='/ferries/terminals'>Ferries and Terminals</a></li>";
     $output .= "  <li><a href='/ferries/rider-information'>Rider Information</a></li>";
     $output .= "  <li><a href='/ferries/about-us'>About Us</a></li>";

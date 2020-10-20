@@ -4,7 +4,7 @@
 */
 function build_schedule_by_route() {
     $output = build_l3_landing_tile("route-map.jpg",
-                                    "/ferries/schedules/schedule-route",
+                                    "/ferries/sailing-schedules/schedule-route",
                                     "Schedule by route",
                                     "Find your route and see the sailing times.");
 
@@ -28,7 +28,7 @@ function build_schedule_by_date() {
 */
 function build_low_tide_warning() {
     $output = build_l3_landing_tile("green-white-foamy-water.jpg",
-                                    "/ferries/schedules/low-tide",
+                                    "/ferries/sailing-schedules/low-tide",
                                     "Low tide warnings",
                                     "Learn about tides that affect large vehicles on the Vashon Island and Mukilteo/Clinton routes.");
 
