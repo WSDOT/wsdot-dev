@@ -1,4 +1,0 @@
-# Google
-google.com, pub-9404316924771596, DIRECT, f08c47fec0942fa0
-# Open-X
-openx.com, 537150268, DIRECT, 6a698e2ec38604c6
