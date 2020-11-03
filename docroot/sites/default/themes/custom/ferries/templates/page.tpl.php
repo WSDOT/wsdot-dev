@@ -3,7 +3,7 @@
   <?php if ($page['emergency_banner']): ?>
     <div id="emergencyBanner">
       <div>
-        <img src="/sites/default/themes/custom/wsdot_classic/images/back/emergencyBannerSymbol.png" class="emergencyBannerSymbol">
+        <img src="/sites/default/themes/custom/wsdot_classic/images/back/emergencyBannerSymbol.png" alt="alert symbol" class="emergencyBannerSymbol">
         <?php print render($page['emergency_banner']); ?>
       </div>
     </div>
