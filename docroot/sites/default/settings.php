@@ -591,6 +591,7 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
   // Configure Acquia Purge for Drupal 7
   $conf['acquia_purge_http'] = FALSE;
   $conf['acquia_purge_https'] = TRUE;
+  $conf['acquia_purge_cron'] = TRUE;
 
   if ($_ENV['AH_SITE_ENVIRONMENT'] != 'prod') {
     // For sites that are hosted in Acquia Cloud and are not the production instance
