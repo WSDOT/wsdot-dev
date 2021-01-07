@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_news_view.views_default.inc
@@ -64,7 +65,7 @@ function wsdot_news_view_views_default_views() {
   );
   $handler->display->display_options['arguments']['field_regions_tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['arguments']['field_regions_tid']['validate_options']['transform'] = TRUE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -79,7 +80,7 @@ function wsdot_news_view_views_default_views() {
     'news_article' => 'news_article',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Field: Publication Date -  start date (field_date) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['filters']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['filters']['field_date_value']['field'] = 'field_date_value';
@@ -87,8 +88,6 @@ function wsdot_news_view_views_default_views() {
   $handler->display->display_options['filters']['field_date_value']['expose']['label'] = 'Publication Date (field_date)';
   $handler->display->display_options['filters']['field_date_value']['expose']['operator'] = 'field_date_value_op';
   $handler->display->display_options['filters']['field_date_value']['expose']['identifier'] = 'field_date_value';
-  $handler->display->display_options['filters']['field_date_value']['granularity'] = 'month';
-  $handler->display->display_options['filters']['field_date_value']['year_range'] = '-3:+0';
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
@@ -182,7 +181,7 @@ function wsdot_news_view_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -264,7 +263,7 @@ function wsdot_news_view_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -325,7 +324,7 @@ function wsdot_news_view_views_default_views() {
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -399,7 +398,7 @@ function wsdot_news_view_views_default_views() {
     'regions' => 'regions',
   );
   $handler->display->display_options['arguments']['tid']['validate_options']['type'] = 'convert';
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -476,6 +475,7 @@ function wsdot_news_view_views_default_views() {
   $handler->display->display_options['arguments']['created_year']['summary']['sort_order'] = 'desc';
   $handler->display->display_options['arguments']['created_year']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['created_year']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['created_year']['summary_options']['base_path'] = 'news/archive/%/%';
   $handler->display->display_options['arguments']['created_year']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['created_year']['specify_validation'] = TRUE;
   /* Contextual filter: Content: Has taxonomy term ID */
