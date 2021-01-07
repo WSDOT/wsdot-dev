@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * wsdot_news_view.features.inc
