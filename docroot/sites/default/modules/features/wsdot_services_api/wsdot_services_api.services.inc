@@ -20,6 +20,13 @@ function wsdot_services_api_default_services_endpoint() {
   $endpoint->authentication = array();
   $endpoint->server_settings = array();
   $endpoint->resources = array(
+    'manuals' => array(
+      'operations' => array(
+        'index' => array(
+          'enabled' => '1',
+        ),
+      ),
+    ),
     'projects' => array(
       'operations' => array(
         'index' => array(
