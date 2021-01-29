@@ -20,14 +20,14 @@ function wsdot_services_api_default_services_endpoint() {
   $endpoint->authentication = array();
   $endpoint->server_settings = array();
   $endpoint->resources = array(
-    'news' => array(
+    'projects' => array(
       'operations' => array(
         'index' => array(
           'enabled' => '1',
         ),
       ),
     ),
-    'projects' => array(
+    'rest-areas' => array(
       'operations' => array(
         'index' => array(
           'enabled' => '1',

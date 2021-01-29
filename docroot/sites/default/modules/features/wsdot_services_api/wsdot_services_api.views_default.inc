@@ -126,7 +126,7 @@ function wsdot_services_api_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Content: Published status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -145,6 +145,109 @@ function wsdot_services_api_views_default_views() {
   $handler = $view->new_display('services', 'Services', 'services_1');
   $handler->display->display_options['path'] = 'projects';
   $export['services_projects'] = $view;
+
+  $view = new view();
+  $view->name = 'services_rest_areas';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Services Rest Areas';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Services Rest Areas';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'nid';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Amenities */
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['id'] = 'field_rest_areas_amenities';
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['table'] = 'field_data_field_rest_areas_amenities';
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['field'] = 'field_rest_areas_amenities';
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['label'] = 'amenities';
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_rest_areas_amenities']['delta_offset'] = '0';
+  /* Field: Content: Direction */
+  $handler->display->display_options['fields']['field_highway_direction']['id'] = 'field_highway_direction';
+  $handler->display->display_options['fields']['field_highway_direction']['table'] = 'field_data_field_highway_direction';
+  $handler->display->display_options['fields']['field_highway_direction']['field'] = 'field_highway_direction';
+  $handler->display->display_options['fields']['field_highway_direction']['label'] = 'direction';
+  $handler->display->display_options['fields']['field_highway_direction']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_highway_direction']['delta_offset'] = '0';
+  /* Field: Content: Geolocation */
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['id'] = 'field_geolocation_lat_long';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['table'] = 'field_data_field_geolocation_lat_long';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['field'] = 'field_geolocation_lat_long';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['label'] = 'geolocation';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['click_sort_column'] = 'lat';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['type'] = 'services';
+  $handler->display->display_options['fields']['field_geolocation_lat_long']['settings'] = array(
+    'data_element_key' => '',
+    'skip_safe' => 0,
+    'skip_empty_values' => 0,
+  );
+  /* Field: Content: Highways */
+  $handler->display->display_options['fields']['field_highways']['id'] = 'field_highways';
+  $handler->display->display_options['fields']['field_highways']['table'] = 'field_data_field_highways';
+  $handler->display->display_options['fields']['field_highways']['field'] = 'field_highways';
+  $handler->display->display_options['fields']['field_highways']['label'] = 'highways';
+  $handler->display->display_options['fields']['field_highways']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_highways']['delta_offset'] = '0';
+  /* Field: Content: Location */
+  $handler->display->display_options['fields']['field_milepost']['id'] = 'field_milepost';
+  $handler->display->display_options['fields']['field_milepost']['table'] = 'field_data_field_milepost';
+  $handler->display->display_options['fields']['field_milepost']['field'] = 'field_milepost';
+  $handler->display->display_options['fields']['field_milepost']['label'] = 'location';
+  $handler->display->display_options['fields']['field_milepost']['type'] = 'text_plain';
+  /* Field: Content: Status */
+  $handler->display->display_options['fields']['field_rest_area_status']['id'] = 'field_rest_area_status';
+  $handler->display->display_options['fields']['field_rest_area_status']['table'] = 'field_data_field_rest_area_status';
+  $handler->display->display_options['fields']['field_rest_area_status']['field'] = 'field_rest_area_status';
+  $handler->display->display_options['fields']['field_rest_area_status']['label'] = 'status';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Filter criterion: Content: Published status */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'rest_area' => 'rest_area',
+  );
+
+  /* Display: Services */
+  $handler = $view->new_display('services', 'Services', 'services_1');
+  $handler->display->display_options['path'] = 'rest-areas';
+  $export['services_rest_areas'] = $view;
 
   return $export;
 }
