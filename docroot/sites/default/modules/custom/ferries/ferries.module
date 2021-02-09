@@ -72,6 +72,9 @@ function ferries_block_info() {
     $blocks['low_tide_warning'] = array(
         'info' => t('Ferries: Schedules: Low tide warning'),
     );
+    $blocks['best_travel_times'] = array(
+        'info' => t('Ferries: Schedules: Best times to travel'),
+    );
     // Ferries and Terminals
     $blocks['travel_alerts'] = array(
         'info' => t('Ferries: Terminals: Travel alerts'),
@@ -241,6 +244,10 @@ function ferries_block_view($delta = '') {
         case 'low_tide_warning':
             $block['subject'] = t('<none>');
             $block['content'] = build_low_tide_warning();
+            break;
+        case 'best_travel_times':
+            $block['subject'] = t('<none>');
+            $block['content'] = build_best_travel_times();
             break;
         // Ferries and Terminals
         case 'travel_alerts':
