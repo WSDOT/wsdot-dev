@@ -34,3 +34,15 @@ function build_low_tide_warning() {
 
     return $output;
 }
+
+/**
+* Returns generated HTML for 'Best times to travel' tile
+*/
+function build_best_travel_times() {
+    $output = build_l3_landing_tile("best-travel-times.jpg",
+                                    "/ferries/sailing-schedules/best-travel-times",
+                                    "Best times to travel",
+                                    "Avoid long waits by traveling outside of the busiest times.");
+
+    return $output;
+}
