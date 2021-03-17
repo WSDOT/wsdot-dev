@@ -90,7 +90,13 @@ class DatabaseConnection_sqlsrv extends DatabaseConnection {
 
     // Build the DSN.
     $options = array();
-    $options['Server'] = $connection_options['host'] . (!empty($connection_options['port']) ? ',' . $connection_options['port'] : '');
+    $options['Server'] = $connection_options['host'];
+
+    // If a port is specified and this is NOT a named instance
+    if (!empty($connection_options['port']) && stripos($connection_options['host'], '\\') === false) {
+        $options['Server'] .= ',' . $connection_options['port'];
+    }  
+
     // We might not have a database in the
     // connection options, for example, during
     // database creation in Install.
