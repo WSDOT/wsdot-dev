@@ -1,11 +1,12 @@
+
 /* Orange */
-a {color:#cc3300;}
+/* a {color:#cc3300;}
 a:visited {color:#6a1a00;}
 #header .topban {background-color:#ff6600;}
 input.searchButton {background-color:#ff6600;border:1px solid;border-top-color:#bdbdbd;border-left-color:#bdbdbd;border-right-color:#cc3333;border-bottom-color:#cc3300;}
 .leftnavbox .content a {color:#cc3300;}
-.leftnavbox .content a:visited {color:#6a1a00;}
+.leftnavbox .content a:visited {color:#6a1a00;} */
 .logo h1 a {background:transparent url(../images/OrangeLogo.gif) no-repeat;}
-.mainnav ul li a {color:#ff6600;}
+/* .mainnav ul li a {color:#ff6600;}
 .mainnav ul li a:hover {color: #ff6600;}
-div#highlight div.widgetdata h3 {background-color:#ff6600;}
+div#highlight div.widgetdata h3 {background-color:#ff6600;} */
