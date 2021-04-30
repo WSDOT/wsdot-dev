@@ -41,8 +41,8 @@ function build_commercial_vehicles() {
 function build_disabilities_medical() {
     $output = build_l3_landing_tile("disabilities-medical.jpg",
                                     "/ferries/rider-information/ada",
-                                    "Disabilities and medical assistance",
-                                    "Learn more about the accommodations we offer.");
+                                    "Riders with disabilities",
+                                    "Get information about accessibility on our ferries.");
 
     return $output;
 }
