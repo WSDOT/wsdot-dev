@@ -19,7 +19,7 @@
   </div>
   <div class="logo">
     <h1> <a href="/"><img src="/sites/default/themes/custom/wsdot_classic/images/blacklogo.gif" alt="WSDOT" /></a> </h1>
-    <div class="emailupdates"><a href="https://public.govdelivery.com/accounts/WADOT/subscriber/new" onclick="window.open('https://public.govdelivery.com/accounts/WADOT/subscriber/new','Popup','width=780,height=440,toolbar=no,scrollbars=yes,resizable=yes'); return false" title="Sign up for email updates">Email/text updates</a></div>
+    <div class="emailupdates"><a href="https://wsdot.wa.gov/Ferries/RouteAlerts" title="Sign up for email updates">Email/text updates</a></div>
   </div>
 
   <div class="mainban">
