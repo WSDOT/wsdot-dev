@@ -3,7 +3,7 @@
 include_once 'fastcache.inc';
 
 /**
- * @filefe
+ * @file
  * Database schema code for Microsoft SQL Server database servers.
  */
 
@@ -137,7 +137,9 @@ class DatabaseSchema_sqlsrv extends DatabaseSchema {
 
     // No worry for the tableExists() check, results
     // are cached.
-    if (empty($table) || !$this->tableExists($table)) {
+    // This fails with drupal > v7.78
+    //if (empty($table) || !$this->tableExists($table)) {
+    if (!$this->tableExists($table)) {
       throw new DatabaseSchemaObjectDoesNotExistException("The table '{$table}' does not exist.");
     }
 
@@ -378,6 +380,9 @@ class DatabaseSchema_sqlsrv extends DatabaseSchema {
    *   True if the table exists, false otherwise.
    */
   public function tableExists($table, $reset = FALSE) {
+    if (empty($table)) {
+      return FALSE;
+    }
     // Do not cache temporary tables (#)
     if (!$reset && $table[0] != '#' && $cache = fastcache::cache_get($table, 'tableExists')) {
       return $cache->data;

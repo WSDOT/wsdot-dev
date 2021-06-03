@@ -141,8 +141,12 @@ class DatabaseConnection_sqlsrv extends DatabaseConnection {
     // Initialize and prepare the connection prefix.
     $this->setPrefix(isset($this->connectionOptions['prefix']) ? $this->connectionOptions['prefix'] : '');
 
-    // Call PDO::__construct and PDO::setAttribute.
-    PDO::__construct($dsn, $connection_options['username'], $connection_options['password'], $connection_options['pdo']);
+    // Drupal 7.79 removed PDO as the parent of DatabaseConnection
+    if (VERSION <= 7.78) {
+      PDO::__construct($dsn, $connection_options['username'], $connection_options['password'], $connection_options['pdo']);
+    } else {
+      $this->connection = new PDO($dsn, $connection_options['username'], $connection_options['password'], $connection_options['pdo']);
+    }
   }
 
   /**
@@ -777,7 +781,12 @@ class DatabaseConnection_sqlsrv extends DatabaseConnection {
         $rolled_back_other_active_savepoints = TRUE;
       }
     }
-    \PDO::rollBack();
+    // Drupal 7.79 removed PDO as the parent of DatabaseConnection
+  	if (VERSION <= 7.78) {
+      PDO::rollback();
+    } else {
+      $this->connection->rollback();
+    }
     // Restore original transaction isolation level
     if ($level = static::DefaultTransactionIsolationLevelInStatement()) {
       if($savepoint['settings']->Get_IsolationLevel() != DatabaseTransactionIsolationLevel::Ignore()) {
@@ -840,7 +849,12 @@ class DatabaseConnection_sqlsrv extends DatabaseConnection {
       foreach($this->statement_cache as $statement) {
         $statement->closeCursor();
       }
-      \PDO::beginTransaction();
+      // Drupal 7.79 removed PDO as the parent of DatabaseConnection
+	    if (VERSION <= 7.78) {
+        PDO::beginTransaction();
+      } else {
+        $this->connection->beginTransaction();
+      }
     }
     // Store the name and settings in the stack.
     $this->transactionLayers[$name] = array('settings' => $settings, 'active' => TRUE, 'name' => $name, 'started' => $started);
@@ -893,7 +907,13 @@ class DatabaseConnection_sqlsrv extends DatabaseConnection {
       if (empty($this->transactionLayers)) {
         try {
           // PDO::commit() can either return FALSE or throw an exception itself
-          if (!PDO::commit()) {
+		      // Drupal 7.79 removed PDO as the parent of DatabaseConnection
+	        if (VERSION <= 7.78) {
+            $commit_check = PDO::commit();
+          } else {
+            $commit_check = $this->connection->commit();
+          }
+		      if (!$commit_check) {
             throw new DatabaseTransactionCommitFailedException();
           }
         }
