@@ -607,9 +607,9 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
       case 'prod':
           // Production environment
           $conf['acquia_purge_domains'] = array(
-              'wsdot.prod.acquia-sites.com',
-              'www.wsdot.wa.gov',
               'wsdot.wa.gov',
+              'www.wsdot.wa.gov',
+              'wsdot.prod.acquia-sites.com',
           );
           break;
       case 'test':
@@ -627,9 +627,9 @@ if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
       default:
           // Default purge domains if no specific environment detected
           $conf['acquia_purge_domains'] = array(
-              'wsdot.prod.acquia-sites.com',
-              'www.wsdot.wa.gov',
               'wsdot.wa.gov',
+              'www.wsdot.wa.gov',
+              'wsdot.prod.acquia-sites.com',
           );
   }
 } else {
