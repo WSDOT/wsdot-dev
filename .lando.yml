@@ -4,4 +4,4 @@ config:
   acli_version: latest
   ah_application_uuid: 50827660-d168-40c8-b3de-0e9a6fa88a8f
   ah_site_group: wsdot
-  php: '7.3'
+  php: '7.4'
