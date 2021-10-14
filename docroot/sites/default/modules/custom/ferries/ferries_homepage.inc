@@ -3,14 +3,6 @@
 * Builds simple form for 'Find your sailing schedule by route' tile
 */
 function select_route_form($form, &$form_state) {
-    $routes = array();
-    $json = file_get_contents("https://data.wsdot.wa.gov/ferries/WSFScheduledRoutes.js");
-    $scheduledRoutes = json_decode($json, true);
-
-    foreach ($scheduledRoutes as $route) {
-        $routes[$route['RouteAbbrev']] = $route['Description'];
-    }
-
     $form['#prefix'] = '<div class="action-box-shadow">';
     $form['#suffix'] = '</div>';
     $form['header'] = array(
@@ -21,13 +13,10 @@ function select_route_form($form, &$form_state) {
     $form['#attributes']['name'] = 'schedule-by-route-form';
     $form['#attributes']['class'] = 'schedule-by-route';
     $form['#id'] = 'schedule-by-route';
-    $form['#action'] = 'https://www.wsdot.com/ferries/schedule/scheduledetailbyroute.aspx';
-    $form['route'] = array(
-        '#type' => 'select',
-        '#options' => $routes,
-        '#required' => TRUE,
-        '#empty_option' => t('Select Route'),
-        '#attributes' => array('onchange' => 'this.form.submit();'),
+    $form['#action'] = 'https://www.wsdot.com/ferries/schedule/';
+    $form['submit_button'] = array(
+        '#type' => 'submit',
+        '#value' => t('Select route'),
     );
     
     return $form;
