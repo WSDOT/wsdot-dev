@@ -868,7 +868,7 @@ input.searchButton {
     width: 300px;
 }
 
-.pane-ferries-make-reservations .form-submit, .pane-ferries-buy-tickets .form-submit {
+.pane-ferries-select-route .form-submit, .pane-ferries-make-reservations .form-submit, .pane-ferries-buy-tickets .form-submit {
     margin-top: 1rem;
     margin-bottom: 1rem;
     height: 45px;
@@ -891,7 +891,7 @@ input.searchButton {
     box-shadow: 0 0 0 5px white, 0 0 0 7px #007b5f;
 }
 
-#edit-submit-button:hover, #edit-submit-button--2:hover {
+#edit-submit-button:hover, #edit-submit-button--2:hover, #edit-submit-button--3:hover {
     text-decoration: underline;
 }
 
