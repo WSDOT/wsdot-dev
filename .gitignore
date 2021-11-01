@@ -6,3 +6,15 @@ docroot/sites/*/files-private
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
+
+# Ignore directories created for Drupal 8 codebase
+auth.json
+blt/
+docroot/core/
+docroot/libraries/
+docroot/modules/contrib/
+docroot/profiles/contrib/
+docroot/sites/default/local.drush.yml
+docroot/sites/default/settings/
+drush/
+vendor/
