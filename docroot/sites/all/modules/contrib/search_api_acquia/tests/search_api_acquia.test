@@ -30,6 +30,10 @@ class SearchApiAcquiaUnitTestCase extends DrupalUnitTestCase {
     parent::setUp();
     require_once dirname(dirname(__FILE__)) . '/search_api_acquia.module';
 
+    if (!function_exists('acquia_agent_settings')) {
+      module_load_include('module', 'acquia_agent');
+    }
+
     // Generate and store a random set of credentials.
     // Make them as close to the production values as possible
     // Something like AAAA-1234
